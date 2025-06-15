@@ -1,0 +1,59 @@
+.hero {
+    height: 400px;
+    background:  url(../../assets/fasad.jpg) center/cover;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .ctaButton {
+    height: 60px;
+    align-self: end;
+    border: none;
+    background: var(--secondary);
+    padding: 0 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: clamp(12px, 1.5vw, 18px);
+    color: black;
+    cursor: pointer;
+
+  }
+  
+  .ctaButton:hover, .categoryButton:hover {
+    background: var(--hover);
+    color: var(--text);;
+  }
+
+  .categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+.categoryButton {
+  padding: 10px 20px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: clamp(12px, 1.5vw, 18px);
+}
+
+
+.categoryButton.active {
+  background-color: #180085;
+  color: #fff;
+}
+  
+  .menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, clamp(250px, 28vw, 400px));
+  gap: 20px;
+  justify-content: center;
+}

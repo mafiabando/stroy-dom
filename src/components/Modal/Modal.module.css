@@ -1,0 +1,200 @@
+/* Modal.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  
+  .modalContent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+   
+  
+  .closeButton {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: clamp(20px, 6.25vw, 25px);
+    color: var(--accent);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .closeButton:hover {
+    color: var(--hover);
+  }
+  
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: clamp(5px, 1vh, 10px);
+    padding: clamp(15px, 1.75vh, 20px);
+    line-height: 1;
+  }
+  
+  .modalImage {
+    width: clamp(250px, 40vw, 400px);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .modalDetails {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1vh, 20px);
+  }
+
+  .modalTitle {
+    font-size: clamp(14px, 2vw, 24px);
+  }
+  
+  .modalText {
+    font-size: clamp(12px, 1.6vw, 20px);
+  }
+
+  .priceControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    flex-direction: column;
+    gap: clamp(10px, 1vh, 15px);
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 1.5vw, 20px);
+  }
+  
+  .controlButton {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    width: clamp(25px, 3.85vh, 40px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s; 
+  }
+  
+  .controlButton:hover {
+    background: #e6b800;
+  }
+
+  .quantityDisplay {
+    font-size: clamp(10px, 1.75vh, 20px);
+  }
+  
+  .priceInfo {
+    font-size: clamp(10px, 2vh, 24px);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  
+  .addToCartButton {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: clamp(8px, 1.5vh, 14px) clamp(16px, 2.5vh, 30px);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: clamp(10px, 1.75vh, 18px);
+  }
+  
+  .addToCartButton:hover {
+    background: #6b2d0f;
+  }
+  
+/* Блок с выбором длины (в модалке) */
+.lengthOptions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Обёртка радиокнопки (в модалке) */
+.modalRadioLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(10px, 2vh, 24px);
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+}
+
+/* Настоящая HTML-радиокнопка (скрыта) */
+.modalRadioInput {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+/* Кастомная радиокнопка */
+.modalRadioCustom {
+  width: clamp(20px, 3vh, 30px);
+  aspect-ratio: 1/1;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: border-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* Внутренний кружок при выбранном состоянии */
+.modalRadioInput:checked ~ .modalRadioCustom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(50%, -50%);
+  width: clamp(10px, 1.5vh, 15px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--secondary); /* Цвет из переменной */
+}
+
+@media (height < 800px) {
+  .modalImage {
+    width: clamp(200px, 40vh, 400px);
+  }
+
+  .modalTitle {
+    font-size: clamp(12px, 1.875vh, 24px);
+  }
+  
+  .modalText {
+    font-size: clamp(10px, 1.625vh, 20px);
+  }
+
+  .closeButton {
+    font-size: 18px;
+  }
+}
