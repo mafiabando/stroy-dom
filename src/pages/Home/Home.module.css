@@ -5,15 +5,18 @@
     color: white;
     text-align: center;
     justify-content: center;
+    gap: 20px;
     padding: 20px;
   }
   
   .ctaButton {
+    box-sizing: content-box;
+    width:  160px;
     height: 60px;
     align-self: end;
     border: none;
     background: var(--secondary);
-    padding: 0 20px;
+    padding: 0;
     border-radius: 4px;
     text-transform: uppercase;
     font-size: clamp(12px, 1.5vw, 18px);
@@ -46,7 +49,7 @@
 }
 
 
-.categoryButton.active {
+.active {
   background-color: #180085;
   color: #fff;
 }

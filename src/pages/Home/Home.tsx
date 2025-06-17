@@ -3,48 +3,58 @@ import MenuItem, { MenuItemProps } from '../../components/MenuItem/MenuItem';
 import styles from './Home.module.css';
 import { menuItems } from './MenuData';
 
-const categoriesList = [
-  "МП-20",
-  "С-8"
-] as const;
+const mainCategories = ["Профнастил", "Плитка", "Двери"] as const;
 
-export type Category = typeof categoriesList[number];
+export type MainCategory = typeof mainCategories[number];
+
+const subCategories = {
+  "Профнастил": ["МП-20", "С-8"],
+  "Плитка": ["Керамика", "Клинкер"],
+  "Двери": ["Межкомнатные", "Входные"]
+} as const;
+
+export type SubCategory<T extends MainCategory> = typeof subCategories[T][number];
 
 const Home = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("МП-20");
+  const [activeMainCategory, setActiveMainCategory] = useState<MainCategory>("Профнастил");
+  const [activeSubCategory, setActiveSubCategory] = useState<string>(subCategories["Профнастил"][0]);
 
+  useEffect(() => {
+    setActiveSubCategory(subCategories[activeMainCategory][0]);
+  }, [activeMainCategory]);
 
-  const groupedMenu = menuItems.reduce((acc, item) => {
-    if (!acc[item.category]) {
-      acc[item.category] = [];
-    }
-    acc[item.category].push(item);
-    return acc;
-  }, {} as Record<Category, typeof menuItems>);
-
-  const currentCategoryItems = groupedMenu[activeCategory] || [];
-
+  const filteredItems = menuItems.filter(
+    item => item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
+  );
 
   return (
     <div className={styles.home}>
       <section className={styles.hero}>
-        <button className={styles.ctaButton}>
-          Посмотреть ассортимент
-        </button>
+        {mainCategories.map(cat => (
+          <button
+            key={cat}
+            onClick={() => setActiveMainCategory(cat)}
+            className={`${styles.ctaButton} ${
+              activeMainCategory === cat ? styles.active : ""
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
       </section>
 
       <section className={styles.categories}>
         <div className="container">
           <div className={styles.categoryButtons}>
-            {categoriesList.map((cat) => (
+            {subCategories[activeMainCategory].map(subCat => (
               <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
+                key={subCat}
+                onClick={() => setActiveSubCategory(subCat)}
                 className={`${styles.categoryButton} ${
-                  activeCategory === cat ? styles.active : ""
+                  activeSubCategory === subCat ? styles.active : ""
                 }`}
               >
-                {cat}
+                {subCat}
               </button>
             ))}
           </div>
@@ -54,7 +64,7 @@ const Home = () => {
       <section className={styles.menuSection}>
         <div className="container">
           <div className={styles.menuGrid}>
-            {currentCategoryItems.map(item => (
+            {filteredItems.map(item => (
               <MenuItem key={item.id} {...item} />
             ))}
           </div>

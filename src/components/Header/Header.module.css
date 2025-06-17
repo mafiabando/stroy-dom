@@ -18,22 +18,17 @@
     align-items: center;
   }
   
-  .logo svg {
-    width: clamp(60px, 8.33vw, 120px);
-    height: auto;
-  }
-  
-  .cart {
+  .cart_container {
     display: flex;
   }
 
-  .burger {
+  .cart {
     display: block;
     cursor: pointer;
     z-index: 400; 
   }
   
-  .burger svg {
+  .cart svg, .logo svg, .contacts svg {
     width: clamp(40px, 5.5vw, 80px);;
     height: auto;
   }

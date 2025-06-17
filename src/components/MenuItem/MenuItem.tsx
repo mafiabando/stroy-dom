@@ -3,14 +3,15 @@ import styles from "./MenuItem.module.css";
 import modalStyles from "../Modal/Modal.module.css";
 import { CartContext } from "../../context/CartContext";
 import Modal from "../Modal/Modal";
-import { Category } from "../../pages/Home/Home";
+import { MainCategory } from "../../pages/Home/Home";
 
 export interface MenuItemProps {
   id: number;
   title: string;
   description: string;
   image: string;
-  category: Category;
+  mainCategory: MainCategory;
+  subCategory: string;
   pricesByLength: Partial<{
     "1.5м": number;
     "1.7м": number;
