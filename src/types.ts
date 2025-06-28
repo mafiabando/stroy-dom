@@ -1,10 +1,10 @@
 export interface ICartItem {
-    id: number;
+    id: string;
     title: string;
     price: number;
     quantity: number;
     image: string;
-    length: string;
+    size?: string;
     key: string;
   }
 

@@ -4,19 +4,18 @@ import modalStyles from "../Modal/Modal.module.css";
 import { CartContext } from "../../context/CartContext";
 import Modal from "../Modal/Modal";
 import { MainCategory } from "../../pages/Home/Home";
+import { SubCategory } from "../../pages/Home/Home";
 
 export interface MenuItemProps {
-  id: number;
+  id: string;
   title: string;
   description: string;
   image: string;
   mainCategory: MainCategory;
-  subCategory: string;
-  pricesByLength: Partial<{
-    "1.5м": number;
-    "1.7м": number;
-    "2м": number;
-  }>;
+  subCategory: SubCategory<MainCategory>;
+  sizeText?: string;
+  pricesBySize?: Record<string, number>;
+  price?: number;
 }
 
 const MenuItem = ({
@@ -24,46 +23,51 @@ const MenuItem = ({
   title,
   description,
   image,
-  pricesByLength,
+  sizeText,
+  pricesBySize,
+  price
 }: MenuItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
-  const [selectedLength, setSelectedLength] = useState<"1.5м" | "1.7м" | "2м">(
-    "1.5м"
-  );
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useContext(CartContext);
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setQuantity(1);
-    setSelectedLength("1.5м");
+    setSelectedSize("1.5м");
   };
   const handleAddToCart = () => {
-    const priceForSelectedLength = pricesByLength[selectedLength];
+    const priceForSelectedSize =
+      selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
+        ? pricesBySize[selectedSize]
+        : price;
+
     addToCart({
       id,
       title,
       image,
       quantity,
-      price: priceForSelectedLength!,
-      length: selectedLength,
+      price: priceForSelectedSize!,
+      ...(selectedSize ? { size: selectedSize } : {}),
     });
     handleCloseModal();
   };
 
   useEffect(() => {
-    const availableLengths = Object.keys(pricesByLength) as Array<
-      "1.5м" | "1.7м" | "2м"
-    >;
-
-    if (
-      availableLengths.length === 1 &&
-      selectedLength !== availableLengths[0]
-    ) {
-      setSelectedLength(availableLengths[0]);
+    if (pricesBySize && Object.keys(pricesBySize).length > 0) {
+      const availableSizes = Object.keys(pricesBySize);
+      if (availableSizes.length === 1) {
+        setSelectedSize(availableSizes[0]);
+      } else if (!selectedSize || !availableSizes.includes(selectedSize)) {
+        setSelectedSize(availableSizes[0]);
+      }
+    } else {
+      setSelectedSize(null);
     }
-  }, [pricesByLength, selectedLength]);
+  }, [pricesBySize, selectedSize]);
+
 
   return (
     <>
@@ -71,53 +75,61 @@ const MenuItem = ({
         className={styles.card}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={handleOpenModal}
       >
         <img
           src={image}
           alt={title}
           className={styles.image}
           style={{ transform: isHovered ? "scale(1.05)" : "scale(1)" }}
+          onClick={handleOpenModal}
         />
 
         <div className={styles.content}>
           <h3 className={styles.title}>{title}</h3>
+          {sizeText && <span>{sizeText}</span>}
+          {pricesBySize && Object.keys(pricesBySize).length > 1 && (
+            <div className={styles.sizeSelector} onClick={(e) => e.stopPropagation()}>
+              {Object.entries(pricesBySize).map(([sizeOption, price]) => (
+                  <label key={sizeOption} className={styles.radioLabel}>
+                    <input
+                      type="radio"
+                      name={`size-${id}`}
+                      value={sizeOption}
+                      checked={selectedSize === sizeOption}
+                      onChange={() => setSelectedSize(sizeOption)}
+                      className={styles.radioInput}
+                    />
+                    <span className={styles.radioCustom}></span>
+                    {sizeOption}
+                  </label>
+              ))}
+            </div>
+          )}
 
-          <div
-            className={styles.lengthSelector}
-            onClick={(e) => e.stopPropagation()}
-          >
-            {(["1.5м", "1.7м", "2м"] as const).map((lengthOption) =>
-              pricesByLength[lengthOption] !== undefined ? (
-                <label key={lengthOption} className={styles.radioLabel}>
-                  <input
-                    type="radio"
-                    name={`length-${id}`}
-                    value={lengthOption}
-                    checked={selectedLength === lengthOption}
-                    onChange={() => setSelectedLength(lengthOption)}
-                    className={styles.radioInput}
-                    disabled={Object.keys(pricesByLength).length === 1}
-                  />
-                  <span className={styles.radioCustom}></span>
-                  {lengthOption}
-                </label>
-              ) : null
-            )}
+          <div className={styles.price}>
+            {selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
+              ? pricesBySize[selectedSize] + " ₽"
+              : price !== undefined
+                ? price + " ₽"
+                : "Цена не указана"}
           </div>
-
-          <div className={styles.price}>{pricesByLength[selectedLength]} ₽</div>
           <button
             className={styles.button}
             onClick={(e) => {
               e.stopPropagation();
+
+              const priceForSelectedSize =
+                selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
+                  ? pricesBySize[selectedSize]
+                  : price;
+
               addToCart({
                 id,
                 title,
-                price: pricesByLength[selectedLength]!,
+                price: priceForSelectedSize!,
                 image,
                 quantity: 1,
-                length: selectedLength,
+                ...(selectedSize ? { size: selectedSize } : {}),
               });
             }}
           >
@@ -132,29 +144,30 @@ const MenuItem = ({
           <div className={modalStyles.modalDetails}>
             <h2 className={modalStyles.modalTitle}>{title}</h2>
             <p className={modalStyles.modalText}>{description}</p>
+            {sizeText && <span>{sizeText}</span>}
 
-            <div className={modalStyles.lengthOptions}>
-              {(["1.5м", "1.7м", "2м"] as const).map((lengthOption) =>
-                pricesByLength[lengthOption] !== undefined ? (
+            {pricesBySize && Object.keys(pricesBySize).length > 1 && (
+              <div className={modalStyles.sizeOptions}>
+                {Object.entries(pricesBySize).map(([sizeOption]) => (
                   <label
-                    key={lengthOption}
+                    key={sizeOption}
                     className={modalStyles.modalRadioLabel}
                   >
                     <input
                       type="radio"
-                      name={`modal-length-${id}`}
-                      value={lengthOption}
-                      checked={selectedLength === lengthOption}
-                      onChange={() => setSelectedLength(lengthOption)}
+                      name={`modal-size-${id}`}
+                      value={sizeOption}
+                      checked={selectedSize === sizeOption}
+                      onChange={() => setSelectedSize(sizeOption)}
                       className={modalStyles.modalRadioInput}
-                      disabled={Object.keys(pricesByLength).length === 1}
+                      disabled={Object.keys(pricesBySize).length === 1}
                     />
                     <span className={modalStyles.modalRadioCustom}></span>
-                    {lengthOption}
+                    {sizeOption}
                   </label>
-                ) : null
-              )}
-            </div>
+                ))}
+              </div>
+            )}
 
             <div className={modalStyles.priceControls}>
               <div className={modalStyles.quantityControls}>
@@ -169,7 +182,10 @@ const MenuItem = ({
                     {quantity} шт
                   </span>
                   <div className={modalStyles.priceInfo}>
-                    {pricesByLength[selectedLength]! * quantity} ₽
+
+                    {(selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
+                      ? pricesBySize[selectedSize]
+                      : price ?? 0) * quantity} ₽
                   </div>
                 </div>
                 <button

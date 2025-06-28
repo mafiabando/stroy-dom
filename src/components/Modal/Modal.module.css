@@ -22,7 +22,10 @@
     z-index: 1000;
     overflow-y: scroll;
   }
-   
+
+  .modalContent::-webkit-scrollbar {
+  width: 0;
+  }
   
   .closeButton {
     position: absolute;
@@ -67,7 +70,7 @@
   }
   
   .modalText {
-    font-size: clamp(12px, 1.6vw, 20px);
+    font-size: clamp(15px, 4vw, 20px)
   }
 
   .priceControls {
@@ -97,7 +100,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s; 
+    transition: all 0.3s;
+    line-height: 1;
   }
   
   .controlButton:hover {
@@ -130,8 +134,11 @@
   }
   
 /* Блок с выбором длины (в модалке) */
-.lengthOptions {
+.sizeOptions {
+  max-width: clamp(250px, 40vw, 400px);
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
 }
@@ -141,7 +148,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   font-size: clamp(10px, 2vh, 24px);
   cursor: pointer;
   user-select: none;
@@ -187,11 +194,15 @@
   }
 
   .modalTitle {
-    font-size: clamp(12px, 1.875vh, 24px);
+    font-size: clamp(18px, 2.75vh, 22px);
   }
   
   .modalText {
-    font-size: clamp(10px, 1.625vh, 20px);
+    font-size: clamp(15px, 2vh, 20px);
+  }
+  
+  .sizeOptions {
+    max-width: clamp(200px, 40vh, 400px);
   }
 
   .closeButton {

@@ -1,33 +1,48 @@
 .hero {
     height: 400px;
-    background:  url(../../assets/fasad.jpg) center/cover;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     text-align: center;
     justify-content: center;
+    align-content: end;
     gap: 20px;
     padding: 20px;
   }
+
+.hero_Профнастил {
+  background: url(../../assets/prof.jpg) center/cover; 
+}
+
+.hero_Сухие_смеси {
+  background: url(../../assets/smesi.jpg) center/cover;
+}
+
+.hero_Древесные_плиты {
+  background: url(../../assets/pliti.jpg) center/cover;
+}
+
+.hero_Гипсокартон {
+  background: url(../../assets/gkl.jpg) center/cover;
+}
   
   .ctaButton {
     box-sizing: content-box;
-    width:  160px;
-    height: 60px;
-    align-self: end;
+    width: auto;
+    height: 40px;
     border: none;
     background: var(--secondary);
-    padding: 0;
+    padding: 0 10px;
     border-radius: 4px;
-    text-transform: uppercase;
     font-size: clamp(12px, 1.5vw, 18px);
     color: black;
     cursor: pointer;
-
   }
   
   .ctaButton:hover, .categoryButton:hover {
     background: var(--hover);
-    color: var(--text);;
+    color: black;
+    outline: 1px solid black;
   }
 
   .categoryButtons {
@@ -49,9 +64,10 @@
 }
 
 
-.active {
+.active, .active:hover {
   background-color: #180085;
   color: #fff;
+  outline: 1px solid black;
 }
   
   .menuGrid {

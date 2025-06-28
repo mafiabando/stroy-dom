@@ -1,16 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import MenuItem, { MenuItemProps } from '../../components/MenuItem/MenuItem';
 import styles from './Home.module.css';
 import { menuItems } from './MenuData';
 
-const mainCategories = ["Профнастил", "Плитка", "Двери"] as const;
+const mainCategories = ["Профнастил", "Сухие смеси", "Древесные плиты", "Гипсокартон", "Профиля и направляющие"] as const;
 
 export type MainCategory = typeof mainCategories[number];
 
 const subCategories = {
   "Профнастил": ["МП-20", "С-8"],
-  "Плитка": ["Керамика", "Клинкер"],
-  "Двери": ["Межкомнатные", "Входные"]
+  "Сухие смеси" : ["Штукатурка", "Шпатлёвка", "Смеси для пола", "Плиточный клей", "Цемент", ],
+  "Древесные плиты" : ["ОСП", "ДСП", "ДВП", "Фанера"],
+  "Гипсокартон" : ["Для сухих помещений", "Влагостойкий"],
+  "Профиля и направляющие" : ["Стоечные", "Потолочные"]
 } as const;
 
 export type SubCategory<T extends MainCategory> = typeof subCategories[T][number];
@@ -19,9 +21,12 @@ const Home = () => {
   const [activeMainCategory, setActiveMainCategory] = useState<MainCategory>("Профнастил");
   const [activeSubCategory, setActiveSubCategory] = useState<string>(subCategories["Профнастил"][0]);
 
+  const heroClassName = `${styles.hero} ${styles[`hero_${activeMainCategory.replace(/\s/g, '_')}`] || ''}`;
+
   useEffect(() => {
     setActiveSubCategory(subCategories[activeMainCategory][0]);
   }, [activeMainCategory]);
+  
 
   const filteredItems = menuItems.filter(
     item => item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
@@ -29,7 +34,7 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <section className={styles.hero}>
+      <section className={heroClassName}>
         {mainCategories.map(cat => (
           <button
             key={cat}

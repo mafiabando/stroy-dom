@@ -28,7 +28,11 @@ const CartItem = ({ item, onQuantityChange, onRemove }: CartItemProps) => {
       <img src={item.image} alt={item.title} className={styles.image} />
 
       <div className={styles.details}>
-        <h3 className={styles.title}>{item.title} - {item.length}</h3>
+        {item.size !== undefined ?
+          <h3 className={styles.title}>{item.title} - {item.size}</h3>
+          : <h3 className={styles.title}>{item.title}</h3>
+
+        }
         <div className={styles.price}>{item.price} ₽</div>
       </div>
 

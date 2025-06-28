@@ -16,6 +16,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     transition: transform 0.3s;
+    cursor: pointer;
   }
   
   .content {
@@ -71,11 +72,12 @@
 
 
   /* Блок с выбором длины */
-.lengthSelector {
+.sizeSelector {
   display: flex;
-  gap: 20px; /* расстояние между вариантами */
+  flex-wrap: wrap;
+  gap: 10px; /* расстояние между вариантами */
   justify-content: center;
-  margin-bottom: 12px;
+  margin: 6px 0;
 }
 
 /* Обёртка радиокнопки (текст + кастомный кружок) */
@@ -83,7 +85,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   font-size: 14px;
   cursor: pointer;
   user-select: none;
