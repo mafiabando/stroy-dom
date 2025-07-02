@@ -25,6 +25,18 @@
 .hero_Гипсокартон {
   background: url(../../assets/gkl.jpg) center/cover;
 }
+
+.hero_Профиля_и_направляющие {
+  background: url(../../assets/profil.jpg) center/cover;
+}
+
+.hero_Маяки_и_перфорированные_углы {
+  background: url(../../assets/mayak.jpg) center/cover;
+}
+
+.hero_Профтрубы_и_металлические_углы {
+  background: url(../../assets/trubi.jpg) center/cover;
+}
   
   .ctaButton {
     box-sizing: content-box;

@@ -5,6 +5,8 @@
     overflow: hidden;
     transition: transform 0.3s;
     width: clamp(250px, 28vw, 400px);
+    display: flex;
+    flex-direction: column;
   }
   
   .card:hover {
@@ -22,6 +24,11 @@
   .content {
     padding: clamp(10px, 1.2vw , 20px);
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .title {

@@ -87,7 +87,7 @@ const MenuItem = ({
         <div className={styles.content}>
           <h3 className={styles.title}>{title}</h3>
           {sizeText && <span>{sizeText}</span>}
-          {pricesBySize && Object.keys(pricesBySize).length > 1 && (
+          {pricesBySize && Object.keys(pricesBySize).length > 0 && (
             <div className={styles.sizeSelector} onClick={(e) => e.stopPropagation()}>
               {Object.entries(pricesBySize).map(([sizeOption, price]) => (
                   <label key={sizeOption} className={styles.radioLabel}>
@@ -146,7 +146,7 @@ const MenuItem = ({
             <p className={modalStyles.modalText}>{description}</p>
             {sizeText && <span>{sizeText}</span>}
 
-            {pricesBySize && Object.keys(pricesBySize).length > 1 && (
+            {pricesBySize && Object.keys(pricesBySize).length > 0 && (
               <div className={modalStyles.sizeOptions}>
                 {Object.entries(pricesBySize).map(([sizeOption]) => (
                   <label
