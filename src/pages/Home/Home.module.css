@@ -37,6 +37,14 @@
 .hero_Профтрубы_и_металлические_углы {
   background: url(../../assets/trubi.jpg) center/cover;
 }
+
+.hero_Утеплители {
+  background: url(../../assets/utepl.jpg) center/cover;
+}
+
+.hero_Изоляция {
+  background: url(../../assets/isol.jpg) center/cover;
+}
   
   .ctaButton {
     box-sizing: content-box;
@@ -66,15 +74,16 @@
 }
 
 .categoryButton {
-  padding: 10px 20px;
+  padding: 8px 10px;
   background: var(--secondary);
   border: none;
   border-radius: 4px;
+  color: black;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: clamp(12px, 1.5vw, 18px);
+  text-decoration: none;
 }
-
 
 .active, .active:hover {
   background-color: #180085;

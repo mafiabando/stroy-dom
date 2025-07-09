@@ -53,7 +53,7 @@
   }
   
   .modalImage {
-    width: clamp(250px, 40vw, 400px);
+    width: clamp(250px, 40vw, 600px);
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 12px;
@@ -90,7 +90,7 @@
   
   .controlButton {
     background: var(--secondary);
-    color: white;
+    color: var(--accent);
     border: none;
     width: clamp(25px, 3.85vh, 40px);
     aspect-ratio: 1/1;
@@ -105,7 +105,7 @@
   }
   
   .controlButton:hover {
-    background: #e6b800;
+    background: var(--hover);
   }
 
   .quantityDisplay {
@@ -113,14 +113,14 @@
   }
   
   .priceInfo {
-    font-size: clamp(10px, 2vh, 24px);
+    font-size: clamp(12px, 2.5vh, 24px);
     color: var(--accent);
     font-weight: 600;
   }
   
   .addToCartButton {
-    background: var(--accent);
-    color: white;
+    background: var(--secondary);
+    color: var(--accent);;
     border: none;
     padding: clamp(8px, 1.5vh, 14px) clamp(16px, 2.5vh, 30px);
     border-radius: 24px;
@@ -130,7 +130,8 @@
   }
   
   .addToCartButton:hover {
-    background: #6b2d0f;
+    background: var(--hover);
+    color: white;
   }
   
 /* Блок с выбором длины (в модалке) */
@@ -208,4 +209,27 @@
   .closeButton {
     font-size: 18px;
   }
+}
+
+.quantityInput {
+  width: 50px;            /* фиксированная ширина, чтобы не было слишком широким */
+  padding: 2px;       /* внутренние отступы для удобства */
+  font-size: clamp(10px, 2vh, 24px);        /* размер шрифта, согласующийся с остальным текстом */
+  text-align: center;     /* выравнивание текста по центру */
+  border: 1px solid #ccc; /* светлая рамка */
+  border-radius: 4px;     /* скругленные углы */
+  outline: none;          /* убираем стандартный синий контур при фокусе */
+  transition: border-color 0.2s ease;
+  -moz-appearance: textfield; /* для Firefox убирает стрелки */
+}
+
+.quantityInput:focus {
+  border-color: var(--secondary);  /* синий цвет рамки при фокусе */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

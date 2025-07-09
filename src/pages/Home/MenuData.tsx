@@ -11,9 +11,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 800,
-    '1.7м': 900,
-    '2м': 1000,
+      '1.5м': 800,
+      '1.7м': 900,
+      '2м': 1000,
     },
   },
   {
@@ -25,9 +25,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 800,
-    '1.7м': 900,
-    '2м': 1000,
+      '1.5м': 800,
+      '1.7м': 900,
+      '2м': 1000,
     },
   },
   {
@@ -39,9 +39,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 800,
-    '1.7м': 900,
-    '2м': 1000,
+      '1.5м': 800,
+      '1.7м': 900,
+      '2м': 1000,
     },
   },
   {
@@ -53,9 +53,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 800,
-    '1.7м': 900,
-    '2м': 1000,
+      '1.5м': 800,
+      '1.7м': 900,
+      '2м': 1000,
     },
   },
   {
@@ -67,9 +67,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 800,
-    '1.7м': 900,
-    '2м': 1000,
+      '1.5м': 800,
+      '1.7м': 900,
+      '2м': 1000,
     },
   },
   {
@@ -81,9 +81,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "МП-20",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '1.5м': 650,
-    '1.7м': 750,
-    '2м': 850,
+      '1.5м': 650,
+      '1.7м': 750,
+      '2м': 850,
     },
   },
   {
@@ -95,7 +95,7 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "С-8",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '2м': 1000,
+      '2м': 1000,
     },
   },
   {
@@ -107,7 +107,7 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "С-8",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '2м': 1000,
+      '2м': 1000,
     },
   },
   {
@@ -119,7 +119,7 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "С-8",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '2м': 1000,
+      '2м': 1000,
     },
   },
   {
@@ -131,7 +131,7 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "С-8",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '2м': 1800,
+      '2м': 1800,
     },
   },
   {
@@ -143,9 +143,9 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "С-8",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-    '2м': 1800,
+      '2м': 1800,
     },
-  },  
+  },
   {
     id: uuidv4(),
     title: "Волма Слой",
@@ -154,7 +154,7 @@ export const menuItems: MenuItemProps[] = [
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
     price: 400
-  },  
+  },
   {
     id: uuidv4(),
     title: "Волма Старт",
@@ -178,15 +178,6 @@ export const menuItems: MenuItemProps[] = [
     title: "Волма Гипс-актив Экстра",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/активэкстра.jpg`,
-    mainCategory: 'Сухие смеси',
-    subCategory: "Штукатурка",
-    price: 400
-  },
-  {
-    id: uuidv4(),
-    title: "Волма Аквапласт",
-    description: "описание",
-    image: `${process.env.PUBLIC_URL}/images/смеси/штук/аквапласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
     price: 400
@@ -220,9 +211,27 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Волма Аквапласт",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/штук/аквапласт.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Штукатурка",
+    price: 400
+  },
+  {
+    id: uuidv4(),
     title: "Литокс CemPlast",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/цемпласт.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Штукатурка",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Power Fasad",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/штук/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
     price: 400
@@ -319,6 +328,15 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Power Nivelir",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/пол/повер.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Смеси для пола",
+    price: 400
+  },
+  {
+    id: uuidv4(),
     title: "Пескобетон ProfMix М300",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/м300.jpg`,
@@ -400,6 +418,96 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Power Ceramic",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/повер.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Плиточный клей",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Литокс Бриз",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/бриз.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Штукатурно-клеевая смесь",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Knauf Севенер",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/севенер.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Штукатурно-клеевая смесь",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Power Teplofix",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/повер.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Штукатурно-клеевая смесь",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Волма Монтаж",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/волма.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Монтажный клей",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Хабез Мелисса",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/хабез.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Монтажный клей",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Волма Блок",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/блок/волма.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Клей для блоков",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Литокс Контакт",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/блок/литокс.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Клей для блоков",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Мега Блок Монтаж",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/блок/мега.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Клей для блоков",
+    price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Profmix Профи-Блок",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/блок/профмикс.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Клей для блоков",
+    price: 400
+  },
+  {
+    id: uuidv4(),
     title: "Цемент Extra Cem 500+",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/смеси/цемент.jpg`,
@@ -409,15 +517,29 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "ОСП 2440х1220мм, пропитка 1 сторона",
+    title: "ОСП 2440х1220мм (пропитка 1 сторона)",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/плиты/осп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ОСП",
     sizeText: 'Выберите толщину:',
     pricesBySize: {
-      '9мм':680,
-      '12мм':900
+      '9мм': 700,
+      '12мм': 950,
+      '15мм': 1200
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "ОСП 2440х1220мм (пропитка 2 стороны)",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/плиты/осп.jpg`,
+    mainCategory: 'Древесные плиты',
+    subCategory: "ОСП",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '9мм': 750,
+      '12мм': 1050
     }
   },
   {
@@ -438,8 +560,8 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "ДВП",
     sizeText: 'Выберите толщину:',
     pricesBySize: {
-      '3мм':210,
-      '5мм':500
+      '3мм': 210,
+      '5мм': 500
     }
   },
   {
@@ -451,12 +573,12 @@ export const menuItems: MenuItemProps[] = [
     subCategory: "Фанера",
     sizeText: 'Выберите толщину:',
     pricesBySize: {
-      '4мм':600,
-      '6мм':800,
-      '8мм':950,
-      '10мм':1100,
-      '12мм':1300,
-      '15мм':1500
+      '4мм': 600,
+      '6мм': 800,
+      '8мм': 950,
+      '10мм': 1100,
+      '12мм': 1300,
+      '15мм': 1500
     }
   },
   {
@@ -484,7 +606,7 @@ export const menuItems: MenuItemProps[] = [
       '9.5мм': 350,
       '12.5мм': 380
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Профиль 3000х60х27мм",
@@ -499,10 +621,10 @@ export const menuItems: MenuItemProps[] = [
       '0.55мм': 230,
       '0.6мм knauf': 380,
     }
-  },  
+  },
   {
     id: uuidv4(),
-    title: "Направляющий 3000х27х28 мм",
+    title: "Направляющий 3000х27х28мм",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/профиля/2728.jpg`,
     mainCategory: 'Профиля и направляющие',
@@ -514,7 +636,7 @@ export const menuItems: MenuItemProps[] = [
       '0.55мм': 160,
       '0.6мм': 250,
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Профиль 3000х50х50мм",
@@ -527,7 +649,7 @@ export const menuItems: MenuItemProps[] = [
       '0.55мм': 350,
       '0.6мм': 450,
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Направляющий 3000х50х40мм",
@@ -541,7 +663,7 @@ export const menuItems: MenuItemProps[] = [
       '0.55мм': 300,
       '0.6мм': 400,
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Профиль 3000х75х50мм",
@@ -577,7 +699,7 @@ export const menuItems: MenuItemProps[] = [
     pricesBySize: {
       '0.55мм': 400,
       '0.6мм': 450,
-      '0.6мм knauf': 550 
+      '0.6мм knauf': 550
     }
   },
   {
@@ -590,7 +712,7 @@ export const menuItems: MenuItemProps[] = [
     sizeText: 'Выберите толщину:',
     pricesBySize: {
       '0.55мм': 390,
-      '0.6мм knauf': 500 
+      '0.6мм knauf': 500
     }
   },
   {
@@ -603,10 +725,10 @@ export const menuItems: MenuItemProps[] = [
     sizeText: 'Выберите толщину:',
     pricesBySize: {
       '0.55мм': 390,
-      '0.6мм': 500 
+      '0.6мм': 500
     }
   },
-    {
+  {
     id: uuidv4(),
     title: "Маячок 3000х10мм",
     description: "Длина 3м",
@@ -616,7 +738,7 @@ export const menuItems: MenuItemProps[] = [
     sizeText: 'Выберите толщину:',
     pricesBySize: {
       '0.55мм': 390,
-      '0.6мм': 500 
+      '0.6мм': 500
     }
   },
   {
@@ -657,7 +779,22 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х15х15х1.5мм",
+    title: "Профтруба 15х15х1.5мм",
+    description: "Длина 6м",
+    image: `${process.env.UBLIC_URL}/images/профтрубы/1515.jpg`,
+    mainCategory: "Профтрубы и металлические углы",
+    subCategory: "Профтрубы",
+    sizeText: 'Выберите длину:',
+    pricesBySize: {
+      '2м': 150,
+      '3м': 225,
+      '4м': 300,
+      '6м': 450
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Профтруба 20х20х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/1515.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -672,22 +809,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х20х20х2мм",
-    description: "Длина 6м",
-    image: `${process.env.PUBLIC_URL}/images/профтрубы/1515.jpg`,
-    mainCategory: "Профтрубы и металлические углы",
-    subCategory: "Профтрубы",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
-    }
-  },
-  {
-    id: uuidv4(),
-    title: "Профтруба 6000х20х20х2мм",
+    title: "Профтруба 20х20х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/2020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -702,7 +824,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х25х25х2мм",
+    title: "Профтруба 25х25х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/2525.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -717,7 +839,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х30х30х2мм",
+    title: "Профтруба 30х30х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/3030.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -732,7 +854,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х40х20х1.5мм",
+    title: "Профтруба 40х20х1.5мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -747,7 +869,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х40х20х2мм",
+    title: "Профтруба 40х20х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -762,7 +884,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х40х25х2мм",
+    title: "Профтруба 40х25х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4025.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -777,7 +899,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х40х40х2мм",
+    title: "Профтруба 40х40х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -792,7 +914,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х50х25х2мм",
+    title: "Профтруба 50х25х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/5025.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -807,7 +929,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х50х50х2мм",
+    title: "Профтруба 50х50х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/5050.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -822,7 +944,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х60х30х2мм",
+    title: "Профтруба 60х30х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6030.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -837,7 +959,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х60х40х2мм",
+    title: "Профтруба 60х40х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -852,7 +974,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х60х40х3мм",
+    title: "Профтруба 60х40х3мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -867,7 +989,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х60х60х2мм",
+    title: "Профтруба 60х60х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6060.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -882,7 +1004,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х60х60х3мм",
+    title: "Профтруба 60х60х3мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6060.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -897,7 +1019,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х80х40х2мм",
+    title: "Профтруба 80х40х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -912,7 +1034,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х80х80х2мм",
+    title: "Профтруба 80х80х2мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8080.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -927,7 +1049,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х80х80х3мм",
+    title: "Профтруба 80х80х3мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8080.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -942,7 +1064,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х100х100х3мм",
+    title: "Профтруба 100х100х3мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/100100.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -957,7 +1079,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Профтруба 6000х100х100х3мм",
+    title: "Профтруба 100х100х3мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/100100.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -972,7 +1094,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Угол металлический 6000х32х32мм",
+    title: "Угол металлический 32х32мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол3232.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -987,7 +1109,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Угол металлический 6000х40х40мм",
+    title: "Угол металлический 40х40мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол4040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -1002,7 +1124,7 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Угол металлический 6000х50х40мм",
+    title: "Угол металлический 50х40мм",
     description: "Длина 6м",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол5040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
@@ -1071,6 +1193,21 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Пенопласт 1200х1000мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/утепл/пенопласт.jpg`,
+    mainCategory: "Утеплители",
+    subCategory: "Пенопласт",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '3мм': 100,
+      '4мм': 130,
+      '5мм': 150,
+      '10мм': 280
+    }
+  },
+  {
+    id: uuidv4(),
     title: "Технониколь Роклайт 1200х600х50мм (уп/8шт)",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/утепл/роклайт.jpg`,
@@ -1122,5 +1259,228 @@ export const menuItems: MenuItemProps[] = [
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
     price: 1500
-  },  
+  },
+  {
+    id: uuidv4(),
+    title: "Фольгированный утеплитель 1200х25000мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/фольга.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Отражающая теплоизоляция",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '2мм': 750,
+      '3мм': 900,
+      '5мм': 1300,
+      '10мм (1200х15000мм)': 1300
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Теплоотражающая пароизоляция 35м²",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/ф.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Отражающая теплоизоляция",
+    price: 2500
+  },
+  {
+    id: uuidv4(),
+    title: "Мембрана B Пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/б.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Пароизоляция",
+    sizeText: 'Площадь:',
+    pricesBySize: {
+      '30м²': 500,
+      '70м²': 900
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Мембрана D Гидро-пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/д.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Гидро-пароизоляция",
+    sizeText: 'Площадь:',
+    pricesBySize: {
+      '30м²': 700,
+      '70м²': 1300
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Мембрана A Ветро-влагозащита",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/а.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Ветро-влагозащита",
+    sizeText: 'Площадь:',
+    pricesBySize: {
+      '30м²': 700,
+      '70м²': 1300
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Тисма B 60м² Пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/тисмаб.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Пароизоляция",
+    price: 2000
+  },
+  {
+    id: uuidv4(),
+    title: "Тисма A 60м² Ветро-влагозащита",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/тисмаа.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Ветро-влагозащита",
+    price: 3000
+  },
+  {
+    id: uuidv4(),
+    title: "Fiberon B 60м² Пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/фб.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Пароизоляция",
+    price: 1200
+  },
+  {
+    id: uuidv4(),
+    title: "Fiberon D 60м² Пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/фд.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Пароизоляция",
+    price: 2000
+  },
+  {
+    id: uuidv4(),
+    title: "Fiberon A 60м² Ветро-влагозащита",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/фа.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Ветро-влагозащита",
+    price: 2000
+  },
+  {
+    id: uuidv4(),
+    title: "Изоспан B Пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/изб.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Пароизоляция",
+    sizeText: 'Площадь:',
+    pricesBySize: {
+      '35м²': 1400,
+      '70м²': 2500
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Изоспан D Гидро-пароизоляция",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/изд.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Гидро-пароизоляция",
+    sizeText: 'Площадь:',
+    pricesBySize: {
+      '35м²': 1700,
+      '70м²': 3000
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Изоспан AM Ветро-влагозащита (3 слоя) 70м²",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/изам.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Ветро-влагозащита",
+    price: 5500
+  },
+  {
+    id: uuidv4(),
+    title: "Изоспан FB Гидро-пароизоляция отражающая 35м²",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/изол/изфб.jpg`,
+    mainCategory: "Изоляция",
+    subCategory: "Гидро-пароизоляция",
+    price: 2800
+  },
+  {
+    id: uuidv4(),
+    title: "Саморез по дереву",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/крепеж/дер.jpg`,
+    mainCategory: "Крепёж",
+    subCategory: "Саморезы для гипсокартона",
+    sizeText: "Выберите длину:",
+    pricesBySize: {
+      "25мм" : 250,
+      "35мм" : 250,
+      "41мм" : 250,
+      "45мм" : 250,
+      "51мм" : 250,
+      "55мм" : 250,
+      "61мм" : 250,
+      "65мм" : 250,
+      "70мм" : 250,
+      "75мм" : 250,
+      "90мм" : 250,
+      "102мм" : 250,
+      "120мм" : 250,
+    },
+  },
+  {
+    id: uuidv4(),
+    title: "Саморез по металлу",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/крепеж/мет.jpg`,
+    mainCategory: "Крепёж",
+    subCategory: "Саморезы для гипсокартона",
+    sizeText: "Выберите длину:",
+    pricesBySize: {
+      "25мм" : 250,
+      "32мм" : 250
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Саморез прессшайба",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/крепеж/пр.jpg`,
+    mainCategory: "Крепёж",
+    subCategory: "Саморезы для гипсокартона",
+    sizeText: "Выберите длину:",
+    pricesBySize: {
+      "13мм" : 300,
+      "16мм" : 300,
+      "19мм" : 300,
+      "29мм" : 300,
+      "35мм" : 300,
+      "41мм" : 300
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Кровельный саморез зелёный",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/крепеж/зел.jpg`,
+    mainCategory: "Крепёж",
+    subCategory: "Кровельные саморезы",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "19мм" : 300,
+      "29мм" : 300,
+      "35мм" : 300,
+      "51мм" : 300,
+      "76мм" : 300,
+      "41мм" : 300
+    }
+  },
 ];

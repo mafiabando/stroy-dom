@@ -90,18 +90,18 @@ const MenuItem = ({
           {pricesBySize && Object.keys(pricesBySize).length > 0 && (
             <div className={styles.sizeSelector} onClick={(e) => e.stopPropagation()}>
               {Object.entries(pricesBySize).map(([sizeOption, price]) => (
-                  <label key={sizeOption} className={styles.radioLabel}>
-                    <input
-                      type="radio"
-                      name={`size-${id}`}
-                      value={sizeOption}
-                      checked={selectedSize === sizeOption}
-                      onChange={() => setSelectedSize(sizeOption)}
-                      className={styles.radioInput}
-                    />
-                    <span className={styles.radioCustom}></span>
-                    {sizeOption}
-                  </label>
+                <label key={sizeOption} className={styles.radioLabel}>
+                  <input
+                    type="radio"
+                    name={`size-${id}`}
+                    value={sizeOption}
+                    checked={selectedSize === sizeOption}
+                    onChange={() => setSelectedSize(sizeOption)}
+                    className={styles.radioInput}
+                  />
+                  <span className={styles.radioCustom}></span>
+                  {sizeOption}
+                </label>
               ))}
             </div>
           )}
@@ -178,16 +178,27 @@ const MenuItem = ({
                   -
                 </button>
                 <div className={modalStyles.quantityDisplayWrapper}>
-                  <span className={modalStyles.quantityDisplay}>
-                    {quantity} шт
-                  </span>
+                  <input
+                    type="number"
+                    min={1}
+                    value={quantity}
+                    onChange={(e) => {
+                      const val = parseInt(e.target.value, 10);
+                      if (!isNaN(val) && val >= 1) {
+                        setQuantity(val);
+                      } else if (e.target.value === "" ) {
+                        setQuantity(1);
+                      }
+                    }}
+                    className={modalStyles.quantityInput}
+                  />
                   <div className={modalStyles.priceInfo}>
-
                     {(selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
                       ? pricesBySize[selectedSize]
                       : price ?? 0) * quantity} ₽
                   </div>
                 </div>
+
                 <button
                   className={modalStyles.controlButton}
                   onClick={() => setQuantity((prev) => prev + 1)}

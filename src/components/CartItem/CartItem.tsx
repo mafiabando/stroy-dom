@@ -40,11 +40,31 @@ const CartItem = ({ item, onQuantityChange, onRemove }: CartItemProps) => {
         <button onClick={handleDecrement} className={styles.controlButton}>
           -
         </button>
-        <span className={styles.quantity}>{quantity} шт</span>
+
+        <input
+          type="number"
+          min={1}
+          step={1}
+          value={quantity}
+          onChange={(e) => {
+            const val = parseInt(e.target.value, 10);
+            if (!isNaN(val) && val >= 1) {
+              setQuantity(val);
+              onQuantityChange(item.key!, val);
+            } else if (e.target.value === "") {
+              setQuantity(1);
+              onQuantityChange(item.key!, 1);
+            }
+          }}
+          className={styles.quantityInput}
+        />
+        <span>шт</span>
+
         <button onClick={handleIncrement} className={styles.controlButton}>
           +
         </button>
       </div>
+
 
       <button className={styles.removeButton} onClick={() => onRemove(item.key!)}>
         ×

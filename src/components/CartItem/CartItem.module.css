@@ -86,3 +86,26 @@
 .removeButton:hover {
   color: #cc0000;
 }
+
+.quantityInput {
+  width: 50px;
+  padding: 2px;
+  font-size: clamp(10px, 2vh, 24px);
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  -moz-appearance: textfield;
+}
+
+.quantityInput:focus {
+  border-color: var(--secondary); /* или ваш основной цвет фокуса */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

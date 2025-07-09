@@ -1,7 +1,7 @@
 .card {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     overflow: hidden;
     transition: transform 0.3s;
     width: clamp(250px, 28vw, 400px);
@@ -129,4 +129,28 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--secondary); /* Цвет из переменной */
+}
+
+.quantityInput {
+  width: 50px;            /* фиксированная ширина, чтобы не было слишком широким */
+  padding: 4px 8px;       /* внутренние отступы для удобства */
+  font-size: 16px;        /* размер шрифта, согласующийся с остальным текстом */
+  text-align: center;     /* выравнивание текста по центру */
+  border: 1px solid #ccc; /* светлая рамка */
+  border-radius: 4px;     /* скругленные углы */
+  outline: none;          /* убираем стандартный синий контур при фокусе */
+  transition: border-color 0.2s ease;
+  -moz-appearance: textfield; /* для Firefox убирает стрелки */
+}
+
+.quantityInput:focus {
+  border-color: #007bff;  /* синий цвет рамки при фокусе */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Убираем стрелки в input type=number для Webkit-браузеров */
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
