@@ -27,7 +27,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -131,26 +131,3 @@
   background-color: var(--secondary); /* Цвет из переменной */
 }
 
-.quantityInput {
-  width: 50px;            /* фиксированная ширина, чтобы не было слишком широким */
-  padding: 4px 8px;       /* внутренние отступы для удобства */
-  font-size: 16px;        /* размер шрифта, согласующийся с остальным текстом */
-  text-align: center;     /* выравнивание текста по центру */
-  border: 1px solid #ccc; /* светлая рамка */
-  border-radius: 4px;     /* скругленные углы */
-  outline: none;          /* убираем стандартный синий контур при фокусе */
-  transition: border-color 0.2s ease;
-  -moz-appearance: textfield; /* для Firefox убирает стрелки */
-}
-
-.quantityInput:focus {
-  border-color: #007bff;  /* синий цвет рамки при фокусе */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-/* Убираем стрелки в input type=number для Webkit-браузеров */
-.quantityInput::-webkit-outer-spin-button,
-.quantityInput::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}

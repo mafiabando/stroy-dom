@@ -1,36 +1,78 @@
-import { useContext, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { CartContext } from '../../context/CartContext';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
-import { ReactComponent as Cart } from '../../assets/cart.svg';
-import { ReactComponent as Contacts } from '../../assets/contacts.svg';
-import styles from './Header.module.css';
+  import { useContext, useState } from 'react';
+  import { Link, useLocation } from 'react-router-dom';
+  import { CartContext } from '../../context/CartContext';
+  import { ReactComponent as Logo } from '../../assets/logo.svg';
+  import { ReactComponent as Cart } from '../../assets/cart.svg';
+  import { ReactComponent as Contacts } from '../../assets/contacts.svg';
+  import styles from './Header.module.css';
+  import menuItems from '../../pages/Home/MenuData';
+  import MenuItem from '../MenuItem/MenuItem';
 
-const Header = () => {
-  const { cartItems } = useContext(CartContext);
-  const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const Header = () => {
+    const { cartItems } = useContext(CartContext);
+    const totalPrice = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0);
 
+    const [searchQuery, setSearchQuery] = useState('');
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <Link to="/" className={styles.logo}>
-          <Logo />
-        </Link>
+    const filteredItems = searchQuery
+      ? menuItems.filter((item) =>
+          item.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+      : [];
 
-        <Link to="/contacts" className={styles.contacts}>
-          <Contacts />
-        </Link>
+    const handleSearchFocus = () => setIsSearchOpen(true);
+    const handleSearchBlur = () => setTimeout(() => setIsSearchOpen(false), 200); // задержка для клика
+    const handleItemClick = (id: string) => {
+      setSearchQuery('');
+    
+    };
 
-      <div className={styles.cart_container}>
-        <Link to='/cart' className={styles.cart}>
-        <Cart /> 
-        </Link>
-        <span className={styles.counter}>{cartCount}</span>
-        </div> 
-      </div>
-    </header>
-  );
-};
+    return (
+      <header className={styles.header}>
+        <div className={styles.container}>
+          <Link to="/" className={styles.logo}>
+            <Logo />
+          </Link>
 
-export default Header;
+          {/* Search Bar */}
+          <div className={styles.searchWrapper}>
+            <input
+              type="text"
+              placeholder="Поиск товара..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onFocus={handleSearchFocus}
+              onBlur={handleSearchBlur}
+              className={styles.searchInput}
+            />
+
+            {/* Dropdown с результатами */}
+            {isSearchOpen && filteredItems.length > 0 && (
+              <ul className={styles.searchResults}>
+                {filteredItems.map((item) => (
+                  <li
+                    key={item.id}
+                    className={styles.searchResultItem}
+                    onClick={() => handleItemClick(item.id)}
+                  >
+                    <img src={item.image} alt={item.title} className={styles.resultImage} />
+                    <span>{item.title}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+        <div className={styles.cart_container}>
+          <Link to='/cart' className={styles.cart}>
+          <Cart /> 
+          </Link>
+          {totalPrice !== 0 ? <span className={styles.counter}>{totalPrice}₽</span> : null}
+          </div> 
+        </div>
+      </header>
+    );
+  };
+
+  export default Header;

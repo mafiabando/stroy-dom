@@ -45,6 +45,14 @@
 .hero_Изоляция {
   background: url(../../assets/isol.jpg) center/cover;
 }
+
+.hero_Крепёж {
+  background: url(../../assets/krepezh.jpg) center/cover;
+}
+
+.hero_Отделка_и_расходные_материалы {
+  background: url(../../assets/otdelka.jpg) center/cover;
+}
   
   .ctaButton {
     box-sizing: content-box;

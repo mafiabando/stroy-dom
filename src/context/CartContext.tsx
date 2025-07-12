@@ -27,6 +27,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
 const addToCart = (item: Omit<ICartItem, 'key'>) => {
   const itemKey = `${item.id}-${item.size}`;
+  console.log(item)
 
   setCartItems((prev) => {
     const existingIndex = prev.findIndex(i => i.key === itemKey);

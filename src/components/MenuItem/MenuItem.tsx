@@ -5,17 +5,21 @@ import { CartContext } from "../../context/CartContext";
 import Modal from "../Modal/Modal";
 import { MainCategory } from "../../pages/Home/Home";
 import { SubCategory } from "../../pages/Home/Home";
+import { useModal } from '../../context/ModalContext';
 
 export interface MenuItemProps {
   id: string;
   title: string;
   description: string;
   image: string;
-  mainCategory: MainCategory;
-  subCategory: SubCategory<MainCategory>;
+  mainCategory?: MainCategory;
+  subCategory?: SubCategory<MainCategory>;
   sizeText?: string;
   pricesBySize?: Record<string, number>;
   price?: number;
+  isWeight?: boolean;
+  quantityStep?: number;
+  minQuantity?: number;
 }
 
 const MenuItem = ({
@@ -25,19 +29,31 @@ const MenuItem = ({
   image,
   sizeText,
   pricesBySize,
-  price
+  price,
+  isWeight = false,
+  quantityStep = 1,
+  minQuantity = 1,
 }: MenuItemProps) => {
+  const step = quantityStep ?? (isWeight ? 0.1 : 1);
+  const minQty = minQuantity ?? (isWeight ? 0.1 : 1);
+
+  const { openModal } = useModal();
+
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(minQty);
+  const [quantityInput, setQuantityInput] = useState(minQty.toString());
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useContext(CartContext);
+
   const handleOpenModal = () => setIsModalOpen(true);
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setQuantity(1);
-    setSelectedSize("1.5м");
+    setQuantity(minQuantity);
+    setSelectedSize(selectedSize);
   };
+
   const handleAddToCart = () => {
     const priceForSelectedSize =
       selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
@@ -50,9 +66,87 @@ const MenuItem = ({
       image,
       quantity,
       price: priceForSelectedSize!,
+      isWeight,
       ...(selectedSize ? { size: selectedSize } : {}),
     });
     handleCloseModal();
+  };
+
+  const handleDecrement = () => {
+    setQuantity((prev) => {
+      const newVal = Math.max(minQty, +(prev - step).toFixed(2));
+      setQuantityInput(newVal.toString());
+      return newVal;
+    });
+  }
+
+  const handleIncrement = () => {
+    setQuantity((prev) => {
+      const newVal = +(prev + step).toFixed(2);
+      setQuantityInput(newVal.toString());
+      return newVal;
+    });
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setQuantityInput(val)
+
+    const num = isWeight ? parseFloat(val) : parseInt(val, 10);
+    if (!isNaN(num) && num >= minQty) {
+      setQuantity(num);
+    }
+  }
+
+  const handleInputBlur = () => {
+    if (quantityInput === "" || isNaN(Number(quantityInput)) || Number(quantityInput) < minQty) {
+      setQuantityInput(isWeight ? quantity.toFixed(2) : quantity.toString());
+    }
+  }
+
+  const handleQuantityKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const allowedKeys = [
+      "Backspace",
+      "ArrowLeft",
+      "ArrowRight",
+      "Delete",
+      "Tab",
+      "Enter",
+      "Home",
+      "End",
+    ];
+
+    // Разрешаем все сочетания с Ctrl или Cmd (Command на Mac)
+    if (e.ctrlKey || e.metaKey) {
+      return;
+    }
+
+    if (allowedKeys.includes(e.key)) {
+      return; // разрешаем управляющие клавиши
+    }
+
+    if (isWeight) {
+      const isNumber = /[0-9]/.test(e.key);
+      const isDot = e.key === ".";
+      const isComma = e.key === ",";
+
+      if (!isNumber && !isDot && !isComma) {
+        e.preventDefault();
+        return;
+      }
+
+      // Запретить ввод второй точки или запятой
+      const value = e.currentTarget.value;
+      if ((isDot && value.includes(".")) || (isComma && value.includes(","))) {
+        e.preventDefault();
+        return;
+      }
+    } else {
+      // Разрешаем только цифры
+      if (!/[0-9]/.test(e.key)) {
+        e.preventDefault();
+      }
+    }
   };
 
   useEffect(() => {
@@ -81,7 +175,18 @@ const MenuItem = ({
           alt={title}
           className={styles.image}
           style={{ transform: isHovered ? "scale(1.05)" : "scale(1)" }}
-          onClick={handleOpenModal}
+          onClick={() => openModal({
+            id,
+            title,
+            description,
+            image,
+            sizeText,
+            pricesBySize,
+            price,
+            isWeight,
+            quantityStep,
+            minQuantity,
+          })}
         />
 
         <div className={styles.content}>
@@ -126,9 +231,10 @@ const MenuItem = ({
               addToCart({
                 id,
                 title,
-                price: priceForSelectedSize!,
                 image,
-                quantity: 1,
+                quantity,
+                price: priceForSelectedSize!,
+                isWeight,
                 ...(selectedSize ? { size: selectedSize } : {}),
               });
             }}
@@ -173,23 +279,20 @@ const MenuItem = ({
               <div className={modalStyles.quantityControls}>
                 <button
                   className={modalStyles.controlButton}
-                  onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+                  onClick={handleDecrement}
                 >
                   -
                 </button>
                 <div className={modalStyles.quantityDisplayWrapper}>
+
                   <input
                     type="number"
-                    min={1}
-                    value={quantity}
-                    onChange={(e) => {
-                      const val = parseInt(e.target.value, 10);
-                      if (!isNaN(val) && val >= 1) {
-                        setQuantity(val);
-                      } else if (e.target.value === "" ) {
-                        setQuantity(1);
-                      }
-                    }}
+                    min={minQty}
+                    step={step}
+                    value={quantityInput}
+                    onChange={handleInputChange}
+                    onBlur={handleInputBlur}
+                    onKeyDown={handleQuantityKeyDown}
                     className={modalStyles.quantityInput}
                   />
                   <div className={modalStyles.priceInfo}>
@@ -201,7 +304,7 @@ const MenuItem = ({
 
                 <button
                   className={modalStyles.controlButton}
-                  onClick={() => setQuantity((prev) => prev + 1)}
+                  onClick={handleIncrement}
                 >
                   +
                 </button>

@@ -6,5 +6,8 @@ export interface ICartItem {
     image: string;
     size?: string;
     key: string;
+    isWeight?: boolean;
+    quantityStep?: number;
+    minQuantity?: number;
   }
 
