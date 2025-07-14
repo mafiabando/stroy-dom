@@ -3,12 +3,13 @@
   import { CartContext } from '../../context/CartContext';
   import { ReactComponent as Logo } from '../../assets/logo.svg';
   import { ReactComponent as Cart } from '../../assets/cart.svg';
-  import { ReactComponent as Contacts } from '../../assets/contacts.svg';
   import styles from './Header.module.css';
   import menuItems from '../../pages/Home/MenuData';
   import MenuItem from '../MenuItem/MenuItem';
+import { useModal } from '../../context/ModalContext';
 
   const Header = () => {
+    const { openProductModal } = useModal();
     const { cartItems } = useContext(CartContext);
     const totalPrice = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0);
 
@@ -25,7 +26,8 @@
     const handleSearchBlur = () => setTimeout(() => setIsSearchOpen(false), 200); // задержка для клика
     const handleItemClick = (id: string) => {
       setSearchQuery('');
-    
+      console.log(`Кликаем по товару с id:${id}`)
+      openProductModal(id)
     };
 
     return (
@@ -54,7 +56,9 @@
                   <li
                     key={item.id}
                     className={styles.searchResultItem}
-                    onClick={() => handleItemClick(item.id)}
+                    onClick={() => {
+                      handleItemClick(item.id)
+                    }}
                   >
                     <img src={item.image} alt={item.title} className={styles.resultImage} />
                     <span>{item.title}</span>

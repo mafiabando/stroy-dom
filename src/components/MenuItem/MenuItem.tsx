@@ -5,7 +5,7 @@ import { CartContext } from "../../context/CartContext";
 import Modal from "../Modal/Modal";
 import { MainCategory } from "../../pages/Home/Home";
 import { SubCategory } from "../../pages/Home/Home";
-import { useModal } from '../../context/ModalContext';
+import { useModal } from "../../context/ModalContext";
 
 export interface MenuItemProps {
   id: string;
@@ -37,19 +37,23 @@ const MenuItem = ({
   const step = quantityStep ?? (isWeight ? 0.1 : 1);
   const minQty = minQuantity ?? (isWeight ? 0.1 : 1);
 
-  const { openModal } = useModal();
-
+  const { selectedProductId, closeProductModal } = useModal();
+  const isModalOpen = selectedProductId === id;
+  
   const [isHovered, setIsHovered] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [quantity, setQuantity] = useState(minQty);
   const [quantityInput, setQuantityInput] = useState(minQty.toString());
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useContext(CartContext);
-
-  const handleOpenModal = () => setIsModalOpen(true);
+  
+  const { openProductModal } = useModal();
+  const handleOpenModal = () => {
+    console.log('isModalOpen:', isModalOpen, 'selectedProductId:', selectedProductId, 'id:', id);
+    openProductModal(id)
+  };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    closeProductModal()
     setQuantity(minQuantity);
     setSelectedSize(selectedSize);
   };
@@ -162,7 +166,6 @@ const MenuItem = ({
     }
   }, [pricesBySize, selectedSize]);
 
-
   return (
     <>
       <div
@@ -175,18 +178,7 @@ const MenuItem = ({
           alt={title}
           className={styles.image}
           style={{ transform: isHovered ? "scale(1.05)" : "scale(1)" }}
-          onClick={() => openModal({
-            id,
-            title,
-            description,
-            image,
-            sizeText,
-            pricesBySize,
-            price,
-            isWeight,
-            quantityStep,
-            minQuantity,
-          })}
+          onClick={ handleOpenModal }
         />
 
         <div className={styles.content}>

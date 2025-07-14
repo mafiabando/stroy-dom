@@ -2338,7 +2338,7 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Силиконовый герметик Vetonit цветной",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/клей/ветон .jpg`,
+    image: `${process.env.PUBLIC_URL}/images/отделка/клей/ветон.jpg`,
     mainCategory: "Отделка и расходные материалы",
     subCategory: "Клей и герметик",
     sizeText: "Выберите цвет:",

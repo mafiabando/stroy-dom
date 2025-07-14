@@ -4,9 +4,11 @@ import Home from './pages/Home/Home';
 import Contacts from './pages/Contacts/Contacts';
 import Cart from './pages/Cart/Cart';
 import { CartProvider } from './context/CartContext';
+import { ModalProvider } from './context/ModalContext';
 
 const App = () => {
   return (
+    <ModalProvider>
     <CartProvider>
     <BrowserRouter> 
       <Header />
@@ -18,6 +20,7 @@ const App = () => {
       </Routes>
     </BrowserRouter>
     </CartProvider>
+    </ModalProvider>
   );
 };
 

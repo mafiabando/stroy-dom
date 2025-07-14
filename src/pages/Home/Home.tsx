@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MenuItem, { MenuItemProps } from '../../components/MenuItem/MenuItem';
 import styles from './Home.module.css';
 import menuItems from './MenuData';
+import { useModal } from '../../context/ModalContext';
 
 const mainCategories = ["Профнастил", "Сухие смеси", "Древесные плиты", "Гипсокартон", "Профиля и направляющие", "Маяки и перфорированные углы", "Профтрубы и металлические углы", "Утеплители", "Изоляция", "Крепёж", "Отделка и расходные материалы"] as const;
 
@@ -24,6 +25,7 @@ const subCategories = {
 export type SubCategory<T extends MainCategory> = typeof subCategories[T][number];
 
 const Home = () => {
+  const { selectedProductId } = useModal();
   const [activeMainCategory, setActiveMainCategory] = useState<MainCategory>("Профнастил");
   const [activeSubCategory, setActiveSubCategory] = useState<string>(subCategories["Профнастил"][0]);
 
@@ -37,6 +39,29 @@ const Home = () => {
   const filteredItems = menuItems.filter(
     item => item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
   );
+
+  const findCategoryByProductId = (id: string) => {
+  const product = menuItems.find(p => p.id === id);
+  if (product) {
+    return {
+      mainCategory: product.mainCategory,
+      subCategory: product.subCategory,
+    };
+  }
+  return null;
+}
+
+  useEffect(() => {
+  if (selectedProductId) {
+    const product = findCategoryByProductId(selectedProductId);
+    if (product) {
+      // Всё равно устанавливаем категорию и подкатегорию,
+      // даже если mainCategory не изменилась
+      setActiveMainCategory(product.mainCategory!);
+      setActiveSubCategory(product.subCategory!);
+    }
+  }
+}, [selectedProductId, activeMainCategory]);
 
   return (
     <div className={styles.home}>
