@@ -557,6 +557,60 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Затирка Ceresit CE33",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/затирка/се33.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Затирка для плитки",
+    sizeText: 'Выберите цвет:',
+    pricesBySize: {
+      'Серый': 400,
+      'Серебристо-серый': 450,
+      'Графит': 450,
+      'Антрацит': 450,
+      'Светло-коричневый': 450,
+      'Розовый': 450,
+      'Роса': 400,
+      'Натура': 400,
+      'Манхеттен': 400,
+      'Карамель': 400,
+      'Жасмин': 400,
+      'Белый': 400,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Затирка Ceresit CE40",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/затирка/се40.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Затирка для плитки",
+    sizeText: 'Выберите цвет:',
+    pricesBySize: {
+      'Серый': 600,
+      'Серебристо-серый': 600,
+      'Мрамор белый': 600,
+      'Графит': 700,
+      'Белый': 500,
+      'Антрацит': 650,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Затирка Литокол",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/смеси/затирка/литокол.jpg`,
+    mainCategory: 'Сухие смеси',
+    subCategory: "Затирка для плитки",
+    sizeText: 'Выберите цвет:',
+    pricesBySize: {
+      'Жасмин': 450,
+      'Багамы': 450,
+      'Песочный': 450,
+    }
+  },
+  {
+    id: uuidv4(),
     title: "ОСП 2440х1220мм (пропитка 1 сторона)",
     description: "описание",
     image: `${process.env.PUBLIC_URL}/images/плиты/осп.jpg`,
@@ -623,6 +677,38 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Вагонка класс AB",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/брус/вагонка.jpg`,
+    mainCategory: 'Вагонка и бруски',
+    subCategory: "Вагонка",
+    sizeText: 'Выберите длину:',
+    pricesBySize: {
+      '2м': 140,
+      '2.5м': 175,
+      '2.7м': 190,
+      '3м': 210,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Деревянный брус 3000мм",
+    description: "описание",
+    image: `${process.env.PUBLIC_URL}/images/брус/бруски.jpg`,
+    mainCategory: 'Вагонка и бруски',
+    subCategory: "Бруски",
+    sizeText: 'Выберите длину:',
+    pricesBySize: {
+      '50х50мм': 220,
+      '50х40мм': 200,
+      '50х25мм': 150,
+      '40х30мм (строганный)': 150,
+      '40х20мм': 120
+
+    }
+  },
+  {
+    id: uuidv4(),
     title: "Гипсокартон 2500х1200мм",
     description: "Длина 2.5м, ширина 1.2м",
     image: `${process.env.PUBLIC_URL}/images/гкл/гкл1.jpg`,
@@ -636,7 +722,16 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Гипсокартон 2500х1200мм",
+    title: "Гипсокартон Knauf 3000х1200мм",
+    description: "Длина 3м, ширина 1.2м",
+    image: `${process.env.PUBLIC_URL}/images/гкл/кнауф.jpg`,
+    mainCategory: 'Гипсокартон',
+    subCategory: "Для сухих помещений",
+    price: 500
+  },
+  {
+    id: uuidv4(),
+    title: "Гипсокартон влагостойкий 2500х1200мм",
     description: "Длина 2.5м, ширина 1.2м",
     image: `${process.env.PUBLIC_URL}/images/гкл/гкл2.jpg`,
     mainCategory: 'Гипсокартон',
@@ -645,6 +740,19 @@ const menuItems: MenuItemProps[] = [
     pricesBySize: {
       '9.5мм': 350,
       '12.5мм': 380
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Гипсокартон влагостойкий Vetonit 2000х1200мм",
+    description: "Длина 2.5м, ширина 1.2м",
+    image: `${process.env.PUBLIC_URL}/images/гкл/ветон.jpg`,
+    mainCategory: 'Гипсокартон',
+    subCategory: "Влагостойкий",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '12.5мм': 300,
+      '15мм': 400,
     }
   },
   {
@@ -1149,6 +1257,34 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Стеклопластиковая арматура (бухта 50м)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/арм/арм.jpg`,
+    mainCategory: "Арматура и кладочная сетка",
+    subCategory: "Стеклопластиковая арматура",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '6мм': 600,
+      '8мм': 800,
+      '10мм': 1200,
+      '12мм': 1550
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Кладочная сетка 2х1м",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/арм/сетка.jpg`,
+    mainCategory: "Арматура и кладочная сетка",
+    subCategory: "Кладочная сетка",
+    sizeText: 'Выберите толщину:',
+    pricesBySize: {
+      '3мм': 150,
+      '4мм': 250
+    }
+  },
+  {
+    id: uuidv4(),
     title: "Пеноплэкс 1185х585х50мм (уп/7шт)",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопл1.jpg`,
@@ -1203,6 +1339,33 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Профиплекс 1185х585х50мм (уп/8шт)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
+    mainCategory: "Утеплители",
+    subCategory: "Пенополистирол",
+    price: 310
+  },
+  {
+    id: uuidv4(),
+    title: "Профиплекс 1185х585х30мм (уп/13шт)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
+    mainCategory: "Утеплители",
+    subCategory: "Пенополистирол",
+    price: 210
+  },
+  {
+    id: uuidv4(),
+    title: "Профиплекс 1185х585х20мм (уп/20шт)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
+    mainCategory: "Утеплители",
+    subCategory: "Пенополистирол",
+    price: 150
+  },
+  {
+    id: uuidv4(),
     title: "Пенопласт 1200х1000мм",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопласт.jpg`,
@@ -1245,7 +1408,7 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Isover СТРОНГ 610х1000х50мм (уп/10шт)",
+    title: "Isover СТРОНГ 610х1000х50мм уп/10шт(6.1м²)",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/утепл/стронг.jpg`,
     mainCategory: "Утеплители",
@@ -1254,7 +1417,16 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Isover Теплый дом 610х1170х100мм (уп/7шт)",
+    title: "Isover Теплый дом 610х1170х100мм уп/7шт(5м²)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/утепл/изовер.jpg`,
+    mainCategory: "Утеплители",
+    subCategory: "Каменная и минеральная вата",
+    price: 1500
+  },
+  {
+    id: uuidv4(),
+    title: "Isover Теплый дом 610х1170х50мм уп/14шт(10м²)",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/утепл/изовер.jpg`,
     mainCategory: "Утеплители",
@@ -1421,6 +1593,67 @@ const menuItems: MenuItemProps[] = [
     mainCategory: "Изоляция",
     subCategory: "Гидро-пароизоляция",
     price: 2800
+  },
+  {
+    id: uuidv4(),
+    title: "Гидроизоляция Ceresit CR65",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/гидроизол/ср65.jpg`,
+    mainCategory: "Гидроизоляция",
+    subCategory: "Сухая смесь",
+    sizeText: 'Выберите объём:',
+    pricesBySize: {
+      '5кг': 500,
+      '20кг': 1300
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Гидроизоляция Литокс",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/гидроизол/литокс.jpg`,
+    mainCategory: "Гидроизоляция",
+    subCategory: "Жидкая гидроизоляция",
+    sizeText: 'Выберите объём:',
+    pricesBySize: {
+      '5кг': 1800,
+      '10кг': 3800
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Гидроизоляция Vetonit",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/гидроизол/ветон.jpg`,
+    mainCategory: "Гидроизоляция",
+    subCategory: "Жидкая гидроизоляция",
+    sizeText: 'Выберите объём:',
+    pricesBySize: {
+      '4кг': 2400,
+      '8кг': 3500
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Гидроизоляция Ceresit CL51",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/гидроизол/сл51.jpg`,
+    mainCategory: "Гидроизоляция",
+    subCategory: "Жидкая гидроизоляция",
+    sizeText: 'Выберите объём:',
+    pricesBySize: {
+      '5кг': 2700,
+      '15кг': 3500
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Лента гидроизоляционная Волма 10м²",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/гидроизол/волма.jpg`,
+    mainCategory: "Гидроизоляция",
+    subCategory: "Лента гидроизоляционная",
+    price: 1500
   },
   {
     id: uuidv4(),
@@ -1913,8 +2146,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Arco Iris глубокого проникновения",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/арко.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "10л" : 500,
@@ -1927,8 +2160,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Ceresit CT17",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст17.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1936,8 +2169,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Оптимист",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/оптимист1.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "10л" : 500,
@@ -1949,8 +2182,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Оптимист глубокого проникновения",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/оптимист2.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1958,8 +2191,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Vetonit глубокого проникновения",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ветонит.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1967,8 +2200,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунт-концентрат Knauf Тифенгрунд",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/тифен.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1976,8 +2209,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка Лакра интерьерная",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/лакра.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1985,8 +2218,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунт-концентрат Лакра PROFIT",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/профит.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -1994,8 +2227,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунт-концентрат Arco Iris 1:10",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/конц.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "10л" : 500,
@@ -2009,8 +2242,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунт-концентрат Knauf Миттельгрунд",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/миттель.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -2018,8 +2251,8 @@ const menuItems: MenuItemProps[] = [
     title: "Грунтовка под декоративные штукатурки Ceresit CT16",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст16.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Грунтовка",
     price: 500
   },
   {
@@ -2027,8 +2260,8 @@ const menuItems: MenuItemProps[] = [
     title: "Бетоноконтакт Ceresit CT19 15кг",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст19.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Бетоноконтакт",
     price: 500
   },
   {
@@ -2036,8 +2269,8 @@ const menuItems: MenuItemProps[] = [
     title: "Бетоноконтакт Хабез 12кг",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/хабез.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Бетоноконтакт",
     price: 500
   },
   {
@@ -2045,8 +2278,8 @@ const menuItems: MenuItemProps[] = [
     title: "Бетоноконтакт Arco Iris",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/бконтакт.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Грунтовка и бетоноконтакт",
+    mainCategory: "Отделка",
+    subCategory: "Бетоноконтакт",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "12кг" : 500,
@@ -2059,9 +2292,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Arco Iris для стен и потолков",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/стен.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/стен.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2074,9 +2307,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Arco Iris моющаяся",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/моющ.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/моющ.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2089,9 +2322,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Arco Iris фасадная",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/фасад.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/фасад.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2104,9 +2337,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Лакра для стен и потолков",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/лстен.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/лстен.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2119,9 +2352,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Лакра моющаяся",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/лмоющ.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/лмоющ.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2133,9 +2366,9 @@ const menuItems: MenuItemProps[] = [
     id: uuidv4(),
     title: "Краска Лакра фасадная",
     description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/краски/лфасад.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Лакокрасочные материалы",
+    image: `${process.env.PUBLIC_URL}/images/краски/лфасад.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "14кг" : 500,
@@ -2145,10 +2378,137 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
+    title: "Эмаль алкидная ПФ-115 (1.8кг)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/пф.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите цвет:",
+    pricesBySize: {
+      "Чёрный": 400,
+      "Белый": 400,
+      "Серый": 400,
+      "Графит": 400,
+      "Шоколадный": 400,
+      "Вишнёвый": 400,
+      "Жёлтый": 400,
+      "Голубой": 400,
+      "Бирюзовый": 400,
+      "Салатный": 400,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Эмаль алкидная ПФ-115 (0.8кг)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/пф.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите цвет:",
+    pricesBySize: {
+      "Чёрный": 400,
+      "Белый": 400,
+      "Серый": 400,
+      "Графит": 400,
+      "Жёлтый": 400,
+      "Синий": 400,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Грунт-эмаль 3в1 (1.8кг)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/грунт.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите цвет:",
+    pricesBySize: {
+      "Чёрный": 500,
+      "Белый": 500,
+      "Серый": 500,
+      "Графит": 500,
+      "Коричневый": 500
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Эмаль для радиаторов акриловая",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/термо.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите объём:",
+    pricesBySize: {
+      "0.9кг": 500,
+      "1.9кг": 900,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Эмаль для дверей и подоконников акриловая",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/окон.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите объём:",
+    pricesBySize: {
+      "0.9кг": 500,
+      "1.9кг": 900,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Яхтный лак бесцветный",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/яхт.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Лаки и пропитки",
+    sizeText: "Выберите объём:",
+    pricesBySize: {
+      "0.9л": 400,
+      "1.9л": 700,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Пропитка Profiwood 0.75л",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/профи075.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Лаки и пропитки",
+    sizeText: "Выберите оттенок:",
+    pricesBySize: {
+      "Калужница": 400,
+      "Красное дерево": 400,
+      "Сосна": 400,
+      "Палисандр": 400,
+      "Тик": 400,
+      "Орегон": 400,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Пропитка Profiwood 2.5л",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/краски/профи25.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Лаки и пропитки",
+    sizeText: "Выберите оттенок:",
+    pricesBySize: {
+      "Калужница": 1100,
+      "Красное дерево": 1100,
+      "Сосна": 1100,
+      "Палисандр": 1100,
+      "Тик": 1100,
+      "Орегон": 1100,
+    }
+  },
+  {
+    id: uuidv4(),
     title: "Шпатлёвка латексная Текс",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/текс.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
     sizeText: "Выберите объём:",
     pricesBySize: {
@@ -2163,7 +2523,7 @@ const menuItems: MenuItemProps[] = [
     title: "Шпатлёвка универсальная SHEETROCK SuperFinish",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/шитрок.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
     sizeText: "Выберите объём:",
     pricesBySize: {
@@ -2176,7 +2536,7 @@ const menuItems: MenuItemProps[] = [
     title: "Шпатлёвка финишная Knauf Ротбанд паста 18кг",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/ротбанд.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
     price: 500
   },
@@ -2185,7 +2545,7 @@ const menuItems: MenuItemProps[] = [
     title: "Шпатлёвка финишная Vetonit LR паста 18кг",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/лрпаста.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
     price: 500
   },
@@ -2194,7 +2554,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена профессиональная 70л",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/проф70.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
       "Arco Iris" : 600,
@@ -2208,7 +2568,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена профессиональная 65л",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/проф65.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
       "Kron (универсальная)" : 600,
@@ -2222,7 +2582,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена бытовая",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/быт.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
       "Kron 65л" : 500,
@@ -2234,7 +2594,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена клей Arco Iris",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/пенакл.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     price: 600
   },
@@ -2243,7 +2603,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена огнеупорная Kolt",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/огн.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     price: 600
   },
@@ -2252,7 +2612,7 @@ const menuItems: MenuItemProps[] = [
     title: "Пена цемент Rich",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/цем.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     price: 600
   },
@@ -2261,45 +2621,17 @@ const menuItems: MenuItemProps[] = [
     title: "Очиститель для пены",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/очиститель.jpg`,
-    mainCategory: "Отделка и расходные материалы",
+    mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     price: 200
-  },
-  {
-    id: uuidv4(),
-    title: "Монтажный клей Момент Жидкие гвозди",
-    description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/клей/мв.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
-    sizeText: "Выберите товар:",
-    pricesBySize: {
-      "МВ-100": 500,
-      "МВ-70": 470,
-      "МВ-50": 450
-    }
-  },
-  {
-    id: uuidv4(),
-    title: "Монтажный клей Жидкие гвозди",
-    description: "Описание",
-    image: `${process.env.PUBLIC_URL}/images/отделка/клей/клей.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
-    sizeText: "Выберите товар:",
-    pricesBySize: {
-      "Tytan Classic Fix": 800,
-      "ЭКОН": 350,
-      "Master Teks": 300
-    }
   },
   {
     id: uuidv4(),
     title: "Силиконовый герметик санитарный",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/санит.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Герметик",
     sizeText: "Выберите товар:",
     pricesBySize: {
       "Tytan прозрачный": 550,
@@ -2312,8 +2644,8 @@ const menuItems: MenuItemProps[] = [
     title: "Силиконовый герметик универсальный",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/унив.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Герметик",
     sizeText: "Выберите товар:",
     pricesBySize: {
       "ISOBOX белый": 350,
@@ -2325,8 +2657,8 @@ const menuItems: MenuItemProps[] = [
     title: "Силиконовый герметик Tytan для кровли",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/кров.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Герметик",
     sizeText: "Выберите цвет:",
     pricesBySize: {
       "Прозрачный": 400,
@@ -2339,8 +2671,8 @@ const menuItems: MenuItemProps[] = [
     title: "Силиконовый герметик Vetonit цветной",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/ветон.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Герметик",
     sizeText: "Выберите цвет:",
     pricesBySize: {
       "Белый": 700,
@@ -2355,17 +2687,45 @@ const menuItems: MenuItemProps[] = [
     title: "Силиконовый герметик Rich огнеупорный",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/огнеуп.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Герметик",
     price: 400
+  },
+  {
+    id: uuidv4(),
+    title: "Монтажный клей Момент Жидкие гвозди",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/клей/мв.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Клей",
+    sizeText: "Выберите товар:",
+    pricesBySize: {
+      "МВ-100": 500,
+      "МВ-70": 470,
+      "МВ-50": 450
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Монтажный клей Жидкие гвозди",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/клей/клей.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Клей",
+    sizeText: "Выберите товар:",
+    pricesBySize: {
+      "Tytan Classic Fix": 800,
+      "ЭКОН": 350,
+      "Master Teks": 300
+    }
   },
   {
     id: uuidv4(),
     title: "Клей КС для линоулема",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/кс.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Клей",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "5кг": 500,
@@ -2378,8 +2738,8 @@ const menuItems: MenuItemProps[] = [
     title: "Клей ПВА строительный",
     description: "Описание",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/пва.jpg`,
-    mainCategory: "Отделка и расходные материалы",
-    subCategory: "Клей и герметик",
+    mainCategory: "Отделка",
+    subCategory: "Клей",
     sizeText: "Выберите объём:",
     pricesBySize: {
       "10кг": 900,
@@ -2387,6 +2747,405 @@ const menuItems: MenuItemProps[] = [
       "3кг": 300,
       "0.9кг": 150
     }
+  },
+  {
+    id: uuidv4(),
+    title: "Клей Hauser для пенополистирола ",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/клей/хаузер.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Клей",
+    price: 500
+  },
+  
+  {
+    id: uuidv4(),
+    title: "Стеклосетка фасадная под штукатурку",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/стекл/фасад.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Стеклосетка и стеклохолст",
+    sizeText: "Выберите стеклосетку:",
+    pricesBySize: {
+      "Зелёная 50м": 2200,
+      "Жёлтая 50м": 1950,
+      "Синяя 50м": 2000,
+      "Жёлтая 30м": 1500,
+      "Жёлтая 20м": 1100,
+      "Жёлтая 10м": 700,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Стеклосетка малярная под штукатурку",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/стекл/интер.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Стеклосетка и стеклохолст",
+    sizeText: "Выберите стеклосетку:",
+    pricesBySize: {
+      "5х5 50м": 1550,
+      "5х5 20м": 800,
+      "2х2 50м": 1400,
+      "2х2 20м": 800,
+      "2х2 10м": 500,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Стеклохолст малярный 40гр/м²",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/отделка/стекл/холст.jpg`,
+    mainCategory: "Отделка",
+    subCategory: "Стеклосетка и стеклохолст",
+    price: 1800
+  },
+  {
+    id: uuidv4(),
+    title: "Валик 180мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/валики.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Валики",
+    sizeText: "Выберите валик:",
+    pricesBySize: {
+      "Тигр (ворс 11мм)": 200,
+      "Зелёный (ворс 18мм)": 200,
+      "Полосатый (ворс 11мм)": 200,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Валик 230мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/валики.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Валики",
+    sizeText: "Выберите валик:",
+    pricesBySize: {
+      "Тигр (ворс 11мм)": 250,
+      "Зелёный (ворс 18мм)": 250,
+      "Полосатый (ворс 11мм)": 250,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Шпатель",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/шпатели.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Шпатели",
+    sizeText: "Выберите ширину:",
+    pricesBySize: {
+      "40мм": 40,
+      "60мм": 50,
+      "80мм": 60,
+      "100мм": 70,
+      "150мм": 80,
+      "200мм": 100,
+      "250мм": 120,
+      "300мм": 140,
+      "350мм": 160,
+      "450мм": 200,
+      "600мм": 250,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Шпатель профессиональный",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/проф.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Шпатели",
+    sizeText: "Выберите ширину:",
+    pricesBySize: {
+      "63мм": 150,
+      "75мм": 200,
+      "100мм": 250,
+      "120мм": 300,
+      "150мм": 350,
+      "200мм": 400,
+      "250мм": 450,
+      "300мм": 500,
+      "350мм": 550,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Кисть с натуральной щетиной",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/кисти.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Кисти",
+    sizeText: "Выберите ширину:",
+    pricesBySize: {
+      "20мм": 50,
+      "25мм": 60,
+      "40мм": 80,
+      "50мм": 100,
+      "65мм": 120,
+      "75мм": 150,
+      "100мм": 200,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Кисть с искусственной щетиной",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/искус.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Кисти",
+    sizeText: "Выберите ширину:",
+    pricesBySize: {
+      "38мм": 80,
+      "50мм": 100,
+      "65мм": 120,
+      "75мм": 150,
+      "100мм": 200,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Кисть макловица (ракля)",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/ракля.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Кисти",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "140х50мм": 150,
+      "150х70мм": 180,
+      "170х70мм": 200,
+    }
+  },  
+  {
+    id: uuidv4(),
+    title: "Скотч 48мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/скотчи.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Ленты и скотчи",
+    sizeText: "Выберите длину:",
+    pricesBySize: {
+      "30м прозрачный": 100,
+      "150м жёлтый": 300,
+    }
+  }, 
+  {
+    id: uuidv4(),
+    title: "Лента малярная 48х5000мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/маляр.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Ленты и скотчи",
+    price: 150
+  },  
+  {
+    id: uuidv4(),
+    title: "Зажим кольцо 0.8мм 500шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз500.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 1000
+  },
+  {
+    id: uuidv4(),
+    title: "Зажим кольцо 0.8мм 100шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз100.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 300
+  },
+  {
+    id: uuidv4(),
+    title: "Зажим кольцо 1.5мм 500шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/зел500.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 1000
+  },
+  {
+    id: uuidv4(),
+    title: "Зажим кольцо 1.5мм 100шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/зел100.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 300
+  },
+  {
+    id: uuidv4(),
+    title: "Клинья 200шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/клин200.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 1000
+  },
+  {
+    id: uuidv4(),
+    title: "Клинья 50шт",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/свп/клин50.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "СВП",
+    price: 350
+  },
+  {
+    id: uuidv4(),
+    title: "Бита Ph2-50мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/биты/бита.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Свёрла, биты и буры",
+    price: 100
+  },
+  {
+    id: uuidv4(),
+    title: "Бита кровельная 8мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/биты/кров.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Свёрла, биты и буры",
+    price: 100
+  },
+  {
+    id: uuidv4(),
+    title: "Бур по бетону SDS+",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/биты/буры.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Свёрла, биты и буры",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "6х110мм": 120,
+      "6х160мм": 150,
+      "6х210мм": 180,
+      "8х110мм": 140,
+      "8х210мм": 200,
+      "8х260мм": 220,
+      "10х160мм": 200,
+      "10х210мм": 220,
+      "10х310мм": 250,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Сверло по металлу",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/биты/сверла.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Свёрла, биты и буры",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "3мм": 50,
+      "3.2мм": 60,
+      "3.5мм": 70,
+      "4.2мм": 80,
+      "4.5мм": 90,
+      "5мм": 100,
+      "5.5мм": 110,
+      "6мм": 130,
+      "6.5мм": 140,
+      "7мм": 150,
+      "7.5мм": 170,
+      "8.5мм": 200,
+      "9мм": 230,
+      "9.5мм": 250,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Диск отрезной по металлу",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/отрез.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "125мм": 100,
+      "150мм": 120,
+      "230мм": 150,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Круг зачистной по металлу",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/зачист.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "125х6х22мм": 150,
+      "150х6х22мм": 170,
+      "180х6х22мм": 200,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Шлифкруг лепестковый",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/зачист.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    price: 150
+  },
+  {
+    id: uuidv4(),
+    title: "Диск алмазный 125мм ультратонкий",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/ультра.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    price: 500
+  },
+  {
+    id: uuidv4(),
+    title: "Диск алмазный 125мм супертонкий",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/ультра.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    price: 450
+  },
+  {
+    id: uuidv4(),
+    title: "Диск алмазный по граниту LUFTER",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/диски/люфтер.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Абразивные диски",
+    sizeText: "Выберите размер:",
+    pricesBySize: {
+      "115мм": 900,
+      "125мм": 1000,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Мешки для строительного мусора",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/мешки.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Другое",
+    sizeText: "Выберите мешок:",
+    pricesBySize: {
+      "зелёный": 15,
+      "белый": 20,
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Ванночка 330х350мм",
+    description: "Описание",
+    image: `${process.env.PUBLIC_URL}/images/инструм/ванночка.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Другое",
+    price: 150
   },
 ];
 
