@@ -47,7 +47,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: clamp(5px, 1vh, 10px);
     padding: clamp(15px, 1.75vh, 20px);
     line-height: 1;
   }
@@ -66,11 +65,15 @@
   }
 
   .modalTitle {
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(16px, 1.8vw, 26px);
   }
   
   .modalText {
-    font-size: clamp(15px, 4vw, 20px)
+    font-size: clamp(15px, 1.66vw, 24px);
+  }
+
+  .modalSizeText {
+    font-size: clamp(14px, 1.45vw, 21px);
   }
 
   .priceControls {
@@ -136,7 +139,6 @@
   
 /* Блок с выбором длины (в модалке) */
 .sizeOptions {
-  max-width: clamp(250px, 40vw, 400px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -192,18 +194,6 @@
 @media (height < 800px) {
   .modalImage {
     width: clamp(200px, 40vh, 400px);
-  }
-
-  .modalTitle {
-    font-size: clamp(18px, 2.75vh, 22px);
-  }
-  
-  .modalText {
-    font-size: clamp(15px, 2vh, 20px);
-  }
-  
-  .sizeOptions {
-    max-width: clamp(200px, 40vh, 400px);
   }
 
   .closeButton {

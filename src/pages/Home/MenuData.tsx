@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
-    title: "Коричневый",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 Коричневый (1150х0.35мм)",
+    description: "Профнастил МП-20, ширина 1.15м, толщина 0.35мм, коричневый цвет. Используется для заборов и облицовки. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp1.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -18,8 +18,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Красный",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 Красный (1150х0.35мм)",
+    description: "Профнастил МП-20, ширина 1.15м, толщина 0.35мм, красный цвет. Используется для заборов и облицовки. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp2.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -32,8 +32,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Синий",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 синий (1150х0.35мм)",
+    description: "Профнастил МП-20, ширина 1.15м, толщина 0.35мм, синий цвет. Используется для заборов и облицовки. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp3.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -46,8 +46,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Зелёный",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 зелёный (1150х0.35мм)",
+    description: "Профнастил МП-20, ширина 1.15м, толщина 0.35мм, зелёный цвет. Используется для заборов и облицовки. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp4.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -60,8 +60,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Графит",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 графит (1150х0.35мм)",
+    description: "Профнастил МП-20, ширина 1.15м, толщина 0.35мм, цвет графит. Используется для заборов и облицовки. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp5.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -74,8 +74,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Оцинкованный",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "МП-20 оцинкованный (1150х0.35мм)",
+    description: "Оцинкованный профнастил МП-20, ширина 1.15м, толщина 0.35мм. Устойчив к коррозии. Цена зависит от длины.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/mp6.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "МП-20",
@@ -88,68 +88,53 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Белый",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "С-8 белый (2000х1150х0.35мм)",
+    description: "Профнастил С-8, ширина 1.15м, толщина 0.35мм, белый цвет. Подходит для стен и облицовки. Длина — 2м. Не рекомендуется для кровли.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/c1.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "С-8",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 1000,
-    },
+    price: 1000,
   },
   {
     id: uuidv4(),
-    title: "Слоновая кость",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "С-8 слоновая кость (2000х1150х0.35мм)",
+    description: "Профнастил С-8, ширина 1.15м, толщина 0.35мм, цвет слоновая кость. Подходит для стен и облицовки. Длина — 2м. Не рекомендуется для кровли.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/c2.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "С-8",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 1000,
-    },
+    price: 1000,
   },
   {
     id: uuidv4(),
-    title: "Коричневый",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "С-8 коричневый (2000х1150х0.35мм)",
+    description: "Профнастил С-8, ширина 1.15м, толщина 0.35мм, коричневый цвет. Подходит для стен и облицовки. Длина — 2м. Не рекомендуется для кровли.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/c3.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "С-8",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 1000,
-    },
+    price: 1000,
   },
   {
     id: uuidv4(),
-    title: "Морёный дуб",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "С-8 морёный дуб (2000х1150х0.35мм)",
+    description: "Профнастил С-8, ширина 1.15м, толщина 0.35мм, цвет морёный дуб. Подходит для стен и облицовки. Длина — 2м. Не рекомендуется для кровли.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/c4.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "С-8",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 1800,
-    },
+    price: 1800,
   },
   {
     id: uuidv4(),
-    title: "Камень",
-    description: "Ширина 1.15м , толщина 0.35мм",
+    title: "С-8 камень (2000х1150х0.35мм)",
+    description: "Профнастил С-8, ширина 1.15м, толщина 0.35мм, цвет камень. Подходит для стен и облицовки. Длина — 2м. Не рекомендуется для кровли.",
     image: `${process.env.PUBLIC_URL}/images/профнастил/c5.jpg`,
     mainCategory: 'Профнастил',
     subCategory: "С-8",
-    sizeText: 'Выберите длину:',
-    pricesBySize: {
-      '2м': 1800,
-    },
+    price: 1800,
   },
   {
     id: uuidv4(),
     title: "Волма Слой",
-    description: "описание",
+    description: "Гипсовая штукатурка для выравнивания стен и потолков внутри помещений. Расход: 8–9 кг на 1 м² при слое 10 мм. Рекомендованная толщина слоя — 5–30 мм, максимум — до 60 мм",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/слой.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -158,7 +143,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Старт",
-    description: "описание",
+    description: "Выравнивающая гипсовая штукатурка для черновой отделки. Подходит для внутренних работ по стабильным основаниям.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/старт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -167,7 +152,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Гипс-актив",
-    description: "описание",
+    description: "Быстросохнущая гипсовая штукатурка для выравнивания поверхностей. Используется для внутренней отделки стен и потолков.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/актив.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -176,7 +161,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Гипс-актив Экстра",
-    description: "описание",
+    description: "Улучшенная формула штукатурки с высокой адгезией. Подходит для выравнивания минеральных оснований внутри помещений.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/активэкстра.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -185,7 +170,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Knauf MP 75",
-    description: "описание",
+    description: "Гипсовая штукатурка для машинного нанесения. Предназначена для высококачественного оштукатуривания стен и потолков внутри помещений с нормальной влажностью, включая кухни и ванные комнаты (при наличии защитного покрытия)",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/мп75.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -194,7 +179,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс Start",
-    description: "описание",
+    description: "Гипсовая штукатурка для выравнивания стен и потолков внутри помещений. Обладает высокой пластичностью и удобна в нанесении.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/литстарт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -203,7 +188,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс AquaPlast",
-    description: "описание",
+    description: "Штукатурка с повышенной влагостойкостью. Подходит для помещений с повышенной влажностью.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/литаквапласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -212,7 +197,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Аквапласт",
-    description: "описание",
+    description: "Гипсовая штукатурка с добавками, повышающими водостойкость. Применяется в помещениях с нормальной влажностью.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/аквапласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -221,7 +206,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс CemPlast",
-    description: "описание",
+    description: "Цементная штукатурка с пластификаторами. Используется для наружных и внутренних работ.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/цемпласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -230,7 +215,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Power Fasad",
-    description: "описание",
+    description: "Фасадная штукатурка на цементной основе. Устойчива к атмосферным воздействиям, морозу и влаге.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
@@ -239,7 +224,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Шов",
-    description: "описание",
+    description: "Сухая смесь на основе гипса для заделки швов и трещин в гипсокартонных конструкциях.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/шов.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -248,7 +233,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Финиш",
-    description: "описание",
+    description: "Мелкозернистая шпатлёвка для финишного выравнивания поверхностей перед покраской или оклейкой обоев.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/финиш.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -257,7 +242,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс SatenLux",
-    description: "описание",
+    description: "Финишная акриловая шпатлёвка для внутренних работ. Обеспечивает гладкую поверхность перед покраской.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/сатен.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -266,7 +251,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Аквастандарт",
-    description: "описание",
+    description: "Шпатлёвка с улучшенной водостойкостью для внутренних работ, в том числе в помещениях с повышенной влажностью.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/аквастандарт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -275,7 +260,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Аквастандарт Светлый",
-    description: "описание",
+    description: "Светлая шпатлёвка с высокой водостойкостью, подходит для влажных помещений и финишной отделки.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/аквастандартсветлый.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -284,7 +269,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка полимерная Vetonit LR+",
-    description: "описание",
+    description: "Универсальная финишная шпатлёвка на акриловой основе для внутренних работ. Образует гладкую поверхность перед покраской.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/ветонит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -293,7 +278,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка полимерная Старатели КР",
-    description: "описание",
+    description: "Финишная шпатлёвка для выравнивания стен и потолков перед окончательной отделкой.",
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/старатели.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
@@ -302,7 +287,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Декоративная штукатурка Литокс Короед",
-    description: "описание",
+    description: "Декоративная фасадная штукатурка с зерном 2.5 или 3.5 мм. Используется для создания текстуры «короед».",
     image: `${process.env.PUBLIC_URL}/images/смеси/короед.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Декоративная штукатурка",
@@ -315,7 +300,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Нивелир 20кг",
-    description: "описание",
+    description: "Самовыравнивающаяся смесь для пола. Подходит для устройства стяжки с минимальными трудозатратами.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/нивелир20.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -324,7 +309,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Нивелир Экспресс 25кг",
-    description: "описание",
+    description: "Быстротвердеющая смесь для выравнивания полов внутри помещений. Обладает высокой прочностью.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/нивелир25.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -333,7 +318,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс Композит",
-    description: "описание",
+    description: "Сухая смесь для устройства прочного и устойчивого к нагрузкам наливного пола. Подходит для тёплого пола.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/композит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -342,7 +327,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс Floorex",
-    description: "описание",
+    description: "Наливной пол на основе цемента и полимеров. Подходит для быстрого выравнивания основания.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/флорекс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -350,8 +335,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Старатели",
-    description: "описание",
+    title: "Наливной пол Старатели",
+    description: "Самовыравнивающаяся смесь для пола, используется как основа под линолеум, ламинат, ковролин и другие покрытия.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/старатели.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -360,7 +345,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Power Nivelir",
-    description: "описание",
+    description: "Самовыравнивающаяся смесь для пола. Используется для устройства ровной основы под укладку напольных покрытий.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -369,7 +354,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пескобетон ProfMix М300",
-    description: "описание",
+    description: "Цементная смесь на основе песка и цемента, марка прочности М300. Применяется для стяжки пола, устройства оснований и монтажных работ.",
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/м300.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
@@ -378,7 +363,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Керамик +",
-    description: "описание",
+    description: "Клеевая смесь для укладки керамической плитки. Обладает повышенной пластичностью и адгезией. Подходит для внутренних и наружных работ. Подходит для теплого пола.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/т20.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -387,7 +372,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Мультиклей",
-    description: "описание",
+    description: "Универсальный плиточный клей для укладки керамической плитки и мозаики на разные типы оснований. Подходит для теплого пола.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/т34.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -396,7 +381,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Ceresit СМ 11",
-    description: "описание",
+    description: "Стандартный плиточный клей для внутренних и наружных работ. Подходит для керамической плитки на бетоне и цементных стяжках",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см11.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -405,7 +390,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Ceresit СМ 14",
-    description: "описание",
+    description: "Улучшенный клей для плитки с увеличенным временем коррекции. Подходит для внутренних и наружных работ. ",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см14.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -414,7 +399,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Ceresit СМ 16",
-    description: "описание",
+    description: "Высокопрочный клевой состав для укладки крупноформатной плитки и керамогранита. Подходит для внутренних и наружных работ.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см16.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -423,7 +408,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Ceresit СМ 17",
-    description: "описание",
+    description: "Плиточный клей для внутренних и наружных работ с двойным временем открытой пленки. Подходит для облицовки полов и стен в сложных условиях.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см17.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -432,7 +417,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мега Стандарт",
-    description: "описание",
+    description: "Универсальный плиточный клей для внутренних и наружных работ. Обладает хорошей адгезией к различным основаниям.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/мега.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -441,7 +426,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мега Керамогранит",
-    description: "описание",
+    description: "Усиленный клей для укладки керамогранита и тяжелых видов плитки. Обеспечивает надежное сцепление с основанием.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/керамогранит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -450,7 +435,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Хабез Стандарт",
-    description: "описание",
+    description: "Плиточный клей для внутренних и наружних работ по  облицовке стен и полов керамической, мозаичной плиткой малого и среднего размера. Подходит для теплого пола.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/хабез.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -459,7 +444,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Power Ceramic",
-    description: "описание",
+    description: "Клеевая смесь для укладки керамической плитки и керамогранита внутри и снаружи помещений.",
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
@@ -468,7 +453,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс Бриз",
-    description: "описание",
+    description: "Штукатурно-клеевая смесь для укладки теплоизоляции и выравнивания стен. Подходит для минераловатных плит.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/бриз.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
@@ -477,7 +462,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Knauf Севенер",
-    description: "описание",
+    description: "Смесь для приклеивания теплоизоляции из минеральной ваты на стены и потолки. Используется внутри и снаружи зданий.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/севенер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
@@ -486,7 +471,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Power Teplofix",
-    description: "описание",
+    description: "Клеевая смесь для монтажа утеплителя. Обеспечивает прочное сцепление с минеральными основаниями.",
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
@@ -495,7 +480,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Монтаж",
-    description: "описание",
+    description: "Сухая смесь для приклеивания гипсокартона, пенополистирола, минераловатных плит и выравнивания поверхностей.",
     image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/волма.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Монтажный клей",
@@ -504,7 +489,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Хабез Мелисса",
-    description: "описание",
+    description: "Клеевая смесь для утепления фасадов и внутренних поверхностей. Обладает высокой адгезией к минеральным основаниям.",
     image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/хабез.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Монтажный клей",
@@ -513,7 +498,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Волма Блок",
-    description: "описание",
+    description: "Клеевая смесь для кладки газобетонных и пенобетонных блоков. Обеспечивает тонкий шов и высокую прочность.",
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/волма.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
@@ -522,7 +507,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Литокс Контакт",
-    description: "описание",
+    description: "Клей для кладки газобетона. Обеспечивает минимальную толщину шва и высокую адгезию.",
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/литокс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
@@ -531,7 +516,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мега Блок Монтаж",
-    description: "описание",
+    description: "Клеевая смесь для кладки газобетонных и пенобетонных блоков. Обладает высокой прочностью и удобством нанесения.",
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/мега.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
@@ -540,7 +525,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Profmix Профи-Блок",
-    description: "описание",
+    description: "Специализированный клей для кладки газобетонных блоков. Подходит для ручного и механизированного нанесения.",
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/профмикс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
@@ -549,7 +534,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Цемент Extra Cem 500+",
-    description: "описание",
+    description: "Цемент марки М500 с улучшенными прочностными характеристиками. Используется для приготовления строительных растворов и бетонов.",
     image: `${process.env.PUBLIC_URL}/images/смеси/цемент.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Цемент",
@@ -558,7 +543,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Затирка Ceresit CE33",
-    description: "описание",
+    description: "Цементная затирка для швов от 1 до 6 мм . Подходит для керамической плитки, камня, стекла и мозаики. Обладает противогрибковым эффектом , защищает от плесени и пятен. Применяется внутри и снаружи помещений , в том числе во влажных зонах.",
     image: `${process.env.PUBLIC_URL}/images/смеси/затирка/се33.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Затирка для плитки",
@@ -581,7 +566,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Затирка Ceresit CE40",
-    description: "описание",
+    description: "Эпоксидно-цементная затирка для швов шириной от 2 до 20 мм . Устойчива к химическим веществам, влаге и загрязнениям. Используется для плитки в бассейнах, ванных, на кухнях и в общественных зонах.",
     image: `${process.env.PUBLIC_URL}/images/смеси/затирка/се40.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Затирка для плитки",
@@ -598,7 +583,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Затирка Литокол",
-    description: "описание",
+    description: "Цементная затирка с противогрибковыми добавками. Подходит для швов шириной от 1 до 6 мм . Используется для керамики, мозаики и камня внутри и снаружи помещений.",
     image: `${process.env.PUBLIC_URL}/images/смеси/затирка/литокол.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Затирка для плитки",
@@ -612,7 +597,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "ОСП 2440х1220мм (пропитка 1 сторона)",
-    description: "описание",
+    description: "Ориентированно-стружечная плита с защитной пропиткой с одной стороны. Применяется для обшивки стен, перегородок, обрешетки и временных конструкций.",
     image: `${process.env.PUBLIC_URL}/images/плиты/осп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ОСП",
@@ -626,7 +611,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "ОСП 2440х1220мм (пропитка 2 стороны)",
-    description: "описание",
+    description: "ОСП с защитной пропиткой с обеих сторон. Обладает повышенной влагостойкостью и прочностью. Используется в условиях повышенной влажности и для наружных работ.",
     image: `${process.env.PUBLIC_URL}/images/плиты/осп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ОСП",
@@ -639,7 +624,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "ДСП 2440х1830х16мм",
-    description: "описание",
+    description: "Древесно-стружечная плита стандартного качества. Применяется для изготовления мебели, перегородок и временных конструкций.",
     image: `${process.env.PUBLIC_URL}/images/плиты/дсп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ДСП",
@@ -648,7 +633,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "ДВП 2440х1220мм",
-    description: "описание",
+    description: "Древесно-волокнистая плита. Используется для обшивки стен, полов, в качестве основы под напольные покрытия и в мебельной промышленности.",
     image: `${process.env.PUBLIC_URL}/images/плиты/двп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ДВП",
@@ -661,7 +646,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Фанера 1520х1520мм",
-    description: "описание",
+    description: "Фанера высокого качества, используется в строительстве, ремонте и мебельном производстве. Выдерживает высокие нагрузки и влажность (в зависимости от сорта и вида).",
     image: `${process.env.PUBLIC_URL}/images/плиты/фанера.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "Фанера",
@@ -678,7 +663,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Вагонка класс AB",
-    description: "описание",
+    description: "Обшивочная доска из натурального дерева, отсортированная по качеству. Используется для внутренней отделки стен и потолков.",
     image: `${process.env.PUBLIC_URL}/images/брус/вагонка.jpg`,
     mainCategory: 'Вагонка и бруски',
     subCategory: "Вагонка",
@@ -693,7 +678,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Деревянный брус 3000мм",
-    description: "описание",
+    description: "Деревянный брус разных сечений. Используется в строительстве каркасов, обрешетки, мебели и временных конструкций.",
     image: `${process.env.PUBLIC_URL}/images/брус/бруски.jpg`,
     mainCategory: 'Вагонка и бруски',
     subCategory: "Бруски",
@@ -710,7 +695,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гипсокартон 2500х1200мм",
-    description: "Длина 2.5м, ширина 1.2м",
+    description: "Гипсокартонный лист для сухих помещений. Применяется для выравнивания стен и потолков, устройства перегородок и ниш.",
     image: `${process.env.PUBLIC_URL}/images/гкл/гкл1.jpg`,
     mainCategory: 'Гипсокартон',
     subCategory: "Для сухих помещений",
@@ -723,7 +708,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гипсокартон Knauf 3000х1200мм",
-    description: "Длина 3м, ширина 1.2м",
+    description: "Гипсокартон от бренда Knauf для сухих помещений. Отличается высоким качеством и точными геометрическими размерами.",
     image: `${process.env.PUBLIC_URL}/images/гкл/кнауф.jpg`,
     mainCategory: 'Гипсокартон',
     subCategory: "Для сухих помещений",
@@ -732,7 +717,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гипсокартон влагостойкий 2500х1200мм",
-    description: "Длина 2.5м, ширина 1.2м",
+    description: "Гипсокартон с добавками, повышающими устойчивость к влаге. Используется в помещениях с повышенной влажностью (ванная, кухня).",
     image: `${process.env.PUBLIC_URL}/images/гкл/гкл2.jpg`,
     mainCategory: 'Гипсокартон',
     subCategory: "Влагостойкий",
@@ -745,7 +730,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гипсокартон влагостойкий Vetonit 2000х1200мм",
-    description: "Длина 2.5м, ширина 1.2м",
+    description: "Влагостойкий гипсокартон для помещений с повышенной влажностью. Используется для выравнивания стен и потолков.",
     image: `${process.env.PUBLIC_URL}/images/гкл/ветон.jpg`,
     mainCategory: 'Гипсокартон',
     subCategory: "Влагостойкий",
@@ -758,7 +743,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиль 60х27х3000мм",
-    description: "Описание",
+    description: "Стеновой профиль для каркасов под гипсокартон. Подходит для возведения перегородок и обрешетки стен.",
     image: `${process.env.PUBLIC_URL}/images/профиля/6027.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Стеновые",
@@ -773,7 +758,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Направляющий 27х28х3000мм",
-    description: "Описание",
+    description: "Направляющий профиль для каркасов. Используется вместе со стоечным профилем при монтаже перегородок и подвесных потолков.",
     image: `${process.env.PUBLIC_URL}/images/профиля/2728.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Стеновые",
@@ -788,7 +773,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиль 50х50х3000мм",
-    description: "Описание",
+    description: "Перегородочный профиль для усиленных каркасов. Применяется при возведении капитальных перегородок.",
     image: `${process.env.PUBLIC_URL}/images/профиля/5050.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -801,7 +786,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Направляющий 50х40х3000мм",
-    description: "Описание",
+    description: "Направляющий профиль для перегородок. Используется в паре с профилем 50х50 или 75х50.",
     image: `${process.env.PUBLIC_URL}/images/профиля/5040.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -815,7 +800,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиль 75х50х3000мм",
-    description: "Описание",
+    description: "Усиленный перегородочный профиль для высоких и широких перегородок. Обеспечивает дополнительную жесткость конструкции.",
     image: `${process.env.PUBLIC_URL}/images/профиля/7550.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -827,7 +812,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Направляющий 75х40х3000мм",
-    description: "Описание",
+    description: "Направляющая для профиля 75х50. Обеспечивает надежную фиксацию каркаса.",
     image: `${process.env.PUBLIC_URL}/images/профиля/7540.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -839,7 +824,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиль 100х50х3000мм",
-    description: "Описание",
+    description: "Усиленный профиль для широких перегородок и конструкций с повышенной нагрузкой.",
     image: `${process.env.PUBLIC_URL}/images/профиля/10050.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -853,7 +838,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Направляющий 100х40х3000мм",
-    description: "Описание",
+    description: "Направляющая для профиля 100х50. Используется при монтаже широких перегородок.",
     image: `${process.env.PUBLIC_URL}/images/профиля/10040.jpg`,
     mainCategory: 'Профиля и направляющие',
     subCategory: "Перегородочные",
@@ -866,7 +851,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Маячок 3000х6мм",
-    description: "Длина 3м",
+    description: "Металлический маячок длиной 3 м, высотой профиля 6 мм. Используется как направляющая при оштукатуривании стен и выравнивании поверхностей с перепадами до 5 мм и более.",
     image: `${process.env.PUBLIC_URL}/images/маяки/6.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
@@ -879,7 +864,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Маячок 3000х10мм",
-    description: "Длина 3м",
+    description: "Металлический маячок длиной 3 м, высотой профиля 10 мм. Применяется при значительных перепадах поверхности (от 10 мм). Используется как опорная направляющая при штукатурных работах.",
     image: `${process.env.PUBLIC_URL}/images/маяки/10.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
@@ -892,7 +877,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол перфорированный 3000х20х20мм",
-    description: "Длина 3м",
+    description: "Металлический перфорированный уголок длиной 3 м, размером полок 20×20 мм. Используется для армирования углов при штукатурных работах, предотвращает растрескивание штукатурного слоя.",
     image: `${process.env.PUBLIC_URL}/images/маяки/2020.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
@@ -901,7 +886,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол перфорированный 3000х25х25мм",
-    description: "Длина 3м",
+    description: "Перфорированный уголок длиной 3 м, размером полок 25×25 мм. Применяется для усиления наружных углов стен. Обеспечивает ровный угол и защиту от сколов при отделке.",
     image: `${process.env.PUBLIC_URL}/images/маяки/2525.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
@@ -910,7 +895,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол перфорированный пластиковый 3000х20х20мм",
-    description: "Длина 3м",
+    description: "Пластиковый перфорированный уголок длиной 3 м, размером 20×20 мм. Используется для армирования и защиты углов при штукатурке и шпатлёвке. Легкий, не подвержен коррозии.",
     image: `${process.env.PUBLIC_URL}/images/маяки/пласт.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
@@ -919,7 +904,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Маяк перфорированный пластиковый 3000х6мм",
-    description: "Длина 3м",
+    description: "Пластиковый перфорированный маячок длиной 3 м, высотой 6 мм. Используется как направляющая при выравнивании стен, особенно в местах с небольшими перепадами. Легкий, не подвержен коррозии.",
     image: `${process.env.PUBLIC_URL}/images/маяки/маякпл.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
@@ -928,7 +913,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 15х15х1.5мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/1515.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -943,7 +928,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 20х20х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/2020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -958,7 +943,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 25х25х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/2525.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -973,7 +958,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 30х30х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/3030.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -988,7 +973,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 40х20х1.5мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1003,7 +988,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 40х20х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4020.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1018,7 +1003,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 40х25х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4025.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1033,7 +1018,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 40х40х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/4040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1048,7 +1033,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 50х25х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/5025.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1063,7 +1048,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 50х50х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/5050.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1078,7 +1063,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 60х30х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6030.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1093,7 +1078,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 60х40х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1108,7 +1093,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 60х40х3мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1123,7 +1108,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 60х60х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6060.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1138,7 +1123,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 60х60х3мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/6060.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1153,7 +1138,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 80х40х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1168,7 +1153,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 80х80х2мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8080.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1183,7 +1168,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 80х80х3мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/8080.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1198,7 +1183,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профтруба 100х100х3мм",
-    description: "Длина 6м",
+    description: "Стальная профильная труба с прямоугольным или квадратным сечением. Используется для строительства каркасов, заборов, ограждений, мебели и других металлических конструкций. Длина — 6 м. Также возможен раскрой на меньшие размеры.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/100100.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Профтрубы",
@@ -1213,7 +1198,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол металлический 32х32мм",
-    description: "Длина 6м",
+    description: "Стальной уголок равнополочный или неравнополочный. Используется в строительстве, машиностроении и для усиления конструкций. Обеспечивает жесткость и устойчивость каркасов. Длина — 6 м.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол3232.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Металлические углы",
@@ -1228,7 +1213,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол металлический 40х40мм",
-    description: "Длина 6м",
+    description: "Стальной уголок равнополочный или неравнополочный. Используется в строительстве, машиностроении и для усиления конструкций. Обеспечивает жесткость и устойчивость каркасов. Длина — 6 м.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол4040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Металлические углы",
@@ -1243,7 +1228,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Угол металлический 50х40мм",
-    description: "Длина 6м",
+    description: "Стальной уголок равнополочный или неравнополочный. Используется в строительстве, машиностроении и для усиления конструкций. Обеспечивает жесткость и устойчивость каркасов. Длина — 6 м.",
     image: `${process.env.PUBLIC_URL}/images/профтрубы/угол5040.jpg`,
     mainCategory: "Профтрубы и металлические углы",
     subCategory: "Металлические углы",
@@ -1258,7 +1243,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Стеклопластиковая арматура (бухта 50м)",
-    description: "Описание",
+    description: "Композитная стеклопластиковая арматура — современная замена металлической. Обладает высокой прочностью на растяжение, в 2 раза превышающей стальную, при этом в 5–6 раз легче. Не подвержена коррозии, устойчива к химическим воздействиям. Применяется в частном и промышленном строительстве.",
     image: `${process.env.PUBLIC_URL}/images/арм/арм.jpg`,
     mainCategory: "Арматура и кладочная сетка",
     subCategory: "Стеклопластиковая арматура",
@@ -1273,7 +1258,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кладочная сетка 2х1м",
-    description: "Описание",
+    description: "Кладочная сетка из металла используется для армирования кладки из газобетона, кирпича и других материалов. Повышает прочность конструкции и предотвращает растрескивание.",
     image: `${process.env.PUBLIC_URL}/images/арм/сетка.jpg`,
     mainCategory: "Арматура и кладочная сетка",
     subCategory: "Кладочная сетка",
@@ -1286,7 +1271,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пеноплэкс 1185х585х50мм (уп/7шт)",
-    description: "Описание",
+    description: "Экструдированный пенополистирол для утепления фундаментов, полов, стен и кровель. Обладает низким водопоглощением и высокой прочностью. Упаковка — 7 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопл1.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1295,7 +1280,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пеноплэкс 1185х585х30мм (уп/13шт)",
-    description: "Описание",
+    description: "Утеплитель из экструдированного пенополистирола толщиной 30 мм. Применяется для теплоизоляции стен, полов и перекрытий. Упаковка — 13 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопл2.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1304,7 +1289,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пеноплэкс 1185х585х20мм (уп/20шт)",
-    description: "Описание",
+    description: "Тонкий утеплитель из экструдированного пенополистирола. Используется для дополнительного утепления и выравнивания поверхностей. Упаковка — 20 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопл3.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1313,7 +1298,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Техноплeкс 1185х585х50мм (уп/8шт)",
-    description: "Описание",
+    description: "Экструзионный пенополистирол от бренда Техноплекс. Высокая прочность и низкая теплопроводность. Подходит для утепления фундаментов, полов и стен. Упаковка — 8 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/технопл1.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1322,7 +1307,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Техноплeкс 1185х585х30мм (уп/13шт)",
-    description: "Описание",
+    description: "Утеплитель Техноплекс толщиной 30 мм. Применяется в системах теплоизоляции жилых и коммерческих зданий. Упаковка — 13 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/технопл2.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1331,7 +1316,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Техноплeкс 1185х585х20мм (уп/20шт)",
-    description: "Описание",
+    description: "Тонкий утеплитель Техноплекс для дополнительного слоя теплоизоляции. Используется в стенах, полах и кровлях. Упаковка — 20 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/технопл3.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1340,7 +1325,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиплекс 1185х585х50мм (уп/8шт)",
-    description: "Описание",
+    description: "Экструдированный пенополистирол Profiplex для утепления фундаментов, цоколей, полов. Обладает низким водопоглощением и высокой прочностью. Упаковка — 8 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1349,7 +1334,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиплекс 1185х585х30мм (уп/13шт)",
-    description: "Описание",
+    description: "Экструдированный пенополистирол Profiplex толщиной 30 мм. Подходит для теплоизоляции стен, полов, перекрытий. Упаковка — 13 листов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1358,7 +1343,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Профиплекс 1185х585х20мм (уп/20шт)",
-    description: "Описание",
+    description: "Тонкий утеплитель Profiplex для дополнительного слоя теплоизоляции. Упаковка — 20 листов",
     image: `${process.env.PUBLIC_URL}/images/утепл/профиплекс.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенополистирол",
@@ -1367,7 +1352,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пенопласт 1200х1000мм",
-    description: "Описание",
+    description: "Пенопласт для утепления стен, перекрытий и мансард. Самозатухающийся, легкий, доступный, прост в монтаже.",
     image: `${process.env.PUBLIC_URL}/images/утепл/пенопласт.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Пенопласт",
@@ -1382,7 +1367,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Технониколь Роклайт 1200х600х50мм (уп/8шт)",
-    description: "Описание",
+    description: "Утеплитель из каменной ваты для утепления стен и перекрытий. Обладает хорошими тепло- и звукоизоляционными свойствами. Упаковка — 8 матов.",
     image: `${process.env.PUBLIC_URL}/images/утепл/роклайт.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1391,7 +1376,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Звукоизоляция АкустиКнауф 1230х610х50мм (уп/16шт)",
-    description: "Описание",
+    description: "Минераловатный утеплитель для звукоизоляции стен и перегородок. Обеспечивает комфортный акустический режим в помещениях. Упаковка — 16 плит.",
     image: `${process.env.PUBLIC_URL}/images/утепл/акустик.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1400,7 +1385,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Тисма 1200x8300х50мм 2 мата (20м²)",
-    description: "Описание",
+    description: "Минераловатный утеплитель Тисма для теплоизоляции стен, кровель и перекрытий. Обладает высокими теплоизоляционными свойствами. В рулоне 2 мата общей площадью 20 м²",
     image: `${process.env.PUBLIC_URL}/images/утепл/тисма.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1408,8 +1393,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Isover СТРОНГ 610х1000х50мм уп/10шт(6.1м²)",
-    description: "Описание",
+    title: "Isover СТРОНГ 610х1000х50мм уп/10шт (6.1м²)",
+    description: "Минераловатный утеплитель Isover СТРОНГ для теплоизоляции стен и перекрытий. Обладает высокой плотностью и теплоизоляционными свойствами. Упаковка — 10 плит на площадь 6.1 м².",
     image: `${process.env.PUBLIC_URL}/images/утепл/стронг.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1417,8 +1402,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Isover Теплый дом 610х1170х100мм уп/7шт(5м²)",
-    description: "Описание",
+    title: "Isover Теплый дом 610х1170х100мм уп/7шт (5м²)",
+    description: "Минераловатный утеплитель для утепления наружных стен и перекрытий. Обладает высокими теплоизоляционными свойствами. Толщина - 100мм. Упаковка — 7 плит на площадь 5 м².",
     image: `${process.env.PUBLIC_URL}/images/утепл/изовер.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1426,8 +1411,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Isover Теплый дом 610х1170х50мм уп/14шт(10м²)",
-    description: "Описание",
+    title: "Isover Теплый дом 610х1170х50мм уп/14шт (10м²)",
+    description: "Минераловатный утеплитель для теплоизоляции стен и перекрытий. Упаковка — 14 плит на площадь 10 м².",
     image: `${process.env.PUBLIC_URL}/images/утепл/изовер.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1436,7 +1421,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Isover Теплый дом 8200х610х50мм 2 мата (10м²)",
-    description: "Описание",
+    description: "Минераловатный утеплитель для утепления стен и перекрытий. Поставляется в виде 2 больших матов на площадь 10 м²",
     image: `${process.env.PUBLIC_URL}/images/утепл/изовер10.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
@@ -1445,7 +1430,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Фольгированный утеплитель 1200х25000мм",
-    description: "Описание",
+    description: "Отражающий утеплитель с фольгированным слоем. Используется для тепло-, паро- и гидроизоляции в банях, саунах, системах отопления и кровле.",
     image: `${process.env.PUBLIC_URL}/images/изол/фольга.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Отражающая теплоизоляция",
@@ -1460,7 +1445,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Теплоотражающая пароизоляция 35м²",
-    description: "Описание",
+    description: "Фольгированный материал для тепло- и пароизоляции. Используется в системах утепления стен, полов, кровель и вентиляции.",
     image: `${process.env.PUBLIC_URL}/images/изол/ф.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Отражающая теплоизоляция",
@@ -1469,7 +1454,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мембрана B Пароизоляция",
-    description: "Описание",
+    description: "Пароизоляционная пленка для защиты утеплителя и конструкций от проникновения водяного пара. Используется в стенах, перекрытиях и кровлях.",
     image: `${process.env.PUBLIC_URL}/images/изол/б.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Пароизоляция",
@@ -1482,7 +1467,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мембрана D Гидро-пароизоляция",
-    description: "Описание",
+    description: "Паро- и гидроизоляционная пленка с повышенной плотностью. Защищает утеплитель от конденсата и атмосферной влаги.",
     image: `${process.env.PUBLIC_URL}/images/изол/д.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Гидро-пароизоляция",
@@ -1495,7 +1480,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мембрана A Ветро-влагозащита",
-    description: "Описание",
+    description: "Ветрозащитная мембрана для защиты утеплителя от ветра и атмосферной влаги. Применяется в вентилируемых фасадах и кровлях.",
     image: `${process.env.PUBLIC_URL}/images/изол/а.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Ветро-влагозащита",
@@ -1508,7 +1493,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Тисма B 60м² Пароизоляция",
-    description: "Описание",
+    description: "Пароизоляционная пленка для защиты утеплителя от пара и конденсата. Используется в системах утепления стен, полов и перекрытий.",
     image: `${process.env.PUBLIC_URL}/images/изол/тисмаб.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Пароизоляция",
@@ -1517,7 +1502,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Тисма A 60м² Ветро-влагозащита",
-    description: "Описание",
+    description: "Ветро- и влагозащитная мембрана для защиты утеплителя от ветра и атмосферной влаги. Подходит для фасадов и кровель.",
     image: `${process.env.PUBLIC_URL}/images/изол/тисмаа.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Ветро-влагозащита",
@@ -1526,7 +1511,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Fiberon B 60м² Пароизоляция",
-    description: "Описание",
+    description: "Пароизоляционная пленка для защиты утеплителя от пара и конденсата. Используется в стенах, перекрытиях и кровлях.",
     image: `${process.env.PUBLIC_URL}/images/изол/фб.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Пароизоляция",
@@ -1535,7 +1520,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Fiberon D 60м² Гидро-пароизоляция",
-    description: "Описание",
+    description: "Гидро- и пароизоляционная пленка для защиты утеплителя от влаги и пара. Подходит для наружных и внутренних работ.",
     image: `${process.env.PUBLIC_URL}/images/изол/фд.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Гидро-пароизоляция",
@@ -1544,7 +1529,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Fiberon A 60м² Ветро-влагозащита",
-    description: "Описание",
+    description: "Ветро- и влагозащитная мембрана для защиты утеплителя от ветра и атмосферной влаги.",
     image: `${process.env.PUBLIC_URL}/images/изол/фа.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Ветро-влагозащита",
@@ -1553,7 +1538,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Изоспан B Пароизоляция",
-    description: "Описание",
+    description: "Пароизоляционная пленка для защиты утеплителя от пара и конденсата. Применяется в системах утепления стен, полов и кровель.",
     image: `${process.env.PUBLIC_URL}/images/изол/изб.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Пароизоляция",
@@ -1566,7 +1551,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Изоспан D Гидро-пароизоляция",
-    description: "Описание",
+    description: "Гидро- и пароизоляционная пленка с высокой прочностью. Защищает утеплитель от влаги и пара.",
     image: `${process.env.PUBLIC_URL}/images/изол/изд.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Гидро-пароизоляция",
@@ -1578,8 +1563,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Изоспан AM Ветро-влагозащита (3 слоя) 70м²",
-    description: "Описание",
+    title: "Изоспан AM Ветро-влагозащита 70м²",
+    description: "Трёхслойная ветро- и влагозащитная мембрана для защиты утеплителя от ветра и влаги. Подходит для кровель и фасадов.",
     image: `${process.env.PUBLIC_URL}/images/изол/изам.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Ветро-влагозащита",
@@ -1588,7 +1573,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Изоспан FB Гидро-пароизоляция отражающая 35м²",
-    description: "Описание",
+    description: "Фольгированный материал с гидроизоляционными свойствами. Используется для утепления бань, саун, трубопроводов.",
     image: `${process.env.PUBLIC_URL}/images/изол/изфб.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Гидро-пароизоляция",
@@ -1597,7 +1582,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гидроизоляция Ceresit CR65",
-    description: "Описание",
+    description: "Гидроизоляционная смесь на цементной основе для защиты бетонных и кирпичных конструкций от воды и влаги. Применяется в бассейнах, ванных, душевых, на балконах и террасах. Обладает высокой эластичностью и адгезией.",
     image: `${process.env.PUBLIC_URL}/images/гидроизол/ср65.jpg`,
     mainCategory: "Гидроизоляция",
     subCategory: "Сухая смесь",
@@ -1610,7 +1595,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гидроизоляция Литокс",
-    description: "Описание",
+    description: "Однокомпонентная эластичная гидроизоляция на полимерной основе. Используется для защиты бетонных, кирпичных и газобетонных поверхностей от влаги. Подходит для ванных комнат, бассейнов, фундаментов.",
     image: `${process.env.PUBLIC_URL}/images/гидроизол/литокс.jpg`,
     mainCategory: "Гидроизоляция",
     subCategory: "Жидкая гидроизоляция",
@@ -1623,7 +1608,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гидроизоляция Vetonit",
-    description: "Описание",
+    description: "Жидкая гидроизоляция для защиты внутренних и наружных конструкций от влаги. Обладает высокой эластичностью и устойчивостью к перепадам температур. Применяется в ванных, на балконах, в системах тёплых полов.",
     image: `${process.env.PUBLIC_URL}/images/гидроизол/ветон.jpg`,
     mainCategory: "Гидроизоляция",
     subCategory: "Жидкая гидроизоляция",
@@ -1636,7 +1621,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гидроизоляция Ceresit CL51",
-    description: "Описание",
+    description: "Эластичная гидроизоляционная мембрана на основе акрилатов. Образует водонепроницаемый слой на бетоне, цементных стяжках, гипсокартоне. Используется в душевых, ванных, на балконах и террасах.",
     image: `${process.env.PUBLIC_URL}/images/гидроизол/сл51.jpg`,
     mainCategory: "Гидроизоляция",
     subCategory: "Жидкая гидроизоляция",
@@ -1649,7 +1634,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Лента гидроизоляционная Волма 10м²",
-    description: "Описание",
+    description: "Самоклеящаяся гидроизоляционная лента для герметизации стыков, швов и примыканий. Используется в сочетании с обмазочной гидроизоляцией для усиления защиты от протечек.",
     image: `${process.env.PUBLIC_URL}/images/гидроизол/волма.jpg`,
     mainCategory: "Гидроизоляция",
     subCategory: "Лента гидроизоляционная",
@@ -1658,7 +1643,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез по дереву",
-    description: "Описание",
+    description: "Острые саморезы с резьбой для крепления гипсокартона к деревянным основаниям. Обеспечивают надежную фиксацию без предварительного сверления.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/дер.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Саморезы для гипсокартона",
@@ -1685,7 +1670,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез по металлу",
-    description: "Описание",
+    description: "Саморезы с острым наконечником для крепления гипсокартона к металлическим профилям. Имеют шаг резьбы, адаптированный под тонкостенные профили.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/мет.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Саморезы для гипсокартона",
@@ -1702,7 +1687,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез прессшайба острый",
-    description: "Описание",
+    description: "Саморезы с прессшайбой для крепления гипсокартона к металлическим профилям. Ускоряют монтаж, предотвращают перекосы листа и повреждение бумаги.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/пр.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Саморезы для гипсокартона",
@@ -1722,7 +1707,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез прессшайба со сверлом",
-    description: "Описание",
+    description: "Саморезы с остриём в виде сверла для крепления гипсокартона без предварительного засверливания. Удобны при монтаже на металлический каркас.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/прсв.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Саморезы для гипсокартона",
@@ -1741,7 +1726,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез оцинкованный",
-    description: "Описание",
+    description: "Высокопрочные оцинкованные саморезы для крепления металлочерепицы, профнастила и других кровельных материалов к деревянной обрешетке.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/оцинк.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1759,7 +1744,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез белый",
-    description: "Описание",
+    description: "Цветные саморезы с полимерным покрытием для крепления кровельных материалов. Белый цвет позволяет вписать крепёж в светлую кровлю.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/бел.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1775,7 +1760,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез графит",
-    description: "Описание",
+    description: "Цветные саморезы с полимерным покрытием в цвет графита. Подходят для кровель тёмных оттенков.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/граф.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1791,7 +1776,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез зелёный",
-    description: "Описание",
+    description: "Цветные саморезы для крепления профнастила и металлочерепицы. Зелёный цвет сочетается с кровлями в природных тонах.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/зел.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1807,7 +1792,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез коричневый",
-    description: "Описание",
+    description: "Полимерные саморезы в тёплых тонах. Подходят для кровель в бежевых, кирпичных и земляных оттенках.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/корич.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1823,7 +1808,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез красный",
-    description: "Описание",
+    description: "Цветные саморезы для крепления кровельных материалов. Красный цвет подходит для кровель в кирпичных и терракотовых оттенках.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/крас.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1839,7 +1824,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез синий",
-    description: "Описание",
+    description: "Саморезы с синим полимерным покрытием. Используются в кровлях холодных оттенков или для декоративного контраста.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/син.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1855,7 +1840,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кровельный саморез слоновая кость",
-    description: "Описание",
+    description: "Саморезы в светло-бежевом оттенке. Подходят для светлых и бежевых кровель, в том числе под натуральную черепицу.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/слон.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1871,7 +1856,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез прессшайба коричневый 19мм",
-    description: "Описание",
+    description: "Саморез с прессшайбой и полимерным покрытием в коричневом цвете. Подходит для кровельных работ, особенно на черепице и профнастиле в теплых тонах.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/краш1.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1880,7 +1865,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез прессшайба белый 19мм",
-    description: "Описание",
+    description: "Саморез с прессшайбой в белом цвете. Используется для крепления кровельных материалов к деревянной обрешетке.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/краш2.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1889,7 +1874,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Саморез прессшайба графит 19мм",
-    description: "Описание",
+    description: "Цветной саморез с прессшайбой в цвет графита. Подходит для тёмных и холодных оттенков кровельных материалов.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/кров/краш3.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Кровельные саморезы",
@@ -1898,7 +1883,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гвозди",
-    description: "Описание",
+    description: "Стандартные стальные гвозди для общестроительных работ. Применяются в деревянном домостроении, монтаже опалубки, обрешетки и других задачах.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/гвозди/гвозди.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Гвозди",
@@ -1923,7 +1908,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гвозди толевые",
-    description: "Описание",
+    description: "Гвозди с крупной шляпкой для крепления толя, рубероида и других рулонных гидроизоляционных материалов.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/гвозди/тол.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Гвозди",
@@ -1935,7 +1920,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гвозди шиферные 120мм",
-    description: "Описание",
+    description: "Удлинённые гвозди с широкой шляпкой для крепления шифера к деревянной обрешетке. Обеспечивают надёжную фиксацию и защиту от вырывания.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/гвозди/шиф.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Гвозди",
@@ -1947,7 +1932,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гвозди финишные латунь",
-    description: "Описание",
+    description: "Финишные гвозди из латуни с декоративной шляпкой. Используются в столярных работах, при отделке мебели и интерьера.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/гвозди/латунь.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Гвозди",
@@ -1959,7 +1944,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гвозди финишные оцинкованные",
-    description: "Описание",
+    description: "Финишные гвозди с оцинкованным покрытием для крепления деревянных изделий. Устойчивы к коррозии и подходят для помещений с повышенной влажностью.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/гвозди/оцинк.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Гвозди",
@@ -1971,7 +1956,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Анкерный болт",
-    description: "Описание",
+    description: "Распорный анкерный болт для крепления тяжелых конструкций к бетону, кирпичу и камню. Используется для монтажа перил, навесов, кронштейнов и т. д.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/болты/анкер.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Болты, гайки",
@@ -1994,7 +1979,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Болт",
-    description: "Описание",
+    description: "Стандартный болт с шестигранной головкой для соединения металлических и деревянных конструкций. Используется в строительстве, ремонте и монтаже.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/болты/болт.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Болты, гайки",
@@ -2014,7 +1999,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Гайка",
-    description: "Описание",
+    description: "Шестигранные гайки для соединения с болтами и шпильками. Используются в различных строительных и монтажных работах.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/болты/гайки.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Болты, гайки",
@@ -2029,7 +2014,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Уголок крепёжный",
-    description: "Описание",
+    description: "Стальной уголок для усиления соединений в каркасных конструкциях. Используется при монтаже гипсокартона, обрешетки, перегородок и других строительных работах.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/уголки.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Крепёжные уголки и подвесы",
@@ -2049,7 +2034,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Уголок крепёжный усиленный",
-    description: "Описание",
+    description: "Усиленный стальной уголок для ответственных соединений и конструкций. Обеспечивает повышенную жёсткость каркасов при монтаже перегородок и подвесных потолков.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/усил.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Крепёжные уголки и подвесы",
@@ -2065,7 +2050,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Подвес прямой для гипсокартона",
-    description: "Описание",
+    description: "Прямой подвес для крепления стоечных профилей при монтаже перегородок и потолков. Упрощает выравнивание каркаса и обеспечивает прочное крепление.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/подвес.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Крепёжные уголки и подвесы",
@@ -2079,7 +2064,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Дюбель морковка",
-    description: "Описание",
+    description: "Распорный дюбель для крепления в бетоне, кирпиче и пустотелых материалах. Используется с саморезами и шурупами.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/дюб/морковка.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Дюбеля",
@@ -2092,7 +2077,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Дюбель гвоздь",
-    description: "Описание",
+    description: "Комбинированный крепёж: дюбель + гвоздь. Применяется для фиксации теплоизоляции, пенополистирола, профилей и других материалов.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/дюб/дюбель.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Дюбеля",
@@ -2108,7 +2093,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Дюбель ввёртыш 15х38мм",
-    description: "Описание",
+    description: "Самонарезающий дюбель для крепления в пустотелые и пористые материалы (газобетон, пеноблок, пустотелый кирпич).",
     image: `${process.env.PUBLIC_URL}/images/крепеж/дюб/ввертыш.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Дюбеля",
@@ -2117,7 +2102,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Дюбель бабочка",
-    description: "Описание",
+    description: "Дюбель-бабочка для крепления в пустотелые материалы. Раскрывается внутри стены при закручивании шурупа.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/дюб/бабочка.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Дюбеля",
@@ -2126,7 +2111,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Удлинитель профилей 60х27мм",
-    description: "Описание",
+    description: "Соединительный элемент для наращивания профилей при монтаже каркасов. Обеспечивает прочное и ровное соединение.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/проф/удл.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Удлинитель профилей и крабы",
@@ -2135,7 +2120,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Соединитель профилей Knauf (Краб)",
-    description: "Описание",
+    description: "Крестовой соединитель (краб) для стоечных и направляющих профилей. Используется при монтаже каркасов для гипсокартона.",
     image: `${process.env.PUBLIC_URL}/images/крепеж/проф/крабы.jpg`,
     mainCategory: "Крепёж",
     subCategory: "Удлинитель профилей и крабы",
@@ -2144,7 +2129,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Arco Iris глубокого проникновения",
-    description: "Описание",
+    description: "Грунтовка глубокого проникновения для подготовки оснований под отделку. Укрепляет поверхность, уменьшает пылеобразование, повышает адгезию штукатурки и шпатлёвки.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/арко.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2158,7 +2143,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Ceresit CT17",
-    description: "Описание",
+    description: "Универсальная грунтовка для внутренних работ. Подходит для бетона, гипсокартона, штукатурки. Уменьшает впитывающую способность основания.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст17.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2167,7 +2152,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Оптимист",
-    description: "Описание",
+    description: "Грунт для подготовки основания перед штукатурными и шпатлёвочными работами. Улучшает сцепление материалов с поверхностью.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/оптимист1.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2180,7 +2165,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Оптимист глубокого проникновения",
-    description: "Описание",
+    description: "Грунтовка с глубоким проникновением для укрепления пористых оснований. Уменьшает пыление, повышает адгезию.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/оптимист2.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2189,7 +2174,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Vetonit глубокого проникновения",
-    description: "Описание",
+    description: "Грунт для укрепления основания и повышения адгезии. Подходит для бетона, кирпича, газобетона.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ветонит.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2197,8 +2182,8 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Грунт-концентрат Knauf Тифенгрунд",
-    description: "Описание",
+    title: "Грунтовка Knauf Тифенгрунд",
+    description: "Готовая к применению грунтовка на акриловой основе для подготовки оснований перед отделкой. Используется для выравнивания впитывающей способности поверхностей (бетон, штукатурка, гипсокартон и др.), повышает адгезию к штукатуркам, шпатлёвкам и клеевым смесям. Не требует разведения.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/тифен.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2207,7 +2192,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка Лакра интерьерная",
-    description: "Описание",
+    description: "Грунт для подготовки внутренних поверхностей перед покраской, оклейкой обоев или нанесением штукатурки.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/лакра.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2216,7 +2201,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунт-концентрат Лакра PROFIT",
-    description: "Описание",
+    description: "Концентрированная грунтовка для внутренних и наружных работ. Экономичный расход, высокая степень укрепления основания.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/профит.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2225,7 +2210,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунт-концентрат Arco Iris 1:10",
-    description: "Описание",
+    description: "Концентрат грунтовки, разводится водой (1:10). Подходит для обработки пористых и впитывающих оснований.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/конц.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2240,7 +2225,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунт-концентрат Knauf Миттельгрунд",
-    description: "Описание",
+    description: "Грунт для подготовки основания средней впитываемости (бетон, штукатурка, гипсокартон). Разводится водой в соотношении 1:3–1:5.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/миттель.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2249,7 +2234,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунтовка под декоративные штукатурки Ceresit CT16",
-    description: "Описание",
+    description: "Специализированная грунтовка для подготовки основания перед нанесением декоративных штукатурок. Повышает адгезию и уменьшает впитываемость.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст16.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
@@ -2258,7 +2243,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бетоноконтакт Ceresit CT19 15кг",
-    description: "Описание",
+    description: "Грунт с кварцевым наполнителем для высокой адгезии к гладким основаниям: бетону, цементным стяжкам, плитке.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст19.jpg`,
     mainCategory: "Отделка",
     subCategory: "Бетоноконтакт",
@@ -2267,7 +2252,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бетоноконтакт Хабез 12кг",
-    description: "Описание",
+    description: "Усиленная грунтовка с кварцевым песком для улучшения сцепления с гладкими основаниями. Применяется внутри и снаружи помещений.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/хабез.jpg`,
     mainCategory: "Отделка",
     subCategory: "Бетоноконтакт",
@@ -2276,7 +2261,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бетоноконтакт Arco Iris",
-    description: "Описание",
+    description: "Акриловый грунт с кварцевым наполнителем для повышения адгезии к трудноудерживаемым основаниям.",
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/бконтакт.jpg`,
     mainCategory: "Отделка",
     subCategory: "Бетоноконтакт",
@@ -2291,7 +2276,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Arco Iris для стен и потолков",
-    description: "Описание",
+    description: "Водоэмульсионная краска для внутренних работ. Подходит для окрашивания штукатурки, бетона, гипсокартона. Обладает хорошей укрывистостью и легко наносится.",
     image: `${process.env.PUBLIC_URL}/images/краски/стен.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2306,7 +2291,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Arco Iris моющаяся",
-    description: "Описание",
+    description: "Моющаяся водоэмульсионная краска для стен и потолков. Устойчива к влажной уборке, подходит для кухонь, ванных и детских комнат.",
     image: `${process.env.PUBLIC_URL}/images/краски/моющ.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2321,7 +2306,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Arco Iris фасадная",
-    description: "Описание",
+    description: "Водоэмульсионная фасадная краска. Устойчива к перепадам температур, УФ-излучению и атмосферным осадкам. Подходит для наружных и внутренних работ.",
     image: `${process.env.PUBLIC_URL}/images/краски/фасад.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2336,7 +2321,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Лакра для стен и потолков",
-    description: "Описание",
+    description: "Белая водоэмульсионная краска для внутренних работ. Используется для окрашивания штукатурки, бетона, гипсокартона. Обладает хорошей укрывистостью.",
     image: `${process.env.PUBLIC_URL}/images/краски/лстен.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2351,7 +2336,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Лакра моющаяся",
-    description: "Описание",
+    description: "Моющаяся водоэмульсионная краска для стен и потолков. Устойчива к многократной влажной уборке. Подходит для кухонь, ванных, коридоров.",
     image: `${process.env.PUBLIC_URL}/images/краски/лмоющ.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2365,7 +2350,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Краска Лакра фасадная",
-    description: "Описание",
+    description: "Фасадная водоэмульсионная краска с высокой стойкостью к влаге и УФ-излучению. Используется для наружных и внутренних работ.",
     image: `${process.env.PUBLIC_URL}/images/краски/лфасад.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Водоэмульсионные краски",
@@ -2379,7 +2364,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Эмаль алкидная ПФ-115 (1.8кг)",
-    description: "Описание",
+    description: "Универсальная алкидная эмаль для окрашивания металлических, деревянных и оштукатуренных поверхностей. Обладает высокой укрывистостью и долговечностью.",
     image: `${process.env.PUBLIC_URL}/images/краски/пф.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Эмали",
@@ -2400,7 +2385,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Эмаль алкидная ПФ-115 (0.8кг)",
-    description: "Описание",
+    description: "Универсальная алкидная эмаль для окрашивания металлических, деревянных и оштукатуренных поверхностей. Обладает высокой укрывистостью и долговечностью.",
     image: `${process.env.PUBLIC_URL}/images/краски/пф.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Эмали",
@@ -2417,7 +2402,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Грунт-эмаль 3в1 (1.8кг)",
-    description: "Описание",
+    description: "Грунт-эмаль с антикоррозионными свойствами. Подходит для подготовки и окрашивания металлических поверхностей перед покраской.",
     image: `${process.env.PUBLIC_URL}/images/краски/грунт.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Эмали",
@@ -2427,13 +2412,29 @@ const menuItems: MenuItemProps[] = [
       "Белый": 500,
       "Серый": 500,
       "Графит": 500,
-      "Коричневый": 500
+      "Шоколадный": 500
+    }
+  },
+  {
+    id: uuidv4(),
+    title: "Грунт-эмаль 3в1 (0.8кг)",
+    description: "Грунт-эмаль с антикоррозионными свойствами. Подходит для подготовки и окрашивания металлических поверхностей перед покраской.",
+    image: `${process.env.PUBLIC_URL}/images/краски/грунт.jpg`,
+    mainCategory: "Лакокрасочные материалы",
+    subCategory: "Эмали",
+    sizeText: "Выберите цвет:",
+    pricesBySize: {
+      "Чёрный": 500,
+      "Белый": 500,
+      "Серый": 500,
+      "Графит": 500,
+      "Шоколадный": 500,
     }
   },
   {
     id: uuidv4(),
     title: "Эмаль для радиаторов акриловая",
-    description: "Описание",
+    description: "Термостойкая акриловая эмаль для окрашивания отопительных радиаторов. Выдерживает температуру до 80°C.",
     image: `${process.env.PUBLIC_URL}/images/краски/термо.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Эмали",
@@ -2446,7 +2447,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Эмаль для дверей и подоконников акриловая",
-    description: "Описание",
+    description: "Акриловая эмаль для окрашивания деревянных окон, дверей, подоконников. Образует прочное и износостойкое покрытие.",
     image: `${process.env.PUBLIC_URL}/images/краски/окон.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Эмали",
@@ -2459,7 +2460,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Яхтный лак бесцветный",
-    description: "Описание",
+    description: "Защитный лак для деревянных поверхностей внутри и снаружи помещений. Обладает высокой водостойкостью и устойчивостью к УФ-излучению.",
     image: `${process.env.PUBLIC_URL}/images/краски/яхт.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Лаки и пропитки",
@@ -2472,7 +2473,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пропитка Profiwood 0.75л",
-    description: "Описание",
+    description: "Масляно-алкидная пропитка для защиты и декора древесины. Подчеркивает текстуру дерева, защищает от влаги и выцветания. Подходит для террас, заборов, мебели и других поверхностей.",
     image: `${process.env.PUBLIC_URL}/images/краски/профи075.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Лаки и пропитки",
@@ -2489,7 +2490,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пропитка Profiwood 2.5л",
-    description: "Описание",
+    description: "Масляно-алкидная пропитка для защиты и декора древесины. Подчеркивает текстуру дерева, защищает от влаги и выцветания. Подходит для террас, заборов, мебели и других поверхностей.",
     image: `${process.env.PUBLIC_URL}/images/краски/профи25.jpg`,
     mainCategory: "Лакокрасочные материалы",
     subCategory: "Лаки и пропитки",
@@ -2506,7 +2507,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка латексная Текс",
-    description: "Описание",
+    description: "Готовая шпатлёвка на латексной основе для выравнивания поверхностей перед покраской или оклейкой обоев. Подходит для гипсокартона, штукатурки, бетона.",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/текс.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
@@ -2521,7 +2522,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка универсальная SHEETROCK SuperFinish",
-    description: "Описание",
+    description: "Готовая шпатлёвка для заделки швов, трещин и неровностей. Обладает высокой пластичностью и удобна в нанесении.",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/шитрок.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
@@ -2534,7 +2535,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка финишная Knauf Ротбанд паста 18кг",
-    description: "Описание",
+    description: "Финишная шпатлёвка на основе полимеров. Используется для тонкого выравнивания стен и потолков перед покраской или поклейкой обоев.",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/ротбанд.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
@@ -2543,7 +2544,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатлёвка финишная Vetonit LR паста 18кг",
-    description: "Описание",
+    description: "Готовая акриловая шпатлёвка для внутренних работ. Обеспечивает гладкую поверхность перед покраской и оклейкой.",
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/лрпаста.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
@@ -2552,7 +2553,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена профессиональная 70л",
-    description: "Описание",
+    description: "Высококачественная монтажная пена для профессионального использования. Обладает высокой адгезией, минимальной усадкой и увеличенным выходом.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/проф70.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2566,7 +2567,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена профессиональная 65л",
-    description: "Описание",
+    description: "Профессиональная монтажная пена для плотных швов и высокой фиксации. Подходит для наружных и внутренних работ.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/проф65.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2580,7 +2581,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена бытовая",
-    description: "Описание",
+    description: "Монтажная пена для бытового использования. Обеспечивает надёжное заполнение швов, хорошее сцепление с большинством поверхностей.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/быт.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2592,7 +2593,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена клей Arco Iris",
-    description: "Описание",
+    description: "Универсальная пена-клей для фиксации и герметизации. Используется вместо крепежа при монтаже панелей, утеплителя, оконных откосов.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/пенакл.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2601,7 +2602,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена огнеупорная Kolt",
-    description: "Описание",
+    description: "Огнестойкая монтажная пена для заполнения и герметизации швов в противопожарных конструкциях.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/огн.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2610,7 +2611,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Пена цемент Rich",
-    description: "Описание",
+    description: "Цементная пена для заполнения швов и пустот в условиях высокой влажности. Устойчива к воде и механическим нагрузкам.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/цем.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2619,7 +2620,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Очиститель для пены",
-    description: "Описание",
+    description: "Средство для очистки пистолетов и удаления остатков монтажной пены до затвердевания.",
     image: `${process.env.PUBLIC_URL}/images/отделка/пена/очиститель.jpg`,
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
@@ -2628,7 +2629,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Силиконовый герметик санитарный",
-    description: "Описание",
+    description: "Герметик с противогрибковыми добавками для ванных комнат, кухонь, душевых. Обеспечивает водонепроницаемое и долговечное соединение.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/санит.jpg`,
     mainCategory: "Отделка",
     subCategory: "Герметик",
@@ -2642,7 +2643,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Силиконовый герметик универсальный",
-    description: "Описание",
+    description: "Универсальный герметик для внутренних и наружных работ. Используется для герметизации швов в окнах, дверях, вентиляции.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/унив.jpg`,
     mainCategory: "Отделка",
     subCategory: "Герметик",
@@ -2655,7 +2656,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Силиконовый герметик Tytan для кровли",
-    description: "Описание",
+    description: "Эластичный герметик для герметизации швов на кровле. Устойчив к перепадам температур, ультрафиолету и осадкам.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/кров.jpg`,
     mainCategory: "Отделка",
     subCategory: "Герметик",
@@ -2669,7 +2670,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Силиконовый герметик Vetonit цветной",
-    description: "Описание",
+    description: "Цветной силиконовый герметик для декоративной отделки и герметизации швов. Используется в ванных, на кухнях и в интерьере.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/ветон.jpg`,
     mainCategory: "Отделка",
     subCategory: "Герметик",
@@ -2685,7 +2686,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Силиконовый герметик Rich огнеупорный",
-    description: "Описание",
+    description: "Огнеупорный герметик для герметизации швов в условиях повышенной температуры. Подходит для каминов, печей, вентиляции.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/огнеуп.jpg`,
     mainCategory: "Отделка",
     subCategory: "Герметик",
@@ -2694,7 +2695,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Монтажный клей Момент Жидкие гвозди",
-    description: "Описание",
+    description: "Высокопрочный клей для фиксации панелей, плит, зеркал, плинтусов и других материалов.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/мв.jpg`,
     mainCategory: "Отделка",
     subCategory: "Клей",
@@ -2708,7 +2709,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Монтажный клей Жидкие гвозди",
-    description: "Описание",
+    description: "Универсальный клей для фиксации материалов без крепежа. Подходит для разных поверхностей: дерево, металл, пластик, бетон.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/клей.jpg`,
     mainCategory: "Отделка",
     subCategory: "Клей",
@@ -2722,7 +2723,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Клей КС для линоулема",
-    description: "Описание",
+    description: "Специализированный клей для приклеивания линолеума и других напольных покрытий. Обеспечивает прочное и долговечное сцепление.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/кс.jpg`,
     mainCategory: "Отделка",
     subCategory: "Клей",
@@ -2736,7 +2737,7 @@ const menuItems: MenuItemProps[] = [
    {
     id: uuidv4(),
     title: "Клей ПВА строительный",
-    description: "Описание",
+    description: "Универсальный клей на основе ПВА для склеивания древесины, бумаги, картона, гипсокартона, ткани и других материалов.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/пва.jpg`,
     mainCategory: "Отделка",
     subCategory: "Клей",
@@ -2751,7 +2752,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Клей Hauser для пенополистирола ",
-    description: "Описание",
+    description: "Клей для приклеивания пенополистирола, пенопласта, гипсокартона, панелей. Образует прочное и устойчивое к влаге соединение.",
     image: `${process.env.PUBLIC_URL}/images/отделка/клей/хаузер.jpg`,
     mainCategory: "Отделка",
     subCategory: "Клей",
@@ -2761,7 +2762,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Стеклосетка фасадная под штукатурку",
-    description: "Описание",
+    description: "Армирующая стеклосетка для усиления фасадных и внутренних штукатурных систем. Увеличивает прочность и предотвращает растрескивание.",
     image: `${process.env.PUBLIC_URL}/images/отделка/стекл/фасад.jpg`,
     mainCategory: "Отделка",
     subCategory: "Стеклосетка и стеклохолст",
@@ -2778,7 +2779,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Стеклосетка малярная под штукатурку",
-    description: "Описание",
+    description: "Малярная сетка для армирования штукатурных систем, выравнивания углов, заделки трещин.",
     image: `${process.env.PUBLIC_URL}/images/отделка/стекл/интер.jpg`,
     mainCategory: "Отделка",
     subCategory: "Стеклосетка и стеклохолст",
@@ -2794,7 +2795,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Стеклохолст малярный 40гр/м²",
-    description: "Описание",
+    description: "Нетканый стеклохолст для армирования и выравнивания стен перед поклейкой обоев. Предотвращает растрескивание штукатурки.",
     image: `${process.env.PUBLIC_URL}/images/отделка/стекл/холст.jpg`,
     mainCategory: "Отделка",
     subCategory: "Стеклосетка и стеклохолст",
@@ -2803,7 +2804,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Валик 180мм",
-    description: "Описание",
+    description: "Валик шириной 180 мм для окрашивания стен и потолков. Подходит для водоэмульсионных и акриловых красок.",
     image: `${process.env.PUBLIC_URL}/images/инструм/валики.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Валики",
@@ -2817,7 +2818,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Валик 230мм",
-    description: "Описание",
+    description: "Широкий валик для быстрого нанесения краски на большие поверхности. Используется с водоэмульсионными и акриловыми составами.",
     image: `${process.env.PUBLIC_URL}/images/инструм/валики.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Валики",
@@ -2831,7 +2832,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатель",
-    description: "Описание",
+    description: "Шпатель для нанесения и разравнивания шпатлёвки, клея, герметика.",
     image: `${process.env.PUBLIC_URL}/images/инструм/шпатели.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Шпатели",
@@ -2853,7 +2854,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шпатель профессиональный",
-    description: "Описание",
+    description: "Профессиональный шпатель с усиленной конструкцией для точного нанесения шпатлёвочных смесей и клея.",
     image: `${process.env.PUBLIC_URL}/images/инструм/проф.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Шпатели",
@@ -2873,7 +2874,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кисть с натуральной щетиной",
-    description: "Описание",
+    description: "Кисть с натуральной щетиной для нанесения масляных и алкидных красок. Обеспечивает гладкое покрытие и точное нанесение.",
     image: `${process.env.PUBLIC_URL}/images/инструм/кисти.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Кисти",
@@ -2891,7 +2892,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кисть с искусственной щетиной",
-    description: "Описание",
+    description: "Кисть с синтетической щетиной для водоэмульсионных и акриловых красок. Не оставляет ворса, легко моется.",
     image: `${process.env.PUBLIC_URL}/images/инструм/искус.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Кисти",
@@ -2907,7 +2908,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Кисть макловица (ракля)",
-    description: "Описание",
+    description: "Широкая кисть для быстрого нанесения грунтовки, краски, штукатурки. Удобна при работе на больших поверхностях.",
     image: `${process.env.PUBLIC_URL}/images/инструм/ракля.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Кисти",
@@ -2921,7 +2922,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Скотч 48мм",
-    description: "Описание",
+    description: "Канцелярский и строительный скотч для фиксации, упаковки и защиты краёв при покраске.",
     image: `${process.env.PUBLIC_URL}/images/инструм/скотчи.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Ленты и скотчи",
@@ -2934,7 +2935,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Лента малярная 48х5000мм",
-    description: "Описание",
+    description: "Малярный скотч для защиты поверхностей при покраске и отделке. Обеспечивает чёткую линию, легко отклеивается.",
     image: `${process.env.PUBLIC_URL}/images/инструм/маляр.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Ленты и скотчи",
@@ -2943,7 +2944,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Зажим кольцо 0.8мм 500шт",
-    description: "Описание",
+    description: "Пластиковые зажимы (диски) для системы выравнивания плитки. Используются вместе с клиньями, чтобы равномерно распределить давление и выровнять уровень соседних плиток.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз500.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2952,7 +2953,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Зажим кольцо 0.8мм 100шт",
-    description: "Описание",
+    description: "Пластиковые зажимы (диски) для системы выравнивания плитки. Используются вместе с клиньями, чтобы равномерно распределить давление и выровнять уровень соседних плиток.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз100.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2961,7 +2962,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Зажим кольцо 1.5мм 500шт",
-    description: "Описание",
+    description: "Пластиковые зажимы для СВП, предназначенные для более толстых плиток и крупноформатных элементов. Обеспечивают точное выравнивание и ровную поверхность.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/зел500.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2970,7 +2971,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Зажим кольцо 1.5мм 100шт",
-    description: "Описание",
+    description: "Пластиковые зажимы для СВП, предназначенные для более толстых плиток и крупноформатных элементов. Обеспечивают точное выравнивание и ровную поверхность.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/зел100.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2979,7 +2980,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Клинья 200шт",
-    description: "Описание",
+    description: "Пластиковые клинья для системы выравнивания плитки. Используются вместе с зажимами для точного выравнивания швов и поверхности. Удаляются после схватывания клея.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/клин200.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2988,7 +2989,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Клинья 50шт",
-    description: "Описание",
+    description: "Пластиковые клинья для системы выравнивания плитки. Используются вместе с зажимами для точного выравнивания швов и поверхности. Удаляются после схватывания клея.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/клин50.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "СВП",
@@ -2997,7 +2998,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бита Ph2-50мм",
-    description: "Описание",
+    description: "Универсальная бита с наконечником PH2 для работы с шуруповёртом. Подходит для завинчивания саморезов, шурупов и других крепёжных элементов. ",
     image: `${process.env.PUBLIC_URL}/images/инструм/биты/бита.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Свёрла, биты и буры",
@@ -3006,7 +3007,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бита кровельная 8мм",
-    description: "Описание",
+    description: "Кровельная бита с широким наконечником для работы с кровельными саморезами. Обеспечивает надёжное закручивание без повреждения шляпки крепежа.",
     image: `${process.env.PUBLIC_URL}/images/инструм/биты/кров.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Свёрла, биты и буры",
@@ -3015,7 +3016,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Бур по бетону SDS+",
-    description: "Описание",
+    description: "Бур с хвостовиком SDS+ для перфораторов. Используется для сверления отверстий в бетоне, кирпиче, камне.",
     image: `${process.env.PUBLIC_URL}/images/инструм/биты/буры.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Свёрла, биты и буры",
@@ -3035,7 +3036,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Сверло по металлу",
-    description: "Описание",
+    description: "Свёрло из быстрорежущей стали HSS для точного сверления металлических заготовок, профилей, листового металла.",
     image: `${process.env.PUBLIC_URL}/images/инструм/биты/сверла.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Свёрла, биты и буры",
@@ -3060,7 +3061,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Диск отрезной по металлу",
-    description: "Описание",
+    description: "Абразивный отрезной диск для резки металлических профилей, арматуры, уголков и других изделий.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/отрез.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3074,7 +3075,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Круг зачистной по металлу",
-    description: "Описание",
+    description: "Зачистной диск для шлифовальных машин. Используется для удаления ржавчины, окалин, заусенцев и подготовки швов.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/зачист.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3088,7 +3089,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Шлифкруг лепестковый",
-    description: "Описание",
+    description: "Лепестковый шлифовальный круг для финишной обработки металлических и деревянных поверхностей. Позволяет добиться гладкой поверхности.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/зачист.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3097,7 +3098,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Диск алмазный 125мм ультратонкий",
-    description: "Описание",
+    description: "Алмазный отрезной диск для резки керамики, керамогранита, бетона и других твёрдых материалов. Ультратонкий для минимального скола и точной резки.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/ультра.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3106,7 +3107,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Диск алмазный 125мм супертонкий",
-    description: "Описание",
+    description: "Супертонкий алмазный диск для резки керамической плитки, керамогранита и бетона. Обеспечивает чистый и аккуратный рез.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/ультра.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3115,7 +3116,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Диск алмазный по граниту LUFTER",
-    description: "Описание",
+    description: "Профессиональный алмазный диск для резки гранита, мрамора, керамогранита и других твёрдых материалов.",
     image: `${process.env.PUBLIC_URL}/images/инструм/диски/люфтер.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Абразивные диски",
@@ -3128,7 +3129,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Мешки для строительного мусора",
-    description: "Описание",
+    description: "Прочные мешки для сбора и выноса строительного мусора. Выдерживают значительный вес, устойчивы к проколам. Зелёный выдерживает нагрузку до 30кг. Белый выдерживает нагрузку до 50кг.",
     image: `${process.env.PUBLIC_URL}/images/инструм/мешки.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Другое",
@@ -3141,7 +3142,7 @@ const menuItems: MenuItemProps[] = [
   {
     id: uuidv4(),
     title: "Ванночка 330х350мм",
-    description: "Описание",
+    description: "Пластиковая ванночка для краски, штукатурки, шпатлёвки. Удобна при окрашивании валиком или приготовлении смесей.",
     image: `${process.env.PUBLIC_URL}/images/инструм/ванночка.jpg`,
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Другое",

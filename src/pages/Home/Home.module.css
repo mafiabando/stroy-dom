@@ -6,7 +6,7 @@
     text-align: center;
     justify-content: center;
     align-content: end;
-    gap: 20px;
+    gap: clamp(10px, 3.33vw, 20px);
     padding: 20px;
   }
 
@@ -18,8 +18,16 @@
   background: url(../../assets/smesi.jpg) center/cover;
 }
 
-.hero_Древесные_плиты_и_вагонка {
+.hero_Древесные_плиты {
   background: url(../../assets/pliti.jpg) center/cover;
+}
+
+.hero_Вагонка_и_бруски {
+  background: url(../../assets/brus.jpg) center/cover;
+}
+
+.hero_Арматура_и_кладочная_сетка {
+  background: url(../../assets/arm.jpg) center/cover;
 }
 
 .hero_Гипсокартон {
@@ -46,21 +54,33 @@
   background: url(../../assets/isol.jpg) center/cover;
 }
 
+.hero_Гидроизоляция {
+  background: url(../../assets/hydro.jpg) center/cover;
+}
+
 .hero_Крепёж {
   background: url(../../assets/krepezh.jpg) center/cover;
 }
 
-.hero_Отделка_и_расходные_материалы {
-  background: url(../../assets/otdelka.jpg) center/cover;
+.hero_Лакокрасочные_материалы {
+  background: url(../../assets/kraski.jpg) center/cover;
 }
-  
-  .ctaButton {
+
+.hero_Отделка {
+background: url(../../assets/otdelka.jpg) center/cover;
+}
+
+.hero_Инструменты_и_расходные_материалы {
+background: url(../../assets/instrum.jpg) center/cover;
+}
+
+.ctaButton {
     box-sizing: content-box;
     width: auto;
-    height: 40px;
+    height: clamp(25px, 7.8125vw, 30px);
     border: none;
     background: var(--secondary);
-    padding: 0 10px;
+    padding: 0 clamp(5px, 1.5625vw, 10px);
     border-radius: 4px;
     font-size: clamp(12px, 1.5vw, 18px);
     color: black;
@@ -76,16 +96,15 @@
   .categoryButtons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 15px 0;
+  gap: clamp(7px, 1.6vw, 10px);
   justify-content: center;
 }
 
 .categoryButton {
-  padding: 8px 10px;
+  padding: clamp(4px, 1.25vw, 8px) clamp(5px, 1.5vw, 10px);
   background: var(--secondary);
   border: none;
-  border-radius: 4px;
+  border-radius: clamp(2px, 0.625vw, 4px);
   color: black;
   cursor: pointer;
   transition: all 0.2s ease;

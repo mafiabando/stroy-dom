@@ -242,7 +242,7 @@ const MenuItem = ({
           <div className={modalStyles.modalDetails}>
             <h2 className={modalStyles.modalTitle}>{title}</h2>
             <p className={modalStyles.modalText}>{description}</p>
-            {sizeText && <span>{sizeText}</span>}
+            {sizeText && <span className={modalStyles.modalSizeText}>{sizeText}</span>}
 
             {pricesBySize && Object.keys(pricesBySize).length > 0 && (
               <div className={modalStyles.sizeOptions}>
