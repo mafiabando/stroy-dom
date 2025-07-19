@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/stroy-dom/static/css/main.ace815f1.css",
-    "main.js": "/stroy-dom/static/js/main.bdbaa8cf.js",
+    "main.css": "/stroy-dom/static/css/main.e0ad12ca.css",
+    "main.js": "/stroy-dom/static/js/main.62d275e9.js",
     "static/media/gkl.jpg": "/stroy-dom/static/media/gkl.3895692c3a562e590a17.jpg",
+    "static/media/hydro.jpg": "/stroy-dom/static/media/hydro.35cb913d5e32ec09f543.jpg",
     "static/media/mayak.jpg": "/stroy-dom/static/media/mayak.78469ef6135ce34aeb43.jpg",
+    "static/media/otdelka.jpg": "/stroy-dom/static/media/otdelka.12f2d4b10869424e16dc.jpg",
+    "static/media/brus.jpg": "/stroy-dom/static/media/brus.df0e3e38fe44c0fdf476.jpg",
     "static/media/smesi.jpg": "/stroy-dom/static/media/smesi.a3a5820665626749f653.jpg",
     "static/media/utepl.jpg": "/stroy-dom/static/media/utepl.4c5455317ad5ac89a22f.jpg",
+    "static/media/kraski.jpg": "/stroy-dom/static/media/kraski.8ddcfc96161ff48cca3f.jpg",
+    "static/media/instrum.jpg": "/stroy-dom/static/media/instrum.e6c8aae37e8f40203e0d.jpg",
     "static/media/profil.jpg": "/stroy-dom/static/media/profil.9d6423e054fbd9e4a343.jpg",
     "static/media/pliti.jpg": "/stroy-dom/static/media/pliti.bd0b712edf0aadbee1af.jpg",
+    "static/media/arm.jpg": "/stroy-dom/static/media/arm.5232ae714b362a729216.jpg",
     "static/media/krepezh.jpg": "/stroy-dom/static/media/krepezh.3a99f573a38d16465494.jpg",
     "static/media/timesnrcyrmt.ttf": "/stroy-dom/static/media/timesnrcyrmt.8c4d4d3b834acd650745.ttf",
     "static/media/prof.jpg": "/stroy-dom/static/media/prof.e7351822c7ddaa0a4b82.jpg",
     "static/media/isol.jpg": "/stroy-dom/static/media/isol.118b023050bc2e7bfacc.jpg",
     "static/media/trubi.jpg": "/stroy-dom/static/media/trubi.afc258e31eaf85b341db.jpg",
-    "static/media/otdelka.jpg": "/stroy-dom/static/media/otdelka.ddb6401dc76c5c830d61.jpg",
     "static/media/logo.svg": "/stroy-dom/static/media/logo.3772e26ddefdd6c892b373a526711506.svg",
     "index.html": "/stroy-dom/index.html",
     "static/media/cart.svg": "/stroy-dom/static/media/cart.584b61aba533fc4f5e273b1552f2bf45.svg",
@@ -21,11 +26,11 @@
     "static/media/location.svg": "/stroy-dom/static/media/location.213cde8b577e58f3dbe1da066079aad9.svg",
     "static/media/clock.svg": "/stroy-dom/static/media/clock.f782ee5b11b0cd1159c92404cfe396ea.svg",
     "static/media/mail.svg": "/stroy-dom/static/media/mail.ab6d8a33f5ba733e4aca2176f4d5e850.svg",
-    "main.ace815f1.css.map": "/stroy-dom/static/css/main.ace815f1.css.map",
-    "main.bdbaa8cf.js.map": "/stroy-dom/static/js/main.bdbaa8cf.js.map"
+    "main.e0ad12ca.css.map": "/stroy-dom/static/css/main.e0ad12ca.css.map",
+    "main.62d275e9.js.map": "/stroy-dom/static/js/main.62d275e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ace815f1.css",
-    "static/js/main.bdbaa8cf.js"
+    "static/css/main.e0ad12ca.css",
+    "static/js/main.62d275e9.js"
   ]
 }
