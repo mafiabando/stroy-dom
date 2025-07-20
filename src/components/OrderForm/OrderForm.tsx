@@ -32,7 +32,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
     setIsLoading(true);
     
     try {
-    const response = await fetch('http://localhost:3001/api/send-order', {
+    const response = await fetch('http://localhost:4000/api/send-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ formData, cartItems, total })
