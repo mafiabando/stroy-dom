@@ -286,7 +286,7 @@ const MenuItem = ({
                     onBlur={handleInputBlur}
                     onKeyDown={handleQuantityKeyDown}
                     className={modalStyles.quantityInput}
-                  />
+                  />{isWeight ? 'кг' : 'шт'}
                   <div className={modalStyles.priceInfo}>
                     {(selectedSize && pricesBySize && pricesBySize[selectedSize] !== undefined
                       ? pricesBySize[selectedSize]

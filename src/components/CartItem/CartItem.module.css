@@ -65,6 +65,11 @@
   line-height: 1;
 }
 
+.controlButton:hover {
+  background-color: var(--hover);
+  color: black;
+}
+
 .quantity {
   font-weight: 600;
   color: var(--accent);
@@ -88,7 +93,7 @@
 }
 
 .quantityInput {
-  width: 50px;
+  width: clamp(25px, 7.8125vw, 50px);
   padding: 2px;
   font-size: clamp(10px, 2vh, 24px);
   text-align: center;

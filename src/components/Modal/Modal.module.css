@@ -211,6 +211,7 @@
   outline: none;          /* убираем стандартный синий контур при фокусе */
   transition: border-color 0.2s ease;
   -moz-appearance: textfield; /* для Firefox убирает стрелки */
+  margin-right: 3px;
 }
 
 .quantityInput:focus {

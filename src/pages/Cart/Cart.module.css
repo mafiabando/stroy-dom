@@ -55,6 +55,20 @@
     color: var(--accent);
   }
   
+  .clearButton {
+    width: clamp(170px, 37.5vw, 320px);
+    background: var(--secondary);
+    color: black;
+    padding: 8px 4px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;
+  }
+
   .orderButton {
     width: 100%;
     background: var(--accent);
@@ -62,16 +76,21 @@
     padding: 16px;
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
     cursor: pointer;
     transition: all 0.3s;
   }
   
   .orderButton:hover {
-    background: #2f00ff;
+    background: var(--hover);
+    color: black;
   }
 
-
+  .clearButton:hover {
+    background: var(--hover);
+    color: var(--primary);
+  }
   
   @media (max-width: 768px) {
     .summary {

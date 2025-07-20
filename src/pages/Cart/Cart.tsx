@@ -8,7 +8,7 @@ import { ICartItem } from '../../types';
 import OrderForm from '../../components/OrderForm/OrderForm';
 
 const Cart = () => {
-  const { cartItems, updateQuantity, removeFromCart } = useContext(CartContext);
+  const { cartItems, updateQuantity, removeFromCart, clearCart } = useContext(CartContext);
   const [total, setTotal] = useState(0);
   const [isOrderOpen, setIsOrderOpen] = useState(false);
 
@@ -50,6 +50,7 @@ const Cart = () => {
               <span>Итого:</span>
               <span>{total} ₽</span>
             </div>
+            <button className={styles.clearButton} onClick={() => clearCart()}>Очистить корзину</button>
             <button 
             className={styles.orderButton}
             onClick={() => setIsOrderOpen(true)}

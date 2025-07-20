@@ -6,6 +6,7 @@ interface CartContextValue {
   addToCart: (item: Omit<ICartItem, 'key'> & { quantity: number }) => void;
   updateQuantity: (key: string, quantity: number) => void;
   removeFromCart: (key: string) => void;
+  clearCart: () => void
 }
 
 export const CartContext = createContext<CartContextValue>({
@@ -13,10 +14,14 @@ export const CartContext = createContext<CartContextValue>({
   addToCart: () => {},
   updateQuantity: () => {},
   removeFromCart: () => {},
+  clearCart: () => {},
 });
 
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
-  const [cartItems, setCartItems] = useState<ICartItem[]>([]);
+  const [cartItems, setCartItems] = useState<ICartItem[]>(() => {
+    const savedCart = localStorage.getItem('cart');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   useEffect(() => {
     const storedItems = localStorage.getItem('cart');
@@ -25,7 +30,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-const addToCart = (item: Omit<ICartItem, 'key'>) => {
+const addToCart = (item: Omit<ICartItem, 'key'> & { quantity: number }) => {
   const itemKey = `${item.id}-${item.size}`;
   console.log(item)
 
@@ -52,13 +57,18 @@ const removeFromCart = (key: string) => {
   setCartItems(prev => prev.filter(item => item.key !== key));
 };
 
+const clearCart = () => {
+  localStorage.removeItem('cart');
+  setCartItems([]);
+}
+
   // Эффект для сохранения в localStorage
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity, removeFromCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );

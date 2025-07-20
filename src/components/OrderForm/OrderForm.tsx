@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { ICartItem } from '../../types';
 import styles from './OrderForm.module.css';
+import { CartContext } from '../../context/CartContext';
 
 interface OrderFormProps {
   cartItems: ICartItem[];
@@ -17,6 +18,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
     comment: '',
   });
 
+  const { clearCart } = useContext(CartContext);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -30,7 +32,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
     setIsLoading(true);
     
     try {
-    const response = await fetch('http://localhost:3000/api/send-order', {
+    const response = await fetch('http://localhost:3001/api/send-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ formData, cartItems, total })
@@ -39,6 +41,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
       if (response.ok) {
         onClose();
         localStorage.removeItem('cart');
+        clearCart();
         alert('Заказ успешно отправлен!');
       } else {
         setError('Ошибка отправки заказа');
