@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import styles from "./MenuItem.module.css";
 import modalStyles from "../Modal/Modal.module.css";
 import { CartContext } from "../../context/CartContext";
@@ -6,6 +6,7 @@ import Modal from "../Modal/Modal";
 import { MainCategory } from "../../pages/Home/Home";
 import { SubCategory } from "../../pages/Home/Home";
 import { useModal } from "../../context/ModalContext";
+import { generateSEO } from "../../utils/seoUtils";
 
 export interface MenuItemProps {
   id: string;
@@ -39,13 +40,13 @@ const MenuItem = ({
 
   const { selectedProductId, closeProductModal } = useModal();
   const isModalOpen = selectedProductId === id;
-  
+
   const [isHovered, setIsHovered] = useState(false);
   const [quantity, setQuantity] = useState(minQty);
   const [quantityInput, setQuantityInput] = useState(minQty.toString());
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useContext(CartContext);
-  
+
   const { openProductModal } = useModal();
   const handleOpenModal = () => {
     console.log('isModalOpen:', isModalOpen, 'selectedProductId:', selectedProductId, 'id:', id);
@@ -178,7 +179,7 @@ const MenuItem = ({
           alt={title}
           className={styles.image}
           style={{ transform: isHovered ? "scale(1.05)" : "scale(1)" }}
-          onClick={ handleOpenModal }
+          onClick={handleOpenModal}
         />
 
         <div className={styles.content}>

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(10px, 2vh, 20px);
-    padding: 30px;
+    padding: clamp(20px, 2.5vw, 30px);
     max-width: 500px;
     width: 90vw;
     margin: 0 auto;
@@ -20,7 +20,9 @@
     padding: clamp(5px, 1vh, 10px);
     border: 1px solid var(--accent);
     border-radius: 4px;
-    font-size: clamp(16px, 2vh, 20px);
+    font-size: clamp(10px, 3.25vw, 18px);
+    color: black;
+    resize: vertical;
   }
   
   .textarea {
@@ -39,17 +41,12 @@
   }
   
   .submitButton:hover {
-    background: #6b2d0f;
+    background: var(--hover);
+    color: black;
+  }
+
+  .error {
+    font-size: clamp(10px, 3.25vw, 18px);
+    color: red;
   }
   
-  @media (max-width: 768px) {
-    .checkoutForm {
-      padding: 20px;
-    }
-    
-    .input,
-    .select,
-    .textarea {
-      font-size: 0.9rem;
-    }
-  }

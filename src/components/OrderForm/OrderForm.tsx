@@ -30,7 +30,15 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
+    const phoneRegex = /^\+?\d{10,15}$/;
+
+    if (!phoneRegex.test(formData.phone)) {
+      setError('Введите корректный номер телефона (например, 79001234567)');
+      setIsLoading(false);
+      return;
+    }
+
     try {
     const response = await fetch('http://localhost:4000/api/send-order', {
         method: 'POST',
@@ -78,6 +86,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.phone}
           onChange={handleChange}
           required
+          placeholder='+79001234567'
           className={styles.input}
         />
       </label>
@@ -90,6 +99,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.address}
           onChange={handleChange}
           className={styles.input}
+          placeholder='Оставьте поле пустым, если заберёте заказ самостоятельно.'
         />
       </label>
 
@@ -113,6 +123,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.comment}
           onChange={handleChange}
           className={styles.textarea}
+          placeholder='Самовывоз, дополнительные товары или инструкция по доставке - всё сюда.'
         />
       </label>
 

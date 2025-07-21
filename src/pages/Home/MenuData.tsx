@@ -138,7 +138,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/слой.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 390
   },
   {
     id: uuidv4(),
@@ -147,7 +147,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/старт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -156,7 +156,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/актив.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 350
   },
   {
     id: uuidv4(),
@@ -165,7 +165,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/активэкстра.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 350
   },
   {
     id: uuidv4(),
@@ -174,7 +174,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/мп75.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 410
   },
   {
     id: uuidv4(),
@@ -183,7 +183,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/литстарт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -192,7 +192,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/литаквапласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -210,7 +210,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/цемпласт.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 360
   },
   {
     id: uuidv4(),
@@ -219,7 +219,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штук/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурка",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -228,7 +228,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/шов.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
-    price: 400
+    price: 420
   },
   {
     id: uuidv4(),
@@ -246,7 +246,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/сатен.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -264,7 +264,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/аквастандартсветлый.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
-    price: 400
+    price: 550
   },
   {
     id: uuidv4(),
@@ -273,7 +273,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/ветонит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
-    price: 400
+    price: 1050
   },
   {
     id: uuidv4(),
@@ -282,7 +282,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/шпат/старатели.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Шпатлёвка",
-    price: 400
+    price: 650
   },
   {
     id: uuidv4(),
@@ -304,7 +304,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/нивелир20.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -313,7 +313,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/нивелир25.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 430
   },
   {
     id: uuidv4(),
@@ -322,7 +322,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/композит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -331,7 +331,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/флорекс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -340,7 +340,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/старатели.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 350
   },
   {
     id: uuidv4(),
@@ -349,7 +349,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 380
   },
   {
     id: uuidv4(),
@@ -358,7 +358,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/пол/м300.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Смеси для пола",
-    price: 400
+    price: 200
   },
   {
     id: uuidv4(),
@@ -376,7 +376,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/т34.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -385,7 +385,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см11.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 530
   },
   {
     id: uuidv4(),
@@ -394,7 +394,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см14.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 800
   },
   {
     id: uuidv4(),
@@ -403,7 +403,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см16.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 1350
   },
   {
     id: uuidv4(),
@@ -412,7 +412,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/см17.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 2000
   },
   {
     id: uuidv4(),
@@ -421,7 +421,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/мега.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -430,7 +430,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/керамогранит.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 370
   },
   {
     id: uuidv4(),
@@ -439,7 +439,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/хабез.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -448,7 +448,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/плитклей/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Плиточный клей",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -457,7 +457,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/бриз.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -466,7 +466,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/севенер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
-    price: 400
+    price: 850
   },
   {
     id: uuidv4(),
@@ -475,7 +475,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/штуккл/повер.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Штукатурно-клеевая смесь",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -484,7 +484,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/волма.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Монтажный клей",
-    price: 400
+    price: 500
   },
   {
     id: uuidv4(),
@@ -493,7 +493,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/монтаж/хабез.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Монтажный клей",
-    price: 400
+    price: 450
   },
   {
     id: uuidv4(),
@@ -502,7 +502,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/волма.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
-    price: 400
+    price: 380
   },
   {
     id: uuidv4(),
@@ -511,7 +511,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/литокс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
-    price: 400
+    price: 340
   },
   {
     id: uuidv4(),
@@ -520,7 +520,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/мега.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -529,7 +529,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/блок/профмикс.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Клей для блоков",
-    price: 400
+    price: 300
   },
   {
     id: uuidv4(),
@@ -538,7 +538,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/смеси/цемент.jpg`,
     mainCategory: 'Сухие смеси',
     subCategory: "Цемент",
-    price: 400
+    price: 480
   },
   {
     id: uuidv4(),
@@ -628,7 +628,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/плиты/дсп.jpg`,
     mainCategory: 'Древесные плиты',
     subCategory: "ДСП",
-    price: 1700
+    price: 1800
   },
   {
     id: uuidv4(),
@@ -686,9 +686,9 @@ const menuItems: MenuItemProps[] = [
     pricesBySize: {
       '50х50мм': 220,
       '50х40мм': 200,
-      '50х25мм': 150,
+      '50х25мм': 140,
       '40х30мм (строганный)': 150,
-      '40х20мм': 120
+      '40х20мм': 100
 
     }
   },
@@ -707,7 +707,7 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Гипсокартон Knauf 3000х1200мм",
+    title: "Гипсокартон Knauf 12.5х3000х1200мм",
     description: "Гипсокартон от бренда Knauf для сухих помещений. Отличается высоким качеством и точными геометрическими размерами.",
     image: `${process.env.PUBLIC_URL}/images/гкл/кнауф.jpg`,
     mainCategory: 'Гипсокартон',
@@ -845,70 +845,75 @@ const menuItems: MenuItemProps[] = [
     sizeText: 'Выберите толщину:',
     pricesBySize: {
       '0.55мм': 390,
+      '0.6мм': 400,
       '0.6мм knauf': 500
     }
   },
   {
     id: uuidv4(),
-    title: "Маячок 3000х6мм",
+    title: "Маячок 6х3000мм",
     description: "Металлический маячок длиной 3 м, высотой профиля 6 мм. Используется как направляющая при оштукатуривании стен и выравнивании поверхностей с перепадами до 5 мм и более.",
     image: `${process.env.PUBLIC_URL}/images/маяки/6.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
     sizeText: 'Выберите толщину:',
     pricesBySize: {
-      '0.55мм': 390,
-      '0.6мм': 500
+      '0.3мм': 50,
+      '0.4мм': 60,
+      '0.5мм': 80,
+      'knauf': 100
     }
   },
   {
     id: uuidv4(),
-    title: "Маячок 3000х10мм",
+    title: "Маячок 10х3000мм",
     description: "Металлический маячок длиной 3 м, высотой профиля 10 мм. Применяется при значительных перепадах поверхности (от 10 мм). Используется как опорная направляющая при штукатурных работах.",
     image: `${process.env.PUBLIC_URL}/images/маяки/10.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
     sizeText: 'Выберите толщину:',
     pricesBySize: {
-      '0.55мм': 390,
-      '0.6мм': 500
+      '0.3мм': 60,
+      '0.4мм': 80,
+      '0.5мм': 100,
+      'knauf': 120
     }
   },
   {
     id: uuidv4(),
-    title: "Угол перфорированный 3000х20х20мм",
+    title: "Угол перфорированный 20х20х3000мм",
     description: "Металлический перфорированный уголок длиной 3 м, размером полок 20×20 мм. Используется для армирования углов при штукатурных работах, предотвращает растрескивание штукатурного слоя.",
     image: `${process.env.PUBLIC_URL}/images/маяки/2020.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
-    price: 390
+    price: 70
   },
   {
     id: uuidv4(),
-    title: "Угол перфорированный 3000х25х25мм",
+    title: "Угол перфорированный Knauf 25х25х3000мм",
     description: "Перфорированный уголок длиной 3 м, размером полок 25×25 мм. Применяется для усиления наружных углов стен. Обеспечивает ровный угол и защиту от сколов при отделке.",
     image: `${process.env.PUBLIC_URL}/images/маяки/2525.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
-    price: 390
+    price: 120
   },
   {
     id: uuidv4(),
-    title: "Угол перфорированный пластиковый 3000х20х20мм",
+    title: "Угол перфорированный пластиковый 20х20х3000мм",
     description: "Пластиковый перфорированный уголок длиной 3 м, размером 20×20 мм. Используется для армирования и защиты углов при штукатурке и шпатлёвке. Легкий, не подвержен коррозии.",
     image: `${process.env.PUBLIC_URL}/images/маяки/пласт.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Перфорированные углы",
-    price: 390
+    price: 60
   },
   {
     id: uuidv4(),
-    title: "Маяк перфорированный пластиковый 3000х6мм",
+    title: "Маяк перфорированный пластиковый 6х3000мм",
     description: "Пластиковый перфорированный маячок длиной 3 м, высотой 6 мм. Используется как направляющая при выравнивании стен, особенно в местах с небольшими перепадами. Легкий, не подвержен коррозии.",
     image: `${process.env.PUBLIC_URL}/images/маяки/маякпл.jpg`,
     mainCategory: 'Маяки и перфорированные углы',
     subCategory: "Маяки",
-    price: 390
+    price: 60
   },
   {
     id: uuidv4(),
@@ -934,10 +939,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 200,
+      '3м': 300,
+      '4м': 400,
+      '6м': 600
     }
   },
   {
@@ -949,10 +954,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 250,
+      '3м': 375,
+      '4м': 500,
+      '6м': 750
     }
   },
   {
@@ -964,10 +969,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 300,
+      '3м': 450,
+      '4м': 600,
+      '6м': 900
     }
   },
   {
@@ -979,10 +984,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 250,
+      '3м': 375,
+      '4м': 500,
+      '6м': 750
     }
   },
   {
@@ -994,10 +999,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 280,
+      '3м': 420,
+      '4м': 640,
+      '6м': 840
     }
   },
   {
@@ -1009,10 +1014,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 300,
+      '3м': 450,
+      '4м': 600,
+      '6м': 900
     }
   },
   {
@@ -1024,10 +1029,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 380,
+      '3м': 570,
+      '4м': 760,
+      '6м': 1140
     }
   },
   {
@@ -1039,10 +1044,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 350,
+      '3м': 525,
+      '4м': 700,
+      '6м': 1050
     }
   },
   {
@@ -1054,10 +1059,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 450,
+      '3м': 675,
+      '4м': 900,
+      '6м': 1350
     }
   },
   {
@@ -1069,10 +1074,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 430,
+      '3м': 645,
+      '4м': 860,
+      '6м': 1290
     }
   },
   {
@@ -1084,10 +1089,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 450,
+      '3м': 675,
+      '4м': 900,
+      '6м': 1350
     }
   },
   {
@@ -1099,10 +1104,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 630,
+      '3м': 945,
+      '4м': 1260,
+      '6м': 1890
     }
   },
   {
@@ -1114,10 +1119,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 530,
+      '3м': 795,
+      '4м': 1060,
+      '6м': 1590
     }
   },
   {
@@ -1129,10 +1134,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 780,
+      '3м': 1170,
+      '4м': 1560,
+      '6м': 2340
     }
   },
   {
@@ -1144,10 +1149,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 610,
+      '3м': 915,
+      '4м': 1220,
+      '6м': 1830
     }
   },
   {
@@ -1159,10 +1164,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 730,
+      '3м': 1095,
+      '4м': 1460,
+      '6м': 2190
     }
   },
   {
@@ -1174,10 +1179,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 930,
+      '3м': 1395,
+      '4м': 1860,
+      '6м': 2790
     }
   },
   {
@@ -1189,12 +1194,12 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Профтрубы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 1270,
+      '3м': 1905,
+      '4м': 2540,
+      '6м': 3810
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Угол металлический 32х32мм",
@@ -1204,10 +1209,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Металлические углы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 470,
+      '3м': 705,
+      '4м': 940,
+      '6м': 1410
     }
   },
   {
@@ -1219,10 +1224,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Металлические углы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 530,
+      '3м': 795,
+      '4м': 1060,
+      '6м': 1590
     }
   },
   {
@@ -1234,10 +1239,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Металлические углы",
     sizeText: 'Выберите длину:',
     pricesBySize: {
-      '2м': 150,
-      '3м': 225,
-      '4м': 300,
-      '6м': 450
+      '2м': 630,
+      '3м': 945,
+      '4м': 1260,
+      '6м': 1890
     }
   },
   {
@@ -1380,7 +1385,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/утепл/акустик.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
-    price: 1800
+    price: 2800
   },
   {
     id: uuidv4(),
@@ -1398,7 +1403,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/утепл/стронг.jpg`,
     mainCategory: "Утеплители",
     subCategory: "Каменная и минеральная вата",
-    price: 1000
+    price: 1200
   },
   {
     id: uuidv4(),
@@ -1460,8 +1465,8 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Пароизоляция",
     sizeText: 'Площадь:',
     pricesBySize: {
-      '30м²': 500,
-      '70м²': 900
+      '30м²': 450,
+      '70м²': 850
     }
   },
   {
@@ -1479,16 +1484,12 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Мембрана A Ветро-влагозащита",
+    title: "Мембрана A 70м² Ветро-влагозащита",
     description: "Ветрозащитная мембрана для защиты утеплителя от ветра и атмосферной влаги. Применяется в вентилируемых фасадах и кровлях.",
     image: `${process.env.PUBLIC_URL}/images/изол/а.jpg`,
     mainCategory: "Изоляция",
     subCategory: "Ветро-влагозащита",
-    sizeText: 'Площадь:',
-    pricesBySize: {
-      '30м²': 700,
-      '70м²': 1300
-    }
+    price: 1200
   },
   {
     id: uuidv4(),
@@ -1675,19 +1676,19 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Саморезы для гипсокартона",
     sizeText: "Выберите длину:",
     pricesBySize: {
-      "25мм" : 250,
-      "35мм" : 250,
-      "41мм" : 250,
-      "45мм" : 250,
-      "51мм" : 250,
-      "55мм" : 250,
-      "61мм" : 250,
-      "65мм" : 250,
-      "70мм" : 250,
-      "75мм" : 250,
-      "90мм" : 250,
-      "102мм" : 250,
-      "120мм" : 250,
+      "25мм": 250,
+      "35мм": 250,
+      "41мм": 250,
+      "45мм": 250,
+      "51мм": 250,
+      "55мм": 250,
+      "61мм": 250,
+      "65мм": 250,
+      "70мм": 250,
+      "75мм": 250,
+      "90мм": 250,
+      "102мм": 250,
+      "120мм": 250,
     },
     isWeight: true,
     quantityStep: 0.1,
@@ -1702,9 +1703,9 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Саморезы для гипсокартона",
     sizeText: "Выберите длину:",
     pricesBySize: {
-      "25мм" : 250,
-      "32мм" : 250,
-      "41мм" : 250
+      "25мм": 250,
+      "32мм": 250,
+      "41мм": 250
     },
     isWeight: true,
     quantityStep: 0.1,
@@ -1719,12 +1720,12 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Саморезы для гипсокартона",
     sizeText: "Выберите длину:",
     pricesBySize: {
-      "13мм" : 300,
-      "16мм" : 300,
-      "19мм" : 300,
-      "29мм" : 300,
-      "35мм" : 300,
-      "41мм" : 300
+      "13мм": 300,
+      "16мм": 300,
+      "19мм": 300,
+      "29мм": 300,
+      "35мм": 300,
+      "41мм": 300
     },
     isWeight: true,
     quantityStep: 0.1,
@@ -1739,11 +1740,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Саморезы для гипсокартона",
     sizeText: "Выберите длину:",
     pricesBySize: {
-      "13мм" : 300,
-      "16мм" : 300,
-      "19мм" : 300,
-      "29мм" : 300,
-      "35мм" : 300,
+      "13мм": 300,
+      "16мм": 300,
+      "19мм": 300,
+      "29мм": 300,
+      "35мм": 300,
     },
     isWeight: true,
     quantityStep: 0.1,
@@ -1758,13 +1759,13 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 2.5,
-      "4.8х29мм" : 2.5,
-      "6.3х32мм" : 4.5,
-      "5.5х38мм" : 3.5,
-      "5.5х51мм" : 4,
-      "6.3х51мм" : 4.5,
-      "5.5х76мм" : 5.5
+      "5.5х19мм": 2.5,
+      "4.8х29мм": 2.5,
+      "6.3х32мм": 4.5,
+      "5.5х38мм": 3.5,
+      "5.5х51мм": 4,
+      "6.3х51мм": 4.5,
+      "5.5х76мм": 5.5
     },
   },
   {
@@ -1776,11 +1777,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1792,11 +1793,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1808,11 +1809,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1824,11 +1825,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1840,11 +1841,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1856,11 +1857,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1872,11 +1873,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Кровельные саморезы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "5.5х19мм" : 3.5,
-      "4.8х29мм" : 3.5,
-      "4.8х35мм" : 4,
-      "4.8х51мм" : 4.5,
-      "5.5х76мм" : 7
+      "5.5х19мм": 3.5,
+      "4.8х29мм": 3.5,
+      "4.8х35мм": 4,
+      "4.8х51мм": 4.5,
+      "5.5х76мм": 7
     },
   },
   {
@@ -1915,17 +1916,17 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Гвозди",
     sizeText: "Выберите длину:",
     pricesBySize: {
-      "20мм" : 200,
-      "40мм" : 200,
-      "50мм" : 200,
-      "60мм" : 200,
-      "70мм" : 200,
-      "80мм" : 200,
-      "90мм" : 200,
-      "100мм" : 200,
-      "110мм" : 200,
-      "120мм" : 200,
-      "150мм" : 200
+      "20мм": 200,
+      "40мм": 200,
+      "50мм": 200,
+      "60мм": 200,
+      "70мм": 200,
+      "80мм": 200,
+      "90мм": 200,
+      "100мм": 200,
+      "110мм": 200,
+      "120мм": 200,
+      "150мм": 200
     },
     isWeight: true,
     quantityStep: 0.1,
@@ -1988,18 +1989,18 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Болты, гайки",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "8х40мм" : 10,
-      "8х65мм" : 13,
-      "8х100мм" : 15,
-      "8х120мм" : 20,
-      "10х77мм" : 20,
-      "10х97мм" : 20,
-      "10х130мм" : 25,
-      "12х99мм" : 30,
-      "12х129мм" : 30,
-      "12х150мм" : 40,
-      "12х250мм" : 50,
-      "12х300мм" : 60,
+      "8х40мм": 10,
+      "8х65мм": 13,
+      "8х100мм": 15,
+      "8х120мм": 20,
+      "10х77мм": 20,
+      "10х97мм": 20,
+      "10х130мм": 25,
+      "12х99мм": 30,
+      "12х129мм": 30,
+      "12х150мм": 40,
+      "12х250мм": 50,
+      "12х300мм": 60,
     }
   },
   {
@@ -2011,15 +2012,15 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Болты, гайки",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "6х20мм" : 5,
-      "6х50мм" : 7,
-      "8х30мм" : 8,
-      "10х30мм" : 10,
-      "10х50мм" : 12,
-      "10х80мм" : 15,
-      "12х40мм" : 10,
-      "12х60мм" : 15,
-      "12х100мм" : 20,
+      "6х20мм": 5,
+      "6х50мм": 7,
+      "8х30мм": 8,
+      "10х30мм": 10,
+      "10х50мм": 12,
+      "10х80мм": 15,
+      "12х40мм": 10,
+      "12х60мм": 15,
+      "12х100мм": 20,
     }
   },
   {
@@ -2031,10 +2032,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Болты, гайки",
     sizeText: "Выберите диаметр:",
     pricesBySize: {
-      "6мм" : 2,
-      "8мм" : 4,
-      "10мм" : 6,
-      "12мм" : 8,
+      "6мм": 2,
+      "8мм": 4,
+      "10мм": 6,
+      "12мм": 8,
     }
   },
   {
@@ -2046,15 +2047,15 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Крепёжные уголки и подвесы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "20х40х40мм" : 6,
-      "30х30х30мм" : 8,
-      "40х40х30мм" : 10,
-      "40х40х40мм" : 15,
-      "40х50х50мм" : 18,
-      "40х80х80мм" : 20,
-      "50х40х40мм" : 20,
-      "50х80х80мм" : 30,
-      "60х60х60мм" : 25,
+      "20х40х40мм": 6,
+      "30х30х30мм": 8,
+      "40х40х30мм": 10,
+      "40х40х40мм": 15,
+      "40х50х50мм": 18,
+      "40х80х80мм": 20,
+      "50х40х40мм": 20,
+      "50х80х80мм": 30,
+      "60х60х60мм": 25,
     }
   },
   {
@@ -2066,11 +2067,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Крепёжные уголки и подвесы",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "50х50х35мм" : 15,
-      "70х70х40мм" : 25,
-      "70х70х55мм" : 30,
-      "90х90х40мм" : 35,
-      "90х90х65мм" : 40,
+      "50х50х35мм": 15,
+      "70х70х40мм": 25,
+      "70х70х55мм": 30,
+      "90х90х40мм": 35,
+      "90х90х65мм": 40,
     }
   },
   {
@@ -2082,9 +2083,9 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Крепёжные уголки и подвесы",
     sizeText: "Выберите толщину:",
     pricesBySize: {
-      "0.7мм" : 10,
-      "0.9мм" : 15,
-      "1мм knauf" : 20,
+      "0.7мм": 10,
+      "0.9мм": 15,
+      "1мм knauf": 20,
     }
   },
   {
@@ -2096,8 +2097,8 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Дюбеля",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "6х42мм" : 1,
-      "6х52мм" : 1,
+      "6х42мм": 1,
+      "6х52мм": 1,
     }
   },
   {
@@ -2109,11 +2110,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Дюбеля",
     sizeText: "Выберите размер:",
     pricesBySize: {
-      "6х40мм" : 2,
-      "6х60мм" : 2.5,
-      "6х80мм" : 3.5,
-      "8х60мм" : 4,
-      "8х120мм" : 6,
+      "6х40мм": 2,
+      "6х60мм": 2.5,
+      "6х80мм": 3.5,
+      "8х60мм": 4,
+      "8х120мм": 6,
     }
   },
   {
@@ -2161,9 +2162,9 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "10л" : 500,
-      "5л" : 300,
-      "3л" : 200,
+      "10л": 500,
+      "5л": 300,
+      "3л": 200,
     }
   },
   {
@@ -2173,7 +2174,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст17.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 1200
   },
   {
     id: uuidv4(),
@@ -2184,8 +2185,8 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "10л" : 500,
-      "5л" : 300,
+      "10л": 850,
+      "5л": 500,
     }
   },
   {
@@ -2195,7 +2196,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/оптимист2.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 1100
   },
   {
     id: uuidv4(),
@@ -2204,7 +2205,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ветонит.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 1200
   },
   {
     id: uuidv4(),
@@ -2213,7 +2214,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/тифен.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 1350
   },
   {
     id: uuidv4(),
@@ -2222,7 +2223,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/лакра.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 750
   },
   {
     id: uuidv4(),
@@ -2231,7 +2232,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/профит.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 1000
   },
   {
     id: uuidv4(),
@@ -2242,10 +2243,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Грунтовка",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "10л" : 500,
-      "5л" : 300,
-      "3л" : 200,
-      "1л" : 100,
+      "10л": 1800,
+      "5л": 1000,
+      "3л": 650,
+      "1л": 300,
     }
   },
   {
@@ -2255,7 +2256,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/миттель.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 3300
   },
   {
     id: uuidv4(),
@@ -2264,7 +2265,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст16.jpg`,
     mainCategory: "Отделка",
     subCategory: "Грунтовка",
-    price: 500
+    price: 2500
   },
   {
     id: uuidv4(),
@@ -2273,7 +2274,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/ст19.jpg`,
     mainCategory: "Отделка",
     subCategory: "Бетоноконтакт",
-    price: 500
+    price: 2100
   },
   {
     id: uuidv4(),
@@ -2282,7 +2283,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/грунт/хабез.jpg`,
     mainCategory: "Отделка",
     subCategory: "Бетоноконтакт",
-    price: 500
+    price: 1000
   },
   {
     id: uuidv4(),
@@ -2293,10 +2294,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Бетоноконтакт",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "12кг" : 500,
-      "6кг" : 300,
-      "3кг" : 200,
-      "1.5кг" : 100,
+      "12кг": 1200,
+      "6кг": 650,
+      "3кг": 400,
+      "1.5кг": 200,
     }
   },
   {
@@ -2308,10 +2309,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "7кг" : 300,
-      "3кг" : 200,
-      "1.5кг" : 100,
+      "14кг": 1300,
+      "7кг": 700,
+      "3кг": 350,
+      "1.5кг": 230,
     }
   },
   {
@@ -2323,10 +2324,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "7кг" : 300,
-      "3кг" : 200,
-      "1.5кг" : 100,
+      "14кг": 1500,
+      "7кг": 800,
+      "3кг": 450,
+      "1.5кг": 260,
     }
   },
   {
@@ -2338,10 +2339,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "7кг" : 300,
-      "3кг" : 200,
-      "1.5кг" : 100,
+      "14кг": 1600,
+      "7кг": 900,
+      "3кг": 450,
+      "1.5кг": 300,
     }
   },
   {
@@ -2353,10 +2354,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "6.5кг" : 300,
-      "3кг" : 200,
-      "1.5кг" : 100,
+      "14кг": 1300,
+      "6.5кг": 700,
+      "3кг": 350,
+      "1.5кг": 200,
     }
   },
   {
@@ -2368,9 +2369,9 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "6.5кг" : 300,
-      "3кг" : 200,
+      "14кг": 2500,
+      "6.5кг": 1200,
+      "3кг": 650,
     }
   },
   {
@@ -2382,9 +2383,9 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Водоэмульсионные краски",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "14кг" : 500,
-      "6.5кг" : 300,
-      "3кг" : 200,
+      "14кг": 2550,
+      "6.5кг": 1250,
+      "3кг": 650,
     }
   },
   {
@@ -2417,12 +2418,12 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Эмали",
     sizeText: "Выберите цвет:",
     pricesBySize: {
-      "Чёрный": 400,
-      "Белый": 400,
-      "Серый": 400,
-      "Графит": 400,
-      "Жёлтый": 400,
-      "Синий": 400,
+      "Чёрный": 200,
+      "Белый": 200,
+      "Серый": 200,
+      "Графит": 200,
+      "Жёлтый": 200,
+      "Синий": 200,
     }
   },
   {
@@ -2450,11 +2451,11 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Эмали",
     sizeText: "Выберите цвет:",
     pricesBySize: {
-      "Чёрный": 500,
-      "Белый": 500,
-      "Серый": 500,
-      "Графит": 500,
-      "Шоколадный": 500,
+      "Чёрный": 300,
+      "Белый": 300,
+      "Серый": 300,
+      "Графит": 300,
+      "Шоколадный": 300,
     }
   },
   {
@@ -2539,10 +2540,10 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Готовые шпатлёвки",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "16кг" : 500,
-      "8кг" : 300,
-      "5кг" : 200,
-      "1.5кг" : 100,
+      "16кг": 1300,
+      "8кг": 850,
+      "5кг": 650,
+      "1.5кг": 200,
     }
   },
   {
@@ -2554,8 +2555,8 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Готовые шпатлёвки",
     sizeText: "Выберите объём:",
     pricesBySize: {
-      "28кг" : 3500,
-      "18кг" : 2300,
+      "28кг": 3500,
+      "18кг": 2300,
     }
   },
   {
@@ -2565,7 +2566,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/ротбанд.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
-    price: 500
+    price: 2000
   },
   {
     id: uuidv4(),
@@ -2574,7 +2575,7 @@ const menuItems: MenuItemProps[] = [
     image: `${process.env.PUBLIC_URL}/images/отделка/шпатлевки/лрпаста.jpg`,
     mainCategory: "Отделка",
     subCategory: "Готовые шпатлёвки",
-    price: 500
+    price: 1700
   },
   {
     id: uuidv4(),
@@ -2584,10 +2585,10 @@ const menuItems: MenuItemProps[] = [
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
-      "Arco Iris" : 600,
-      "Soudal" : 600,
-      "Tytan" : 700,
-      "Kudo" : 600
+      "Arco Iris": 600,
+      "Soudal": 600,
+      "Tytan": 700,
+      "Kudo": 600
     }
   },
   {
@@ -2598,10 +2599,10 @@ const menuItems: MenuItemProps[] = [
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
-      "Kron (универсальная)" : 600,
-      "Момент" : 500,
-      "Arco Iris" : 500,
-      "Kron" : 500
+      "Kron (универсальная)": 600,
+      "Момент": 500,
+      "Arco Iris": 500,
+      "Kron": 500
     }
   },
   {
@@ -2612,8 +2613,8 @@ const menuItems: MenuItemProps[] = [
     mainCategory: "Отделка",
     subCategory: "Монтажная пена и пена клей",
     pricesBySize: {
-      "Kron 65л" : 500,
-      "Arco Iris 55л" : 450,
+      "Kron 65л": 500,
+      "Arco Iris 55л": 450,
     }
   },
   {
@@ -2760,7 +2761,7 @@ const menuItems: MenuItemProps[] = [
       "1.5кг": 250,
     }
   },
-   {
+  {
     id: uuidv4(),
     title: "Клей ПВА строительный",
     description: "Универсальный клей на основе ПВА для склеивания древесины, бумаги, картона, гипсокартона, ткани и других материалов.",
@@ -2784,7 +2785,7 @@ const menuItems: MenuItemProps[] = [
     subCategory: "Клей",
     price: 500
   },
-  
+
   {
     id: uuidv4(),
     title: "Стеклосетка фасадная под штукатурку",
@@ -2944,7 +2945,7 @@ const menuItems: MenuItemProps[] = [
       "150х70мм": 180,
       "170х70мм": 200,
     }
-  },  
+  },
   {
     id: uuidv4(),
     title: "Скотч 48мм",
@@ -2957,7 +2958,7 @@ const menuItems: MenuItemProps[] = [
       "30м прозрачный": 100,
       "150м жёлтый": 300,
     }
-  }, 
+  },
   {
     id: uuidv4(),
     title: "Лента малярная 48х5000мм",
@@ -2966,10 +2967,55 @@ const menuItems: MenuItemProps[] = [
     mainCategory: "Инструменты и расходные материалы",
     subCategory: "Ленты и скотчи",
     price: 150
-  },  
+  },
   {
     id: uuidv4(),
-    title: "Зажим кольцо 0.8мм 500шт",
+    title: "Пистолет для пены усиленный ПМ-220",
+    description: "Усиленный монтажный пистолет для нанесения монтажной пены. Обладает прочной металлической конструкцией, регулировкой подачи и долгим сроком службы. Подходит для профессионального использования.",
+    image: `${process.env.PUBLIC_URL}/images/инструм/пм220.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Монтажные пистолеты",
+    price: 650
+  },
+  {
+    id: uuidv4(),
+    title: "Пистолет для пены металлический",
+    description: "Прочный металлический пистолет для нанесения монтажной пены. Обеспечивает точную дозировку и равномерное распределение пены. Подходит для профессионального и бытового использования.",
+    image: `${process.env.PUBLIC_URL}/images/инструм/пистпен.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Монтажные пистолеты",
+    price: 650
+  },
+  {
+    id: uuidv4(),
+    title: "Пистолет для пены Fomeron Fort",
+    description: "Профессиональный пистолет для монтажной пены с регулировкой подачи и удобным ходом штока. Обеспечивает точное и экономичное нанесение пены.",
+    image: `${process.env.PUBLIC_URL}/images/инструм/фомеронт.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Монтажные пистолеты",
+    price: 450
+  },
+  {
+    id: uuidv4(),
+    title: "Пистолет для пены пластиковый",
+    description: "Бюджетный пистолет для нанесения монтажной пены. Удобен в бытовом использовании, подходит для стандартных баллонов.",
+    image: `${process.env.PUBLIC_URL}/images/инструм/пм02.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Монтажные пистолеты",
+    price: 300
+  },
+  {
+    id: uuidv4(),
+    title: "Пистолет для герметика полузакрытый",
+    description: "Пистолет для нанесения силиконовых и акриловых герметиков из туб. Используется в строительстве, ремонте и автосервисе.",
+    image: `${process.env.PUBLIC_URL}/images/инструм/пистгерм.jpg`,
+    mainCategory: "Инструменты и расходные материалы",
+    subCategory: "Монтажные пистолеты",
+    price: 350
+  },
+  {
+    id: uuidv4(),
+    title: "Зажим кольцо 1мм 500шт",
     description: "Пластиковые зажимы (диски) для системы выравнивания плитки. Используются вместе с клиньями, чтобы равномерно распределить давление и выровнять уровень соседних плиток.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз500.jpg`,
     mainCategory: "Инструменты и расходные материалы",
@@ -2978,7 +3024,7 @@ const menuItems: MenuItemProps[] = [
   },
   {
     id: uuidv4(),
-    title: "Зажим кольцо 0.8мм 100шт",
+    title: "Зажим кольцо 1мм 100шт",
     description: "Пластиковые зажимы (диски) для системы выравнивания плитки. Используются вместе с клиньями, чтобы равномерно распределить давление и выровнять уровень соседних плиток.",
     image: `${process.env.PUBLIC_URL}/images/инструм/свп/роз100.jpg`,
     mainCategory: "Инструменты и расходные материалы",
