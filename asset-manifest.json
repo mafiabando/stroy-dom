@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/stroy-dom/static/css/main.e0ad12ca.css",
-    "main.js": "/stroy-dom/static/js/main.d9623c20.js",
-    "static/media/gkl.jpg": "/stroy-dom/static/media/gkl.3895692c3a562e590a17.jpg",
-    "static/media/hydro.jpg": "/stroy-dom/static/media/hydro.35cb913d5e32ec09f543.jpg",
-    "static/media/mayak.jpg": "/stroy-dom/static/media/mayak.78469ef6135ce34aeb43.jpg",
-    "static/media/otdelka.jpg": "/stroy-dom/static/media/otdelka.12f2d4b10869424e16dc.jpg",
-    "static/media/brus.jpg": "/stroy-dom/static/media/brus.df0e3e38fe44c0fdf476.jpg",
-    "static/media/smesi.jpg": "/stroy-dom/static/media/smesi.a3a5820665626749f653.jpg",
-    "static/media/utepl.jpg": "/stroy-dom/static/media/utepl.4c5455317ad5ac89a22f.jpg",
-    "static/media/kraski.jpg": "/stroy-dom/static/media/kraski.8ddcfc96161ff48cca3f.jpg",
-    "static/media/instrum.jpg": "/stroy-dom/static/media/instrum.e6c8aae37e8f40203e0d.jpg",
-    "static/media/profil.jpg": "/stroy-dom/static/media/profil.9d6423e054fbd9e4a343.jpg",
-    "static/media/pliti.jpg": "/stroy-dom/static/media/pliti.bd0b712edf0aadbee1af.jpg",
-    "static/media/arm.jpg": "/stroy-dom/static/media/arm.5232ae714b362a729216.jpg",
-    "static/media/krepezh.jpg": "/stroy-dom/static/media/krepezh.3a99f573a38d16465494.jpg",
+    "main.css": "/stroy-dom/static/css/main.1255c4d2.css",
+    "main.js": "/stroy-dom/static/js/main.98d61de7.js",
+    "static/media/mayak.webp": "/stroy-dom/static/media/mayak.be354f03633ddce60332.webp",
+    "static/media/arm.webp": "/stroy-dom/static/media/arm.8153fe1d1fa7e52efa88.webp",
+    "static/media/pliti.webp": "/stroy-dom/static/media/pliti.15bedd6c56e970b617b4.webp",
+    "static/media/kraski.webp": "/stroy-dom/static/media/kraski.2befda9b6376eb26b1f4.webp",
     "static/media/timesnrcyrmt.ttf": "/stroy-dom/static/media/timesnrcyrmt.8c4d4d3b834acd650745.ttf",
-    "static/media/prof.jpg": "/stroy-dom/static/media/prof.e7351822c7ddaa0a4b82.jpg",
-    "static/media/isol.jpg": "/stroy-dom/static/media/isol.118b023050bc2e7bfacc.jpg",
-    "static/media/trubi.jpg": "/stroy-dom/static/media/trubi.afc258e31eaf85b341db.jpg",
+    "static/media/otdelka.webp": "/stroy-dom/static/media/otdelka.a886b8e35619a1aacc59.webp",
+    "static/media/hydro.webp": "/stroy-dom/static/media/hydro.9d0c7693e469ffbbc8c7.webp",
+    "static/media/gkl.webp": "/stroy-dom/static/media/gkl.ad92988e4cb57daeb734.webp",
+    "static/media/smesi.webp": "/stroy-dom/static/media/smesi.1fcf6be6554a814be2b8.webp",
+    "static/media/krepezh.webp": "/stroy-dom/static/media/krepezh.9ba3f07656f5913bfb94.webp",
+    "static/media/isol.webp": "/stroy-dom/static/media/isol.c54bf41c62f1bf6406fa.webp",
+    "static/media/brus.webp": "/stroy-dom/static/media/brus.93963ef4f2e618af95e4.webp",
+    "static/media/utepl.webp": "/stroy-dom/static/media/utepl.03671c8dc6cd0658f1fa.webp",
+    "static/media/instrum.webp": "/stroy-dom/static/media/instrum.7d83099b126c2428f2d5.webp",
+    "static/media/trubi.webp": "/stroy-dom/static/media/trubi.4236842bfa21a4b39049.webp",
+    "static/media/prof.webp": "/stroy-dom/static/media/prof.15ca1b5a982c2ef1e24f.webp",
+    "static/media/profil.webp": "/stroy-dom/static/media/profil.744dbd859683098e2d0f.webp",
     "static/media/logo.svg": "/stroy-dom/static/media/logo.3772e26ddefdd6c892b373a526711506.svg",
     "index.html": "/stroy-dom/index.html",
     "static/media/cart.svg": "/stroy-dom/static/media/cart.584b61aba533fc4f5e273b1552f2bf45.svg",
@@ -26,11 +26,11 @@
     "static/media/location.svg": "/stroy-dom/static/media/location.213cde8b577e58f3dbe1da066079aad9.svg",
     "static/media/clock.svg": "/stroy-dom/static/media/clock.f782ee5b11b0cd1159c92404cfe396ea.svg",
     "static/media/mail.svg": "/stroy-dom/static/media/mail.ab6d8a33f5ba733e4aca2176f4d5e850.svg",
-    "main.e0ad12ca.css.map": "/stroy-dom/static/css/main.e0ad12ca.css.map",
-    "main.d9623c20.js.map": "/stroy-dom/static/js/main.d9623c20.js.map"
+    "main.1255c4d2.css.map": "/stroy-dom/static/css/main.1255c4d2.css.map",
+    "main.98d61de7.js.map": "/stroy-dom/static/js/main.98d61de7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0ad12ca.css",
-    "static/js/main.d9623c20.js"
+    "static/css/main.1255c4d2.css",
+    "static/js/main.98d61de7.js"
   ]
 }
