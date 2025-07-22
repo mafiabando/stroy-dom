@@ -60,8 +60,6 @@ const Home = () => {
   if (selectedProductId) {
     const product = findCategoryByProductId(selectedProductId);
     if (product) {
-      // Всё равно устанавливаем категорию и подкатегорию,
-      // даже если mainCategory не изменилась
       setActiveMainCategory(product.mainCategory!);
       setActiveSubCategory(product.subCategory!);
     }

@@ -60,7 +60,7 @@ import { useModal } from '../../context/ModalContext';
                       handleItemClick(item.id)
                     }}
                   >
-                    <img src={item.image} alt={item.title} className={styles.resultImage} />
+                    <img src={item.image} alt={item.title} loading="lazy" className={styles.resultImage} />
                     <span>{item.title}</span>
                   </li>
                 ))}

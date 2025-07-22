@@ -141,7 +141,7 @@ const CartItem = ({ item, onQuantityChange, onRemove }: CartItemProps) => {
 
   return (
     <div className={styles.cartItem}>
-      <img src={item.image} alt={item.title} className={styles.image} />
+      <img src={item.image} alt={item.title} loading="lazy" className={styles.image} />
 
       <div className={styles.details}>
         {item.size !== undefined ?

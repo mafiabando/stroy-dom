@@ -7,6 +7,7 @@ import { MainCategory } from "../../pages/Home/Home";
 import { SubCategory } from "../../pages/Home/Home";
 import { useModal } from "../../context/ModalContext";
 import { generateSEO } from "../../utils/seoUtils";
+import { Helmet } from "react-helmet-async";
 
 export interface MenuItemProps {
   id: string;
@@ -28,6 +29,8 @@ const MenuItem = ({
   title,
   description,
   image,
+  mainCategory,
+  subCategory,
   sizeText,
   pricesBySize,
   price,
@@ -35,8 +38,26 @@ const MenuItem = ({
   quantityStep = 1,
   minQuantity = 1,
 }: MenuItemProps) => {
+  const seo = generateSEO({
+    id,
+    title,
+    description,
+    image,
+    mainCategory,
+    subCategory,
+    sizeText,
+    pricesBySize,
+    price,
+    isWeight,
+    quantityStep,
+    minQuantity,
+  });
   const step = quantityStep ?? (isWeight ? 0.1 : 1);
   const minQty = minQuantity ?? (isWeight ? 0.1 : 1);
+
+  const minPrice = pricesBySize
+    ? Math.min(...Object.values(pricesBySize))
+    : price ?? 0;
 
   const { selectedProductId, closeProductModal } = useModal();
   const isModalOpen = selectedProductId === id;
@@ -169,6 +190,24 @@ const MenuItem = ({
 
   return (
     <>
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <link rel="canonical" href={seo.canonicalUrl} />
+        <script type="application/ld+json">
+          {seo.schema}
+        </script>
+
+        {/* Open Graph / Social */}
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:image" content={`https://stroydom30.ru${image}`} />
+        <meta property="og:url" content={seo.canonicalUrl} />
+        <meta property="og:type" content="product" />
+        <meta property="og:price:amount" content={minPrice.toString()} />
+        <meta property="og:price:currency" content="RUB" />
+        <meta property="og:availability" content="instock" />
+      </Helmet>
       <div
         className={styles.card}
         onMouseEnter={() => setIsHovered(true)}
@@ -179,6 +218,7 @@ const MenuItem = ({
           alt={title}
           className={styles.image}
           style={{ transform: isHovered ? "scale(1.05)" : "scale(1)" }}
+          loading="lazy"
           onClick={handleOpenModal}
         />
 
@@ -238,7 +278,15 @@ const MenuItem = ({
       </div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className={modalStyles.modalContainer}>
-          <img src={image} alt={title} className={modalStyles.modalImage} />
+          <Helmet>
+            <title>{seo.title}</title>
+            <meta name="description" content={seo.description} />
+            <link rel="canonical" href={seo.canonicalUrl} />
+            <script type="application/ld+json">
+              {seo.schema}
+            </script>
+          </Helmet>
+          <img src={image} alt={title} loading="lazy" className={modalStyles.modalImage} />
 
           <div className={modalStyles.modalDetails}>
             <h2 className={modalStyles.modalTitle}>{title}</h2>
