@@ -1,9 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Строй Дом",
+  "name": "Строй Дом - Магазин строительных товаров в Астрахани",
+  "description": "Магазин строительных товаров в городе Астрахань 'Строй Дом'. Широкий ассортимент товаров для строительства и ремонта.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -18,8 +19,14 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "scope": "/",
+  "lang": "ru",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "business"],
+  "id": "/"
 }
