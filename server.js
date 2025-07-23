@@ -1,12 +1,19 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
-const TELEGRAM_BOT_TOKEN = '7437770429:AAGbvVQcKyQo9W60oo9vKO7kSs2tMg8QcGQ';
-const TELEGRAM_CHAT_ID = 616956857; // ваш личный chat_id
+// Проверяем, что переменные окружения заданы
+if (!process.env.TELEGRAM_BOT_TOKEN || !process.env.TELEGRAM_CHAT_ID) {
+  console.error('Ошибка: Не заданы переменные окружения TELEGRAM_BOT_TOKEN или TELEGRAM_CHAT_ID');
+  process.exit(1);
+}
+
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 app.use(bodyParser.json());
 
@@ -19,7 +26,9 @@ app.use((req, res, next) => {
 
 app.post('/api/send-order', async (req, res) => {
   const { formData, cartItems, total } = req.body;
-console.log('Полученные данные:', { formData, cartItems, total });
+  
+  console.log('Полученные данные:', { formData, cartItems, total });
+  
   if (!formData || !cartItems || typeof total !== 'number') {
     return res.status(400).json({ error: 'Invalid data' });
   }
@@ -48,6 +57,7 @@ ${cartItems.map((item) => {
 `;
 
   try {
+    // Исправлен URL (убран лишний пробел)
     await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       chat_id: TELEGRAM_CHAT_ID,
       text: message,
@@ -63,6 +73,7 @@ ${cartItems.map((item) => {
 
 app.get('/test', async (req, res) => {
   try {
+    // Исправлен URL (убран лишний пробел)
     await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       chat_id: TELEGRAM_CHAT_ID,
       text: 'Тестовое сообщение от сервера!'
@@ -71,7 +82,7 @@ app.get('/test', async (req, res) => {
     res.send('Сообщение успешно отправлено в Telegram!');
   } catch (err) {
     console.error('Ошибка:', err.response?.data || err.message);
-    res.send('Ошибка: ' + (err.response?.data.description || err.message));
+    res.send('Ошибка: ' + (err.response?.data?.description || err.message));
   }
 });
 

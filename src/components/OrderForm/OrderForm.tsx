@@ -1,28 +1,32 @@
-import { useContext, useState } from 'react';
-import { ICartItem } from '../../types';
-import styles from './OrderForm.module.css';
-import { CartContext } from '../../context/CartContext';
+import { useContext, useState } from "react";
+import { ICartItem } from "../../types";
+import styles from "./OrderForm.module.css";
+import { CartContext } from "../../context/CartContext";
 
 interface OrderFormProps {
   cartItems: ICartItem[];
   total: number;
-  onClose: () => void; 
+  onClose: () => void;
 }
 
 const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    address: '',
-    paymentMethod: 'cash',
-    comment: '',
+    name: "",
+    phone: "",
+    address: "",
+    paymentMethod: "cash",
+    comment: "",
   });
 
   const { clearCart } = useContext(CartContext);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -34,33 +38,35 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
     const phoneRegex = /^\+?\d{10,15}$/;
 
     if (!phoneRegex.test(formData.phone)) {
-      setError('Введите корректный номер телефона (например, 79001234567)');
+      setError("Введите корректный номер телефона (например, 79001234567)");
       setIsLoading(false);
       return;
     }
 
     try {
-    const response = await fetch('http://localhost:4000/api/send-order', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formData, cartItems, total })
-      });
+      const response = await fetch(
+        "https://название-твоего-сервиса.onrender.com/api/send-order",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ formData, cartItems, total }),
+        }
+      );
 
       if (response.ok) {
         onClose();
-        localStorage.removeItem('cart');
+        localStorage.removeItem("cart");
         clearCart();
-        alert('Заказ успешно отправлен!');
+        alert("Заказ успешно отправлен!");
       } else {
-        setError('Ошибка отправки заказа');
+        setError("Ошибка отправки заказа");
       }
     } catch (err) {
-      setError('Ошибка соединения');
+      setError("Ошибка соединения");
     } finally {
       setIsLoading(false);
     }
   };
-
 
   return (
     <form onSubmit={handleSubmit} className={styles.orderForm}>
@@ -86,7 +92,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.phone}
           onChange={handleChange}
           required
-          placeholder='+79001234567'
+          placeholder="+79001234567"
           className={styles.input}
         />
       </label>
@@ -99,15 +105,15 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.address}
           onChange={handleChange}
           className={styles.input}
-          placeholder='Оставьте поле пустым, если заберёте заказ самостоятельно.'
+          placeholder="Оставьте поле пустым, если заберёте заказ самостоятельно."
         />
       </label>
 
       <label className={styles.formGroup}>
         Способ оплаты:
-        <select 
-          name="paymentMethod" 
-          value={formData.paymentMethod} 
+        <select
+          name="paymentMethod"
+          value={formData.paymentMethod}
           onChange={handleChange}
           className={styles.select}
         >
@@ -123,17 +129,17 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
           value={formData.comment}
           onChange={handleChange}
           className={styles.textarea}
-          placeholder='Самовывоз, дополнительные товары или инструкция по доставке - всё сюда.'
+          placeholder="Самовывоз, дополнительные товары или инструкция по доставке - всё сюда."
         />
       </label>
 
       {error && <p className={styles.error}>{error}</p>}
-      <button 
-        type="submit" 
+      <button
+        type="submit"
         className={styles.submitButton}
         disabled={isLoading}
       >
-        {isLoading ? 'Отправка...' : 'Отправить заказ'}
+        {isLoading ? "Отправка..." : "Отправить заказ"}
       </button>
     </form>
   );
