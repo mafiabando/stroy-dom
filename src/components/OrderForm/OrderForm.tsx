@@ -45,7 +45,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
 
     try {
       const response = await fetch(
-        "http://37.46.128.97:4000/api/send-order",
+        "https://trapboiatlanta.fvds.ru/api/send-order",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
