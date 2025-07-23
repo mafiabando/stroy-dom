@@ -45,7 +45,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
 
     try {
       const response = await fetch(
-        "https://название-твоего-сервиса.onrender.com/api/send-order",
+        "http://37.46.128.97:4000/api/send-order",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

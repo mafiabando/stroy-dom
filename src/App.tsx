@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Contacts from './pages/Contacts/Contacts';
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <ModalProvider>
     <CartProvider>
-    <BrowserRouter> 
+    <HashRouter> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </CartProvider>
     </ModalProvider>
   );
