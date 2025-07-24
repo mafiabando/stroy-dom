@@ -33,7 +33,7 @@ export function generateSEO(product: MenuItemProps): SEOData {
 
   // Schema.org
   const schema = {
-    "@context": "https://schema.org ",
+    "@context": "https://schema.org",
     "@type": "Product",
     name: title,
     description: `${description} ${mainCategory ? `| ${mainCategory}` : ''} ${subCategory ? `| ${subCategory}` : ''}. Купите ${title} в Астрахани или в Астрахань с доставкой. ${priceText}.`,
@@ -41,7 +41,7 @@ export function generateSEO(product: MenuItemProps): SEOData {
       "@type": "Offer",
       priceCurrency: "RUB",
       price: minPrice,
-      availability: "https://schema.org/InStock ",
+      availability: "https://schema.org/InStock",
       areaServed: {
         "@type": "City",
         name: "Астрахань"

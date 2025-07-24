@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useMemo, useRef } from "react";
 import styles from "./MenuItem.module.css";
 import modalStyles from "../Modal/Modal.module.css";
 import { CartContext } from "../../context/CartContext";
@@ -22,6 +22,7 @@ export interface MenuItemProps {
   isWeight?: boolean;
   quantityStep?: number;
   minQuantity?: number;
+  urlId?: string
 }
 
 const MenuItem = ({
@@ -38,7 +39,7 @@ const MenuItem = ({
   quantityStep = 1,
   minQuantity = 1,
 }: MenuItemProps) => {
-  const seo = generateSEO({
+  const seo = useMemo(() => generateSEO({
     id,
     title,
     description,
@@ -51,7 +52,18 @@ const MenuItem = ({
     isWeight,
     quantityStep,
     minQuantity,
-  });
+  }), [id,
+    title,
+    description,
+    image,
+    mainCategory,
+    subCategory,
+    sizeText,
+    pricesBySize,
+    price,
+    isWeight,
+    quantityStep,
+    minQuantity,]);
   const step = quantityStep ?? (isWeight ? 0.1 : 1);
   const minQty = minQuantity ?? (isWeight ? 0.1 : 1);
 
@@ -61,7 +73,7 @@ const MenuItem = ({
 
   const { selectedProductId, closeProductModal } = useModal();
   const isModalOpen = selectedProductId === id;
-
+  const originalTitleRef = useRef(document.title);
   const [isHovered, setIsHovered] = useState(false);
   const [quantity, setQuantity] = useState(minQty);
   const [quantityInput, setQuantityInput] = useState(minQty.toString());
@@ -70,15 +82,29 @@ const MenuItem = ({
 
   const { openProductModal } = useModal();
   const handleOpenModal = () => {
-    console.log('isModalOpen:', isModalOpen, 'selectedProductId:', selectedProductId, 'id:', id);
     openProductModal(id)
+    originalTitleRef.current = document.title;
   };
 
   const handleCloseModal = () => {
     closeProductModal()
     setQuantity(minQuantity);
     setSelectedSize(selectedSize);
+    document.title = originalTitleRef.current;
   };
+
+   // Эффект для восстановления оригинального заголовка
+  useEffect(() => {
+    if (isModalOpen) {
+      // Сохраняем оригинальный заголовок
+      const originalTitle = document.title;
+      
+      // Восстанавливаем оригинальный заголовок при размонтировании
+      return () => {
+        document.title = originalTitle;
+      };
+    }
+  }, [isModalOpen]);
 
   const handleAddToCart = () => {
     const priceForSelectedSize =
@@ -190,6 +216,11 @@ const MenuItem = ({
 
   return (
     <>
+    <Helmet>
+        <title>Строй Дом - Магазин строительных товаров в Астрахани</title>
+        <meta name="description" content="Магазин строительных товаров в городе Астрахань 'Строй Дом'. Широкий ассортимент товаров для строительства и ремонта." />
+      </Helmet>
+    {isModalOpen && (
       <Helmet>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
@@ -208,6 +239,7 @@ const MenuItem = ({
         <meta property="og:price:currency" content="RUB" />
         <meta property="og:availability" content="instock" />
       </Helmet>
+    )}
       <div
         className={styles.card}
         onMouseEnter={() => setIsHovered(true)}
@@ -278,14 +310,6 @@ const MenuItem = ({
       </div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className={modalStyles.modalContainer}>
-          <Helmet>
-            <title>{seo.title}</title>
-            <meta name="description" content={seo.description} />
-            <link rel="canonical" href={seo.canonicalUrl} />
-            <script type="application/ld+json">
-              {seo.schema}
-            </script>
-          </Helmet>
           <img src={image} alt={title} loading="lazy" className={modalStyles.modalImage} />
 
           <div className={modalStyles.modalDetails}>
