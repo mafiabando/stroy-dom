@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet-async';
 
 const mainCategories = ["Профнастил", "Сухие смеси", "Древесные плиты", "Вагонка и бруски", "Гипсокартон", "Профиля и направляющие", "Маяки и перфорированные углы", "Профтрубы и металлические углы", "Арматура и кладочная сетка", "Утеплители", "Изоляция", "Гидроизоляция", "Крепёж", "Лакокрасочные материалы", "Отделка", "Инструменты и расходные материалы"] as const;
 
-export type MainCategory = typeof mainCategories[number];
+export type MainCategory = typeof mainCategories[number]; 
 
 const subCategories = {
   "Профнастил": ["МП-20", "С-8"],
