@@ -8,6 +8,7 @@ import { SubCategory } from "../../pages/Home/Home";
 import { useModal } from "../../context/ModalContext";
 import { generateSEO } from "../../utils/seoUtils";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from 'react-router-dom';
 
 export interface MenuItemProps {
   id: string;
@@ -38,6 +39,7 @@ const MenuItem = ({
   isWeight = false,
   quantityStep = 1,
   minQuantity = 1,
+  urlId
 }: MenuItemProps) => {
   const seo = useMemo(() => generateSEO({
     id,
@@ -52,6 +54,7 @@ const MenuItem = ({
     isWeight,
     quantityStep,
     minQuantity,
+    urlId
   }), [id,
     title,
     description,
@@ -63,7 +66,8 @@ const MenuItem = ({
     price,
     isWeight,
     quantityStep,
-    minQuantity,]);
+    minQuantity,
+    urlId]);
   const step = quantityStep ?? (isWeight ? 0.1 : 1);
   const minQty = minQuantity ?? (isWeight ? 0.1 : 1);
 
@@ -79,15 +83,17 @@ const MenuItem = ({
   const [quantityInput, setQuantityInput] = useState(minQty.toString());
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const { addToCart } = useContext(CartContext);
-
   const { openProductModal } = useModal();
+  
   const handleOpenModal = () => {
     openProductModal(id)
     originalTitleRef.current = document.title;
+    window.location.hash = `#/product/${urlId}`;
   };
 
   const handleCloseModal = () => {
-    closeProductModal()
+    closeProductModal();
+    window.location.hash = '#/';
     setQuantity(minQuantity);
     setSelectedSize(selectedSize);
     document.title = originalTitleRef.current;

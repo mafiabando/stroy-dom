@@ -24,7 +24,7 @@ export function generateSEO(product: MenuItemProps): SEOData {
   const seoTitle = `${title} | Купить в Астрахани ${priceText} — СтройДом`;
   const seoDescription = `${description} ${mainCategory ? `| ${mainCategory}` : ''} ${subCategory ? `| ${subCategory}` : ''}. Купить ${title} в Астрахани или заказать в Астрахань с доставкой. ${priceText}.`;
   // Генерируем slug
-  const slug = title
+  const slug = product.urlId || title
     .toLowerCase()
     .replace(/\s+/g, '-')
     .replace(/[^\w\-]/g, '');
@@ -36,31 +36,28 @@ export function generateSEO(product: MenuItemProps): SEOData {
     "@context": "https://schema.org",
     "@type": "Product",
     name: title,
-    description: `${description} ${mainCategory ? `| ${mainCategory}` : ''} ${subCategory ? `| ${subCategory}` : ''}. Купите ${title} в Астрахани или в Астрахань с доставкой. ${priceText}.`,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "RUB",
-      price: minPrice,
-      availability: "https://schema.org/InStock",
-      areaServed: {
-        "@type": "City",
-        name: "Астрахань"
-      }
-    },
-    image: image,
+    description: description,
+    image: `https://stroydom30.ru${image}`,
     url: canonicalUrl,
     brand: {
       "@type": "Organization",
       name: "СтройДом"
     },
-    availableAtOrFrom: {
-      "@type": "Organization",
-      name: "СтройДом",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Астрахань",
-        addressRegion: "Астраханская область",
-        addressCountry: "Россия"
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "RUB",
+      price: minPrice,
+      availability: "https://schema.org/InStock",
+      areaServed: "RU",
+      availableAtOrFrom: {
+        "@type": "Place",
+        name: "СтройДом",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Астрахань",
+          addressRegion: "Астраханская область",
+          addressCountry: "Россия"
+        }
       }
     }
   };

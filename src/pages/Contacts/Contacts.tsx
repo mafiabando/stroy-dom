@@ -52,8 +52,8 @@ const Contacts = () => {
             <Mail />
           </div>
           <div className={styles.text}>
-            <h3>Email</h3>
-            <a href="mailto:info@cafe.ru">info@cafe.ru</a>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/79371333366">Написать в WhatsApp</a>
             <p>Отвечаем в течение часа</p>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Contacts = () => {
 
       <section className={styles.mapContainer}>
         <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=48.038066%2C46.342018&mode=search&oid=17706622751&ol=biz&z=14.66"
+          src="https://yandex.ru/map-widget/v1/?ll=48.100428%2C46.364570&mode=search&oid=231175893901&ol=biz&z=15.69"
           className={styles.map}
           allowFullScreen
           loading="lazy"

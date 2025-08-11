@@ -5,6 +5,7 @@ import Contacts from './pages/Contacts/Contacts';
 import Cart from './pages/Cart/Cart';
 import { CartProvider } from './context/CartContext';
 import { ModalProvider } from './context/ModalContext';
+import PrivacyPolicy from './pages/Privacy/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -14,8 +15,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/product/:slug" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </HashRouter>
