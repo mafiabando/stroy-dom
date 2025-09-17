@@ -1,0 +1,211 @@
+.pageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 5vw, 60px);
+  padding: clamp(20px, 5vw, 60px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.imageContainer {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Увеличение изображения */
+  width: 100%; /* Чтобы занимал всю доступную ширину */
+  aspect-ratio: 1 / 1; /* Квадратное изображение */
+  object-fit: cover; /* Сохраняет пропорции и заполняет */
+}
+
+.detailsContainer {
+  flex: 2 1 600px; /* ← Шире — теперь 2/3 от контейнера */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.productTitle {
+  font-size: clamp(24px, 5vw, 36px);
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.productDescription {
+  font-size: clamp(14px, 3vw, 18px);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.sizeLabel {
+  font-size: clamp(16px, 3.5vw, 20px);
+  margin-bottom: 12px;
+}
+
+/* === Радиокнопки — кастомный кружок по центру === */
+
+.radioLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(14px, 3.2vw, 18px);
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+  justify-content: center;
+}
+
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.radioCustom {
+  width: clamp(15px, 3.8vw, 25px);
+  aspect-ratio: 1/1;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: border-color 0.2s ease;
+  flex-shrink: 0;
+  /* Смещаем внутренний кружок точно в центр */
+  position: relative;
+}
+
+.radioInput:checked ~ .radioCustom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(7.5px, 1.9vw, 12.5px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+
+/* === Контролы количества === */
+
+.priceControls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 20px);
+  justify-content: center; /* Центрирование */
+}
+
+.controlButton {
+  background: var(--secondary);
+  color: var(--accent);
+  border: none;
+  width: clamp(20px, 4.5vw, 35px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: clamp(15px, 3.33vw, 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.controlButton:hover {
+  background: var(--hover);
+}
+
+.quantityDisplayWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: clamp(14px, 3vw, 20px);
+  color: var(--accent);
+}
+
+.quantityInput {
+  max-width: 50px;
+  max-height: 28px;
+  padding: 4px;
+  font-size: clamp(12px, 3vw, 18px);
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+.quantityInput:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Текст "шт" — справа от инпута */
+.unitLabel {
+  font-size: clamp(10px, 2.5vw, 16px);
+  margin-left: 4px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.priceInfo {
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: center;
+  font-size: clamp(14px, 3vw, 20px);
+}
+
+.addToCartButton {
+  background: var(--secondary);
+  color: var(--accent);
+  border: none;
+  padding: clamp(10px, 2vw, 16px) clamp(20px, 3.8vw, 36px);
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: clamp(14px, 3vw, 20px);
+  font-weight: 600;
+  align-self: center;
+}
+
+.addToCartButton:hover {
+  background: var(--hover);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageContainer,
+  .detailsContainer {
+    flex: 1 1 auto;
+  }
+}

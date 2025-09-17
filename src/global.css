@@ -1,7 +1,7 @@
 :root {
   --primary: #ffffff;
-  --secondary: #00e1ff; 
-  --accent: #000000; 
+  --secondary: #00e1ff;
+  --accent: #000000;
   --text: #3a3a3a;
   --hover: #3e6bff;
 }
@@ -19,8 +19,9 @@
   font-family: 'Times New Roman Cyr';
   src: url(./assets/timesnrcyrmt.ttf);
 }
+
 body {
-  
+
   color: var(--text);
   background-color: var(--primary);
 }
@@ -31,3 +32,13 @@ body {
   padding: 10px 10px;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  /* Это заставит основной контент занимать всё пространство между header и footer */
+}

@@ -5,10 +5,8 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ReactComponent as Cart } from '../../assets/cart.svg';
 import styles from './Header.module.css';
 import menuItems from '../../pages/Home/MenuData';
-import { useModal } from '../../context/ModalContext';
 
 const Header = () => {
-  const { openProductModal } = useModal();
   const { cartItems } = useContext(CartContext);
   const totalPrice = cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0);
 

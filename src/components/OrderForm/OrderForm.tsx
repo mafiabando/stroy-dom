@@ -45,7 +45,7 @@ const OrderForm = ({ cartItems, total, onClose }: OrderFormProps) => {
 
     try {
       const response = await fetch(
-        "https://trapboiatlanta.fvds.ru/api/send-order",
+        "https://server-stroydom-telegram.onrender.com/api/send-order",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

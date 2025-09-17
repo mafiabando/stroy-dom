@@ -1,0 +1,85 @@
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footerGrid img {
+    width: clamp(100px, 31.25vw, 200px);
+    height: clamp(100px, 31.25vw, 200px);
+    align-self: center;
+    justify-self: center;
+}
+
+.contactsSection {
+    justify-self: end;
+}
+
+.infoSection h3,
+.contactsSection h3 {
+    font-size: clamp(12px, 3.75vw, 26px);
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.infoSection ul,
+.contactsSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infoSection ul li,
+.contactsSection ul li {
+    margin-bottom: 8px;
+}
+
+.infoSection a,
+.contactsSection a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: clamp(10px, 3.125vw, 24px);
+    transition: color 0.3s;
+}
+
+.infoSection a:hover,
+.contactsSection a:hover {
+    color: var(--hover);
+}
+
+.contactList li {
+    margin-bottom: 8px;
+    font-size: clamp(10px, 3.125vw, 24px);
+    line-height: 1.5;
+}
+
+.workTime {
+    display: flex;
+    justify-self: center;
+    margin-bottom: 5px;
+    font-size: clamp(12px, 3.75vw, 20px);
+}
+
+.footerBottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    font-size: clamp(12px, 3.75vw, 20px);
+    color: #95a5a6;
+}
+
+.footerBottom a {
+    color: #95a5a6;
+    text-decoration: none;
+}
+
+.footerBottom a:hover {
+    text-decoration: underline;
+}
